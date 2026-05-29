@@ -1,0 +1,30 @@
+name: Auto-merge claude branches to main
+# Jeder Push auf claude/** wird automatisch in main gemergt, damit Coolify deployt.
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge pushed claude branch into main
+        run: |
+          set -euo pipefail
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          echo "Merging $BRANCH -> main"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$BRANCH"
+          # Fast-forward wenn moeglich, sonst echter Merge-Commit
+          git merge --ff-only "origin/$BRANCH" || git merge --no-edit "origin/$BRANCH"
+          git push origin main
+          echo "main aktualisiert."
