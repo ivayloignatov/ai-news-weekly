@@ -1,5 +1,10 @@
 name: Auto-merge claude branches to main
 # Jeder Push auf claude/** wird automatisch in main gemergt, damit Coolify deployt.
+# Wenn der Merge index.html aendert, wird zusaetzlich der Newsletter-Workflow
+# explizit getriggert (gh workflow run). Grund: ein Push mit GITHUB_TOKEN loest
+# per GitHub-Design KEINE on:push-Workflows aus (Loop-Schutz) — sonst liefe der
+# Newsletter bei Routine-Laeufen (claude/** -> auto-merge -> main) nie.
+# workflow_dispatch umgeht diesen Loop-Schutz und laeuft wirklich.
 on:
   push:
     branches:
@@ -7,10 +12,13 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   merge:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,7 +32,16 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin "$BRANCH"
+          BEFORE="$(git rev-parse HEAD)"
           # Fast-forward wenn moeglich, sonst echter Merge-Commit
           git merge --ff-only "origin/$BRANCH" || git merge --no-edit "origin/$BRANCH"
           git push origin main
-          echo "main aktualisiert."
+          AFTER="$(git rev-parse HEAD)"
+          echo "main aktualisiert ($BEFORE -> $AFTER)."
+          # Newsletter NUR bei echter index.html-Aenderung explizit triggern.
+          if git diff --name-only "$BEFORE" "$AFTER" | grep -qx 'index.html'; then
+            echo "index.html geaendert -> Newsletter-Workflow triggern (workflow_dispatch)"
+            gh workflow run newsletter.yml --ref main
+          else
+            echo "index.html unveraendert -> kein Newsletter"
+          fi
