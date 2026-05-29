@@ -3,247 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Weekly — KW 22 / 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<title>AI Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,900&family=Hanken+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #0e0d0c; --bg-raised: #161513; --bg-card: #1b1916;
-    --ink: #f4efe7; --ink-dim: #a9a097; --ink-faint: #6b635b; --rule: #2b2723;
-    --accent-anthropic: #cc785c; --accent-openai: #19c37d; --accent-google: #5a8dee;
-    --accent-xai: #d6d3cd; --accent-general: #e0b03c; --accent-europe: #b07cf0;
-    --font-display: "Fraunces", Georgia, serif;
-    --font-body: "Hanken Grotesk", system-ui, sans-serif;
-    --font-mono: "JetBrains Mono", monospace;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--bg); color: var(--ink); font-family: var(--font-body);
-    line-height: 1.6; font-size: 17px; -webkit-font-smoothing: antialiased;
-    background-image:
-      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(204,120,92,0.08), transparent),
-      radial-gradient(circle at 88% 8%, rgba(90,141,238,0.05), transparent 40%);
-  }
-  .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-  header.hero { padding: 88px 0 56px; border-bottom: 1px solid var(--rule); position: relative; }
-  .kicker { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-faint); display: flex; gap: 14px; align-items: center; margin-bottom: 28px; }
-  .kicker .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent-anthropic); box-shadow: 0 0 12px var(--accent-anthropic); }
-  h1.title { font-family: var(--font-display); font-weight: 900; font-size: clamp(44px, 9vw, 86px); line-height: 0.94; letter-spacing: -0.02em; margin-bottom: 22px; }
-  h1.title em { font-style: italic; font-weight: 400; color: var(--accent-anthropic); }
-  .period { font-family: var(--font-mono); font-size: 14px; color: var(--ink-dim); margin-bottom: 32px; }
-  .lead { font-family: var(--font-display); font-size: clamp(19px, 3vw, 23px); font-weight: 400; line-height: 1.5; color: var(--ink); max-width: 62ch; border-left: 2px solid var(--accent-anthropic); padding-left: 22px; }
-  section.lab { padding: 52px 0; border-bottom: 1px solid var(--rule); }
-  .lab-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 34px; }
-  .lab-chip { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 5px 11px; border-radius: 4px; color: var(--bg); white-space: nowrap; }
-  .lab-name { font-family: var(--font-display); font-size: 30px; font-weight: 600; letter-spacing: -0.01em; }
-  .lab-count { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); margin-left: auto; }
-  .lab.anthropic { --c: var(--accent-anthropic); }
-  .lab.openai    { --c: var(--accent-openai); }
-  .lab.google    { --c: var(--accent-google); }
-  .lab.xai       { --c: var(--accent-xai); }
-  .lab.general   { --c: var(--accent-general); }
-  .lab.europe    { --c: var(--accent-europe); }
-  .lab .lab-chip { background: var(--c); }
-  .item { margin-bottom: 34px; padding-left: 22px; border-left: 2px solid var(--rule); transition: border-color .2s; }
-  .item:hover { border-color: var(--c); }
-  .item:last-child { margin-bottom: 0; }
-  .item h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
-  .item p { color: var(--ink-dim); font-size: 16.5px; margin-bottom: 14px; }
-  .sources { display: flex; flex-wrap: wrap; gap: 10px; }
-  .src { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-dim); text-decoration: none; border: 1px solid var(--rule); border-radius: 4px; padding: 4px 9px; display: inline-flex; gap: 8px; align-items: center; transition: all .18s; }
-  .src:hover { border-color: var(--c); color: var(--ink); }
-  .src .src-date { color: var(--ink-faint); }
-  .src::before { content: "↗"; color: var(--c); }
-  .empty { font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint); padding-left: 22px; border-left: 2px solid var(--rule); }
-  footer { padding: 48px 0 80px; display: flex; flex-direction: column; gap: 24px; }
-  .prev-link { font-family: var(--font-mono); font-size: 13px; color: var(--ink-dim); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; align-self: flex-start; border: 1px solid var(--rule); padding: 10px 16px; border-radius: 6px; transition: all .18s; }
-  .prev-link:hover { border-color: var(--accent-anthropic); color: var(--ink); }
-  .meta-foot { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); line-height: 1.8; border-top: 1px solid var(--rule); padding-top: 24px; }
-  @media print {
-    body { background: #fff; color: #111; background-image: none; font-size: 12px; }
-    .item, .empty, .lead { border-left-color: #ccc; }
-    .lab, header.hero { border-color: #ddd; }
-    h1.title em, .item h3, .lab-name { color: #111; }
-    .src { color: #444; border-color: #ccc; }
-    .lab-chip { color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .prev-link { display: none; }
-  }
-  @media (max-width: 600px) {
-    header.hero { padding: 56px 0 40px; }
-    .lab-head { flex-wrap: wrap; gap: 10px; }
-    .lab-count { margin-left: 0; width: 100%; }
-  }
+:root{--bg:#fbfbfc;--panel:#ffffff;--ink:#15171d;--dim:#5a6070;--faint:#9aa0ad;--rule:#e7e9ef;
+  --fd:"Fraunces",Georgia,serif;--fb:"Hanken Grotesk",system-ui,sans-serif;--fm:"JetBrains Mono",monospace;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+.wrap{max-width:880px;margin:0 auto;padding:0 30px}
+.mast{display:flex;align-items:center;gap:11px;padding:30px 0 20px}
+.brand{font-family:var(--fd);font-size:28px;font-weight:900;letter-spacing:-.02em;line-height:1;display:flex;align-items:center;gap:11px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:#b5512f}
+.divider{border:none;border-top:1px solid var(--rule);margin:0}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:60px 30px}
+.msg p{font-family:var(--fm);font-size:13px;color:var(--faint);letter-spacing:.04em;text-align:center}
 </style>
 </head>
 <body>
-<div class="wrap">
-
-  <header class="hero">
-    <div class="kicker">
-      <span class="dot"></span>
-      <span>AI Weekly</span>
-      <span>&middot;</span>
-      <span>Kalenderwoche 22</span>
-    </div>
-    <h1 class="title">Was war los<br>in der <em>KI-Welt</em>.</h1>
-    <div class="period">25. Mai – 31. Mai 2026 &nbsp;//&nbsp; 5 Labs · 13 Meldungen</div>
-    <p class="lead">Anthropic schließt mit 65 Milliarden Dollar die bisher größte private KI-Finanzierungsrunde ab und übertrifft erstmals OpenAI in der Bewertung – begleitet vom Release des Flaggschiff-Modells Claude Opus 4.8 mit koordinierten Multi-Agenten-Workflows. OpenAI bereitet parallel einen vertraulichen Börsengangs-Prospekt vor und räumt einen Sicherheitsvorfall in internen Code-Repositories ein.</p>
-  </header>
-
-  <!-- INHALT_START -->
-
-  <section class="lab anthropic">
-    <div class="lab-head">
-      <span class="lab-chip">Anthropic</span>
-      <span class="lab-name">Anthropic</span>
-      <span class="lab-count">3 Meldungen</span>
-    </div>
-    <article class="item">
-      <h3>65-Milliarden-Series-H: Anthropic übertrifft OpenAI in der Bewertung</h3>
-      <p>Anthropic schloss am 28. Mai eine von Altimeter Capital, Dragoneer, Greenoaks und Sequoia Capital co-geführte Series-H-Runde mit 65 Milliarden Dollar ab. Die Post-Money-Bewertung beträgt 965 Milliarden Dollar – erstmals über dem Rivalen OpenAI. Der annualisierte Umsatz überschritt die Marke von 47 Milliarden Dollar; das Unternehmen erwartet laut Wall Street Journal 2026 seinen ersten operativen Gewinn. Die Runde gilt als voraussichtlich letzter Privatfinanzierungsschritt vor einem Börsengang.</p>
-      <div class="sources">
-        <a class="src" href="https://www.bloomberg.com/news/articles/2026-05-28/anthropic-raises-at-965-billion-valuation-eclipsing-openai">Bloomberg<span class="src-date">28.05.2026</span></a>
-        <a class="src" href="https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/">TechCrunch<span class="src-date">28.05.2026</span></a>
-        <a class="src" href="https://www.anthropic.com/news/series-h">Anthropic<span class="src-date">28.05.2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Claude Opus 4.8 veröffentlicht – Dynamic Workflows koordinieren Hunderte Subagenten</h3>
-      <p>Zeitgleich mit der Finanzierungsrunde erschien Opus 4.8, Anthropics aktuell stärkstes öffentlich verfügbares Modell, mit einem Standard-Kontextfenster von einer Million Token. Das hybride Reasoning-Modell kommuniziert Unsicherheiten aktiv statt sie zu verbergen. Neu in Research Preview: „Dynamic Workflows", mit dem Opus komplexe Aufgaben über Hunderte parallel laufende Subagenten koordiniert. Preise ab 5 USD pro Mio. Input-Token; bis zu 90 % Rabatt via Prompt Caching.</p>
-      <div class="sources">
-        <a class="src" href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/">TechCrunch<span class="src-date">28.05.2026</span></a>
-        <a class="src" href="https://venturebeat.com/technology/anthropics-claude-opus-4-8-is-here-with-3x-cheaper-fast-mode-and-near-mythos-level-alignment">VentureBeat<span class="src-date">28.05.2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Claude Managed Agents: Sandbox-Betrieb und private MCP-Server im Enterprise</h3>
-      <p>Anthropic erweiterte Managed Agents um unternehmenseigene Sandboxes: Agenten operieren nun vollständig in der Infrastruktur des Kunden und verbinden sich mit internen MCP-Servern, ohne dass Daten die eigene Umgebung verlassen. Zusätzlich erschienen über 20 neue Legal-MCP-Konnektoren und 12 Praxis-Plugins für Rechtsberufe.</p>
-      <div class="sources">
-        <a class="src" href="https://www.anthropic.com/news">Anthropic News<span class="src-date">28.05.2026</span></a>
-      </div>
-    </article>
-  </section>
-
-  <section class="lab openai">
-    <div class="lab-head">
-      <span class="lab-chip">OpenAI</span>
-      <span class="lab-name">OpenAI</span>
-      <span class="lab-count">3 Meldungen</span>
-    </div>
-    <article class="item">
-      <h3>OpenAI reicht vertraulichen Börsengangs-Prospekt (S-1) bei der SEC ein</h3>
-      <p>OpenAI hat nach Berichten einen vertraulichen S-1-Antrag bei der US-Wertpapieraufsicht SEC hinterlegt. CEO Sam Altman betonte intern, dass eine Einreichung noch keinen unmittelbaren Börsengang bedeute. Die aktuellen Kennzahlen zeigen 25 Milliarden Dollar annualisierten Umsatz bei rund 30 Milliarden Dollar Jahresausgaben. OpenAI und Anthropic befinden sich damit in einem direkten IPO-Wettlauf.</p>
-      <div class="sources">
-        <a class="src" href="https://www.buildfastwithai.com/blogs/ai-news-today-may-28-2026">BuildFastWithAI<span class="src-date">28.05.2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Sicherheitsvorfall: Mitarbeitergeräte und Code-Repositories kompromittiert</h3>
-      <p>OpenAI bestätigte, dass zwei Mitarbeitergeräte gehackt wurden und Angreifer dabei Zugriff auf interne Quellcode-Repositories erhielten. Als direkte Konsequenz wird das Signaturzertifikat der macOS-App am 12. Juni widerrufen; betroffene Nutzer müssen die Anwendung neu installieren.</p>
-      <div class="sources">
-        <a class="src" href="https://www.buildfastwithai.com/blogs/ai-news-today-may-28-2026">BuildFastWithAI<span class="src-date">28.05.2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Codex CLI v0.134.0 – Gesprächshistorien-Suche und OAuth für MCP-Server</h3>
-      <p>Das OpenAI Codex CLI erhielt mit Version 0.134.0 eine konversationsübergreifende Suchfunktion, --profile als kanonischen Profilselektor sowie OAuth-Unterstützung für Streamable-HTTP-MCP-Endpunkte. Relevant für Entwicklerteams, die Codex in komplexen Agenten-Pipelines oder mit mehreren MCP-Servern einsetzen.</p>
-      <div class="sources">
-        <a class="src" href="https://developers.openai.com/codex/changelog">OpenAI Codex Changelog<span class="src-date">Mai 2026</span></a>
-        <a class="src" href="https://codersera.com/blog/openai-may-2026-updates-roundup/">Codersera<span class="src-date">Mai 2026</span></a>
-      </div>
-    </article>
-  </section>
-
-  <section class="lab google">
-    <div class="lab-head">
-      <span class="lab-chip">Google</span>
-      <span class="lab-name">Google &amp; Gemini</span>
-      <span class="lab-count">2 Meldungen</span>
-    </div>
-    <article class="item">
-      <h3>Gemini 3.5 Flash allgemein verfügbar – AI Mode überschreitet 1 Milliarde Nutzer</h3>
-      <p>Google veröffentlichte auf dem Google I/O (19. Mai) Gemini 3.5 Flash und rollt es seither als Standard-Modell in AI Mode der Google Suche aus. AI Mode überschritt 1 Milliarde monatliche Nutzer. Das Modell übertrifft Gemini 3.1 Pro auf Coding- und Agenten-Benchmarks (Terminal-Bench 2.1: 76,2 %) und ist via Google AI Studio sowie der Gemini API verfügbar.</p>
-      <div class="sources">
-        <a class="src" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google Blog<span class="src-date">19.05.2026</span></a>
-        <a class="src" href="https://9to5google.com/2026/05/19/google-io-2026-news/">9to5Google<span class="src-date">19.05.2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Gemini Spark: 24/7-KI-Agent für Workspace rollt ab 26. Mai für Ultra-Abonnenten aus</h3>
-      <p>Google startete Gemini Spark als dauerhaft aktiven persönlichen Agenten, der proaktiv Aufgaben in Gmail, Docs, Slides und Kalender übernimmt. Der cloudbasierte Agent setzt seine Arbeit fort, auch wenn Nutzer das Gerät schließen. Ab der Woche des 26. Mai wird Spark für Google AI Ultra-Abonnenten in den USA freigeschaltet.</p>
-      <div class="sources">
-        <a class="src" href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html">CNBC<span class="src-date">19.05.2026</span></a>
-        <a class="src" href="https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/">Google Blog<span class="src-date">19.05.2026</span></a>
-      </div>
-    </article>
-  </section>
-
-  <section class="lab xai">
-    <div class="lab-head">
-      <span class="lab-chip">xAI</span>
-      <span class="lab-name">xAI &amp; Grok</span>
-      <span class="lab-count">1 Meldung</span>
-    </div>
-    <article class="item">
-      <h3>Custom Skills für Grok: personalisierte, täglich ausführbare Automatisierungen</h3>
-      <p>xAI startete am 26. Mai Custom Skills für Grok: Nutzer können individuelle, wiederverwendbare Automatisierungsaufgaben in Sekunden erstellen und täglich ausführen lassen. Die Funktion positioniert Grok als persönlichen Agenten direkt in der X-Plattform und konkurriert mit Tasks-Funktionen in ChatGPT und Claude-Agenten.</p>
-      <div class="sources">
-        <a class="src" href="https://x.ai/news">xAI News<span class="src-date">26.05.2026</span></a>
-        <a class="src" href="https://www.basenor.com/blogs/news/5-xai-grok-updates-you-may-have-missed-this-may">Basenor<span class="src-date">Mai 2026</span></a>
-      </div>
-    </article>
-  </section>
-
-  <section class="lab general">
-    <div class="lab-head">
-      <span class="lab-chip">Allgemein</span>
-      <span class="lab-name">Sonstige KI-News</span>
-      <span class="lab-count">4 Meldungen</span>
-    </div>
-    <article class="item">
-      <h3>DeepSeek schließt erste externe Finanzierungsrunde ab – Bewertung 50 Milliarden Dollar</h3>
-      <p>Das chinesische KI-Unternehmen DeepSeek steht kurz vor dem Abschluss seiner ersten externen Finanzierungsrunde bei einer Bewertung von bis zu 50 Milliarden Dollar. Tencent und staatliche Investitionsvehikel des China Integrated Circuit Industry Investment Fund sollen beteiligt sein. Bloomberg analysierte diese Woche, dass DeepSeek gleichzeitig an drei KI-Rennen teilnimmt: Modellbenchmarks, Inferenzkosten und eigene Chipentwicklung – trotz wachsendem Rückstand gegenüber US-Frontendmodellen.</p>
-      <div class="sources">
-        <a class="src" href="https://www.bloomberg.com/opinion/articles/2026-05-26/deepseek-is-now-running-three-ai-races-at-once">Bloomberg<span class="src-date">26.05.2026</span></a>
-        <a class="src" href="https://www.scmp.com/tech/tech-trends/article/3352945/deepseek-soon-close-first-external-fundraising-us50b-valuation-sources">South China Morning Post<span class="src-date">26.05.2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Custom-KI-Chips wachsen dreimal schneller als NVIDIA-GPU-Markt</h3>
-      <p>Cloud-Provider-eigene ASIC-Chip-Lieferungen wachsen 2026 mit 44,6 %, gegenüber 16,1 % für Merchant-GPUs wie Nvidias Blackwell und Vera Rubin. AMD rampt MI450-GPUs in der zweiten Jahreshälfte hoch. NVIDIA hält dennoch den Hauptteil des Marktes und prognostiziert einen kombinierten Umsatz von einer Billion Dollar für Blackwell und Vera Rubin über 2026–2027.</p>
-      <div class="sources">
-        <a class="src" href="https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm">TechTimes<span class="src-date">26.05.2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Microsoft Copilot Studio: Computer-Using Agents jetzt allgemein verfügbar</h3>
-      <p>Microsoft machte Computer-Using Agents in Copilot Studio im Mai allgemein verfügbar (GA) und präsentierte einen neu gestalteten visuellen Workflow-Designer. Microsoft 365 Copilot Notebooks wird parallel auf Excel, Teams, Outlook und OneNote ausgedehnt und bietet einen übergreifenden KI-Arbeitsbereich mit Enterprise-Governance-Kontrollen.</p>
-      <div class="sources">
-        <a class="src" href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/">Microsoft Copilot Blog<span class="src-date">Mai 2026</span></a>
-      </div>
-    </article>
-    <article class="item">
-      <h3>Meta streicht 8.000 Stellen und verlagert Unternehmen auf KI-fokussierte Pods</h3>
-      <p>Meta begann am 20. Mai mit dem Abbau von 8.000 Stellen (10 % der Belegschaft) und strich 6.000 offene Stellen; Recruiting, Content Moderation und Nicht-KI-Produktteams werden umstrukturiert. Die verbleibenden Teams fusionieren zu KI-fokussierten Pods unter dem neuen Superintelligence Labs, das Alexandr Wang leitet. Die Capex-Prognose für 2026 stieg auf 115–135 Milliarden Dollar.</p>
-      <div class="sources">
-        <a class="src" href="https://www.npr.org/2026/05/20/nx-s1-5826917/meta-layoffs-ai-jobs">NPR<span class="src-date">20.05.2026</span></a>
-        <a class="src" href="https://thenextweb.com/news/meta-layoffs-8000-ai-restructuring-may-2026">The Next Web<span class="src-date">20.05.2026</span></a>
-      </div>
-    </article>
-  </section>
-
-  <!-- INHALT_ENDE -->
-
-  <footer>
-    <a class="prev-link" href="archiv/2026-kw21.html">&larr; Vorherige Ausgabe &middot; KW 21</a>
-    <div class="meta-foot">
-      Automatisch erstellt durch eine wöchentliche Claude-Routine.<br>
-      Jede Meldung basiert auf einer datierten Quelle der jeweiligen Woche. Ohne Beleg keine Aufnahme.<br>
-      Generiert: 29.05.2026, 07:15
-    </div>
-  </footer>
-
-</div>
+<header class="wrap mast"><div class="brand"><span class="dot"></span>AI Weekly</div></header>
+<hr class="divider">
+<main>
+  <div class="msg"><p>Nächste Ausgabe folgt Montag.</p></div>
+</main>
 </body>
 </html>
