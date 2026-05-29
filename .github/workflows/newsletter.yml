@@ -1,0 +1,36 @@
+name: Weekly Newsletter
+# Sendet das aktuelle index.html als HTML-Mail (Resend), sobald es sich aendert.
+on:
+  push:
+    branches: [main]
+    paths: ['index.html']
+  workflow_dispatch: {}
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send newsletter via Resend
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          set -euo pipefail
+          HTML="$(cat index.html)"
+          SUBJECT="AI News Weekly – $(date +'%G-KW%V')"
+          # jq escaped HTML (Quotes/Newlines) sauber zu JSON
+          jq -n \
+            --arg from "ainews@keramikcenter.com" \
+            --arg to "ivaylo.ignatov@gmail.com" \
+            --arg subject "$SUBJECT" \
+            --arg html "$HTML" \
+            '{from:$from, to:[$to], subject:$subject, html:$html}' > payload.json
+          code=$(curl -sS -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
+            -H "Content-Type: application/json" \
+            --data @payload.json -o resp.json -w "%{http_code}")
+          echo "HTTP $code"
+          cat resp.json
+          echo
+          grep -q '"id"' resp.json || { echo "Resend send FAILED"; exit 1; }
+          echo "Newsletter sent."
