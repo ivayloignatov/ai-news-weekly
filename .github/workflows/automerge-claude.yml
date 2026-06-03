@@ -24,6 +24,9 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - name: Merge pushed claude branch into main
         run: |
           set -euo pipefail
@@ -35,11 +38,28 @@ jobs:
           BEFORE="$(git rev-parse HEAD)"
           # Fast-forward wenn moeglich, sonst echter Merge-Commit
           git merge --ff-only "origin/$BRANCH" || git merge --no-edit "origin/$BRANCH"
+          MERGED="$(git rev-parse HEAD)"
+          # index.html durch diesen Merge geaendert? (Flag fuer Newsletter unten)
+          if git diff --name-only "$BEFORE" "$MERGED" | grep -qx 'index.html'; then
+            INDEX_CHANGED=1
+          else
+            INDEX_CHANGED=0
+          fi
+          # data.json deterministisch aus index.html ableiten (Consumer lesen JSON,
+          # nicht HTML). Idempotent: nur committen wenn sich data.json aendert.
+          node scripts/html-to-data.mjs
+          if ! git diff --quiet -- data.json; then
+            git add data.json
+            git commit -m "chore(data): regenerate data.json from index.html"
+            echo "data.json regeneriert + committet."
+          else
+            echo "data.json unveraendert."
+          fi
           git push origin main
           AFTER="$(git rev-parse HEAD)"
           echo "main aktualisiert ($BEFORE -> $AFTER)."
           # Newsletter NUR bei echter index.html-Aenderung explizit triggern.
-          if git diff --name-only "$BEFORE" "$AFTER" | grep -qx 'index.html'; then
+          if [ "$INDEX_CHANGED" = "1" ]; then
             echo "index.html geaendert -> Newsletter-Workflow triggern (workflow_dispatch)"
             gh workflow run newsletter.yml --ref main
           else
