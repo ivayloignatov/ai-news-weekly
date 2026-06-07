@@ -1,0 +1,6 @@
+version: 0.1.0
+sync_sha: 7ca58a2
+bootstrapped: 2026-06-07
+
+# Von Automaton C5 (/automaton-init) angelegt, von C-SYNC aktualisiert.
+# Dient der Drift-/Upgrade-Erkennung (ADR-018, OD-8).

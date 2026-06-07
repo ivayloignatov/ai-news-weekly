@@ -1,0 +1,15 @@
+# lefthook.yml — Git-Hook-Gate (Automaton C13 Stack-Modul, ADR-016).
+# INERT bis 'lefthook install' (owner-gated, neue Binary-Abhaengigkeit). Sprach-agnostisch.
+# Passe die Commands an den Stack dieses Repos an, dann aktiviere mit 'lefthook install'.
+
+pre-commit:
+  commands:
+    # Beispiel: Secret-Scan / Linting vor jedem Commit.
+    placeholder:
+      run: 'echo "lefthook pre-commit: configure commands in lefthook.yml"'
+
+pre-push:
+  commands:
+    # Beispiel: Tests / Typecheck vor jedem Push.
+    placeholder:
+      run: 'echo "lefthook pre-push: configure commands in lefthook.yml"'

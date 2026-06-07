@@ -70,3 +70,6 @@ sichtbarer Bruch statt stilles leeres data.json).
 
 - Conventional Commits. Kein Force-Push, kein `--no-verify`.
 - Secrets (Resend) nur via GitHub Actions Secrets, nie im Repo.
+
+## Aktive Stack-Module
+@.automaton/stack-modules/secrets-bws/gotchas.md

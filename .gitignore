@@ -1,0 +1,5 @@
+# Automaton bootstrap
+.planning/.recovery/
+.env
+.env.*
+!.env.example
