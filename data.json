@@ -1,81 +1,71 @@
 {
   "schemaVersion": 1,
-  "kw": 22,
+  "kw": 23,
   "year": 2026,
-  "period": "25. – 31. Mai 2026",
-  "generated": "2026-06-01T07:00:00",
-  "prevHref": "archiv/2026-kw21.html",
+  "period": "01. – 07. Juni 2026",
+  "generated": "2026-06-08T07:00:00",
+  "prevHref": "archiv/2026-kw22.html",
   "categoryCount": 6,
-  "itemCount": 22,
+  "itemCount": 23,
   "labs": [
     {
       "id": "anthropic",
       "name": "Anthropic",
       "color": "#b5512f",
-      "count": 4,
+      "count": 3,
       "items": [
         {
           "num": null,
           "featured": true,
-          "tag": "Finanzierung",
-          "headline": "Anthropic überrundet OpenAI: $65-Milliarden-Runde bei fast einer Billion Bewertung",
-          "lede": "Anthropic hat in einer Series-H-Runde 65 Milliarden Dollar eingesammelt und verdrängt damit OpenAI als wertvollstes KI-Startup der Welt.",
-          "detail": "Angeführt von Altimeter Capital, Dragoneer, Greenoaks und Sequoia Capital bewertet die Runde das Unternehmen mit $965 Mrd. Der Umsatz-Run-Rate liegt bei $47 Mrd. jährlich – mehr als doppelt so hoch wie zu Jahresbeginn.",
+          "tag": "IPO",
+          "headline": "Anthropic reicht S-1-Prospekt bei der SEC ein – Börsenbewertung über 1 Billion Dollar erwartet",
+          "lede": "Anthropic hat am 1. Juni 2026 vertraulich Börsenunterlagen bei der SEC eingereicht und ebnet damit den Weg für einen IPO bei einer erwarteten Bewertung von über einer Billion US-Dollar.",
+          "detail": "Der annualisierte Umsatz liegt laut internen Zahlen bei 47 Milliarden Dollar – Wachstum von 10 Mrd. im Vorjahr. Mit einer zuletzt kommunizierten Bewertung von 965 Milliarden Dollar überholte Anthropic OpenAI (852 Mrd.). Der tatsächliche IPO-Zeitpunkt hängt von Marktbedingungen und der SEC-Freigabe ab.",
           "sources": [
             {
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+              "date": "01.06.2026"
+            },
+            {
               "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html",
-              "date": "28.05.2026"
+              "url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html",
+              "date": "01.06.2026"
+            },
+            {
+              "name": "NPR",
+              "url": "https://www.npr.org/2026/06/01/nx-s1-5843199/anthropic-ipo-filing-ai-large",
+              "date": "01.06.2026"
             }
           ]
         },
         {
           "num": 1,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Claude Opus 4.8 als neues Anthropic-Spitzenmodell veröffentlicht",
-          "lede": "Anthropic hat Claude Opus 4.8 veröffentlicht – das neueste Mitglied der Claude-4-Familie mit erweiterten Fähigkeiten für komplexe Reasoning-Aufgaben.",
-          "detail": null,
+          "tag": "Infrastruktur",
+          "headline": "Project Glasswing: Claude Mythos kommt in kritische Infrastruktur in über 15 Ländern",
+          "lede": "Anthropic hat im Rahmen von Project Glasswing rund 150 Organisationen aus Energie, Wasser, Gesundheit und Kommunikation Zugang zu Claude Mythos Preview gewährt.",
+          "detail": "Die Ausweitung umfasst mehr als 15 Länder und schließt Claude Security ein – ein Tool für automatisierte Codeanalyse und Patch-Vorschläge für sicherheitskritische Systeme.",
           "sources": [
             {
-              "name": "Releasebot",
-              "url": "https://releasebot.io/updates/anthropic",
-              "date": "28.05.2026"
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+              "date": "02.06.2026"
             }
           ]
         },
         {
           "num": 2,
           "featured": false,
-          "tag": "Sicherheit",
-          "headline": "Claude Mythos Preview: Spezialisiertes Cybersecurity-Modell für ausgewählte Partner",
-          "lede": "Anthropic hat Claude Mythos Preview enthüllt – ein Modell mit erweiterten Cybersecurity-Fähigkeiten, das selektiv an Unternehmen und Regierungspartner vergeben wird.",
-          "detail": "Das Modell ist nicht öffentlich zugänglich; es richtet sich an Sicherheitsbehörden und Unternehmenskunden mit spezifischem Schutzbedarf.",
+          "tag": "Tooling",
+          "headline": "Claude Code erhält dynamische Multi-Step-Workflows für großflächige Codebase-Operationen",
+          "lede": "Anthropic hat Claude Code mit dynamischen Workflows ausgestattet, die codebaseweite Aufgaben wie Sicherheitsaudits, Bug-Hunts und Modernisierungsprojekte über Tausende von Dateien ermöglichen.",
+          "detail": "Die neuen Fähigkeiten verbinden agentic Coding mit langfristiger, mehrstufiger Planung und richten sich an Enterprise-Teams mit komplexen Migrationsprojekten und großen Codebasen.",
           "sources": [
             {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html",
-              "date": "28.05.2026"
-            }
-          ]
-        },
-        {
-          "num": 3,
-          "featured": false,
-          "tag": "Gesellschaft",
-          "headline": "Altman relativiert KI-Jobrisiken – Anthropics Olah widerspricht beim Vatikan",
-          "lede": "Sam Altman sagte, die KI-Jobs-Apokalypse werde wohl ausbleiben; Anthropic-Mitgründer Chris Olah bezeichnete die KI-bedingte Verdrängung von Arbeit zwei Tage später beim Vatikan-KI-Ethik-Kongress als reale Möglichkeit von historischem Ausmaß.",
-          "detail": null,
-          "sources": [
-            {
-              "name": "Axios",
-              "url": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic",
-              "date": "27.05.2026"
-            },
-            {
-              "name": "Fortune",
-              "url": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/",
-              "date": "26.05.2026"
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news",
+              "date": "Jun 2026"
             }
           ]
         }
@@ -85,50 +75,65 @@
       "id": "openai",
       "name": "OpenAI",
       "color": "#0f9d63",
-      "count": 3,
+      "count": 4,
       "items": [
+        {
+          "num": 3,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "OpenAI launcht „Dreaming V3\" – ChatGPT-Gedächtnis aktualisiert sich jetzt dauerhaft und automatisch",
+          "lede": "Dreaming V3 ersetzt manuell gespeicherte Notizen durch kontinuierliche Synthese: ChatGPT liest ältere Gespräche, aktualisiert Erinnerungen selbständig und passt den Kontext an veränderte Fakten an.",
+          "detail": "Die faktische Erinnerungsquote stieg laut internen Evals von 41,5 % (2024) auf 82,8 % (2026). Gestartet am 4. Juni für Plus- und Pro-Nutzer in den USA; Free-Nutzer und internationale Märkte folgen in den nächsten Wochen.",
+          "sources": [
+            {
+              "name": "OpenAI",
+              "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+              "date": "04.06.2026"
+            }
+          ]
+        },
         {
           "num": 4,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "OpenAI startet GPT-Rosalind für Biodefense-Partner",
-          "lede": "OpenAI hat GPT-Rosalind für geprüfte Entwickler und US-Regierungspartner aus den Bereichen Biodefense, Public Health und Pandemievorsorge freigeschaltet.",
-          "detail": "Der Zugang erfolgt über ein Trusted-Access-Programm; das Modell ist auf die Verarbeitung sensibler biologischer Daten und Forschungsanfragen ausgelegt.",
+          "tag": "Sicherheit",
+          "headline": "GPT-5.5-Cyber: OpenAI stellt EU-Institutionen und Cybersecurity-Teams das Security-Modell bereit",
+          "lede": "OpenAI gibt ausgewählten EU-Institutionen, Cybersecurity-Teams und Behörden Zugang zu GPT-5.5-Cyber – einer auf Sicherheitsanwendungen spezialisierten Variante des Flaggschiff-Modells.",
+          "detail": "Der limitierte Vorschau-Zugang richtet sich an verifizierte Cybersicherheitsexperten, EU-Behörden und das EU AI Office. Ziel ist laut OpenAI die Stärkung digitaler Resilienz in europäischen Institutionen.",
           "sources": [
             {
               "name": "OpenAI",
               "url": "https://openai.com/news/",
-              "date": "29.05.2026"
+              "date": "04.06.2026"
             }
           ]
         },
         {
           "num": 5,
           "featured": false,
-          "tag": "Politik",
-          "headline": "OpenAI veröffentlicht Governance-Rahmen und Evaluierungs-Playbook",
-          "lede": "OpenAI hat sein Frontier Governance Framework und einen Playbook für vertrauenswürdige Drittanbieter-Evaluierungen veröffentlicht – zwei Dokumente zur strukturierten Sicherheitsbewertung großer Modelle.",
-          "detail": null,
+          "tag": "Enterprise",
+          "headline": "GPT-Rosalind: OpenAI bringt Life-Sciences-Modell für Drug Discovery und Genomforschung",
+          "lede": "OpenAI hat GPT-Rosalind veröffentlicht – ein spezialisiertes Modell, das GPT-5.5-Agentenfähigkeiten mit tiefem Domänenwissen in Wirkstoffentdeckung und Genomik kombiniert.",
+          "detail": "Das Modell ist für Enterprise-Kunden ausgelegt, unterstützt agentic Coding und Tool-Use für Forschungspipelines und ist zum selben Preis wie GPT-5.5 erhältlich.",
           "sources": [
             {
               "name": "OpenAI",
               "url": "https://openai.com/news/",
-              "date": "29.05.2026"
+              "date": "04.06.2026"
             }
           ]
         },
         {
           "num": 6,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "GPT-4.5 und o3 werden aus ChatGPT entfernt",
-          "lede": "OpenAI hat das Ende von GPT-4.5 (27. Juni) und o3 (26. August) in ChatGPT angekündigt und räumt damit ältere Modelle aus dem aktiven Portfolio.",
+          "tag": "Sicherheit",
+          "headline": "ChatGPT Lockdown Mode schützt alle Nutzer vor Prompt-Injection und Daten-Exfiltration",
+          "lede": "OpenAI führt einen optionalen Lockdown Mode für alle eingeloggten ChatGPT-Nutzer ein, der Web- und externen Dienstzugriff einschränkt und damit Prompt-Injection-Risiken und Daten-Exfiltration reduziert.",
           "detail": null,
           "sources": [
             {
               "name": "OpenAI",
               "url": "https://openai.com/news/",
-              "date": "29.05.2026"
+              "date": "Jun 2026"
             }
           ]
         }
@@ -144,14 +149,14 @@
           "num": 7,
           "featured": false,
           "tag": "Produkt",
-          "headline": "Google Mai-Core-Update rollt aus – KI-Overviews jetzt ohne Indexierungs-Verzögerung",
-          "lede": "Google hat sein Mai-Core-Update 2026 ausgerollt, das Rankings spürbar beeinflusst; gleichzeitig entfernte Google die Indexierungs-Verzögerung für AI Overviews und AI Mode.",
-          "detail": "Das Update kommt wenige Wochen nach dem KI-Umbau der Suche auf Google I/O und gewichtet Googles KI-first-Strategie stärker im Ranking-Algorithmus.",
+          "headline": "Google Workspace Juni-Drop: Veo 3 erzeugt Videos mit Ton direkt in Slides und Vids",
+          "lede": "Im Juni-Update für Google Workspace können Nutzer per Texteingabe hochwertige Videoclips mit natürlichem Ton direkt in Google Vids und Slides generieren.",
+          "detail": "Neu: Bilder lassen sich per Prompt in animierte Videos mit Audio umwandeln. Die Funktion ist außerhalb des EWR, der Schweiz und des Vereinigten Königreichs verfügbar; vollständiger Rollout ab dem 2. Juni.",
           "sources": [
             {
-              "name": "Search Engine Roundtable",
-              "url": "https://www.seroundtable.com/recap-05-25-2026-41379.html",
-              "date": "25.05.2026"
+              "name": "Google Workspace Blog",
+              "url": "https://workspace.google.com/blog/product-announcements/june-workspace-drop-create-veo-3-google-vids-and-connect-gemini-app",
+              "date": "02.06.2026"
             }
           ]
         },
@@ -159,29 +164,29 @@
           "num": 8,
           "featured": false,
           "tag": "Produkt",
-          "headline": "Gemini Spark Beta startet für Google AI Ultra-Abonnenten",
-          "lede": "Google hat Gemini Spark, sein experimentelles multimodales Modell, ab der Woche des 26. Mai als Beta für Nutzer des Google AI Ultra-Tarifs ($100/Monat) in den USA freigeschaltet.",
-          "detail": null,
+          "headline": "Gemini-App integriert sich tief in Gmail, Drive, Calendar, Keep und Tasks",
+          "lede": "Google rollt eine tiefe Integration der Gemini-App mit allen zentralen Workspace-Diensten aus: Nutzer können Dokumente suchen, E-Mails zusammenfassen und Kalenderinhalte abfragen – direkt im Chat-Interface.",
+          "detail": "Die Funktion macht Gemini zum zentralen Workspace-Agenten für wiederkehrende Büroaufgaben; vollständiger Rollout ab dem 3. Juni 2026.",
           "sources": [
             {
-              "name": "blog.google",
-              "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
-              "date": "Rollout ab 26.05.2026"
+              "name": "Google Workspace Blog",
+              "url": "https://workspace.google.com/blog/product-announcements/june-workspace-drop-create-veo-3-google-vids-and-connect-gemini-app",
+              "date": "03.06.2026"
             }
           ]
         },
         {
           "num": 9,
           "featured": false,
-          "tag": "Tooling",
-          "headline": "Gemini 3.1 Flash Lite Preview aus Gemini API entfernt",
-          "lede": "Google hat das Vorschaumodell gemini-3.1-flash-lite-preview am 25. Mai aus der Gemini API entfernt; Entwickler migrieren auf die stabile Flash-3-Serie.",
+          "tag": "Modell-Release",
+          "headline": "Veo 3.1 in der Gemini API: verbesserte Videoerzeugung und neue kreative Steuerungsoptionen für Entwickler",
+          "lede": "Google hat Veo 3.1 in der Gemini API eingeführt und erweitert damit die Videofähigkeiten für Entwickler mit höherer Ausgabequalität und präziserer Kontrolle über Bewegung und Stil.",
           "detail": null,
           "sources": [
             {
-              "name": "Google AI Developers",
-              "url": "https://ai.google.dev/gemini-api/docs/changelog",
-              "date": "25.05.2026"
+              "name": "Google Developers Blog",
+              "url": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/",
+              "date": "Jun 2026"
             }
           ]
         }
@@ -191,40 +196,50 @@
       "id": "xai",
       "name": "xAI & Grok",
       "color": "#5b5751",
-      "count": 2,
+      "count": 3,
       "items": [
         {
           "num": 10,
           "featured": false,
           "tag": "Produkt",
-          "headline": "Grok Build 0.1: xAIs Coding-Agent jetzt im Public Beta",
-          "lede": "xAI hat Grok Build 0.1 als Coding-Agent für die xAI API im Public Beta freigegeben – ein terminalbasierter CLI mit Parallelsubagenten, Diff-Unterstützung und ACP-Integration für professionelle Softwareentwicklung.",
-          "detail": null,
+          "headline": "xAI launcht Grok Voice und grok-imagine-video-1.5 – Sprache und Bild-zu-Video in einer Woche",
+          "lede": "xAI hat gleichzeitig Grok Voice (Echtzeit-Sprachinteraktion mit Voice-Cloning aus kurzen Audioclips) und grok-imagine-video-1.5-preview (Bild-zu-Video bis 720p mit Natural-Language-Steuerung) für alle Nutzer freigegeben.",
+          "detail": "Benutzerdefinierte Stimmen lassen sich über die xAI-Konsole verwalten und in TTS- und Voice-Agent-APIs einsetzen. Der Voice-Clone-Dienst startet zunächst für API-Kunden.",
           "sources": [
             {
               "name": "xAI",
               "url": "https://x.ai/news",
-              "date": "29.05.2026"
-            },
-            {
-              "name": "Prismetric",
-              "url": "https://www.prismetric.com/weekly-ai-news-from-may-24-29-2026-grok-build-openai-cnn-perplexity-samsung-ai-chips/",
-              "date": "29.05.2026"
+              "date": "04.06.2026"
             }
           ]
         },
         {
           "num": 11,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Grok Custom Skills: Personalisierte Automatisierungen für alle Nutzer",
-          "lede": "xAI hat Custom Skills in Grok eingeführt – benutzerdefinierte, wiederverwendbare Aufgaben, die täglich automatisch ausgeführt werden können und tief in Grok Web integriert sind.",
-          "detail": null,
+          "tag": "Enterprise",
+          "headline": "Grok Connectors: SharePoint, Outlook, Google Workspace, GitHub und Linear direkt im Chat",
+          "lede": "xAI hat Connectors in Grok Web eingeführt: Nutzer können Unternehmens-Tools wie SharePoint, Outlook, OneDrive, Google Workspace, Notion, GitHub und Linear direkt mit dem Chatbot verbinden.",
+          "detail": "Die Integration macht Grok zum ersten xAI-Produkt mit tiefem Enterprise-Tool-Zugriff und positioniert es als direkten Konkurrenten zu Microsoft Copilot und Perplexity Computer im Unternehmensumfeld.",
           "sources": [
             {
-              "name": "Basenor",
-              "url": "https://www.basenor.com/blogs/news/5-xai-grok-updates-you-may-have-missed-this-may",
-              "date": "26.05.2026"
+              "name": "xAI",
+              "url": "https://x.ai/news",
+              "date": "04.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 12,
+          "featured": false,
+          "tag": "Markt",
+          "headline": "xAI pausiert Einstellung von Grok-Trainern – HR-Abteilung vom Bewerbungsvolumen überwältigt",
+          "lede": "Elon Musks xAI hat laut Bloomberg die Einstellung sogenannter „AI Tutors\" – Fachexperten aus Finanzen, Medizin und Recht – vorübergehend gestoppt, da die HR-Kapazitäten überlastet sind.",
+          "detail": "Der Stopp folgt auf den Abgang zweier führender Personalverantwortlicher. Eine Wiederaufnahme der Einstellungen ist mittelfristig geplant.",
+          "sources": [
+            {
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-06-03/musk-s-xai-pauses-hiring-for-specialists-to-train-grok-chatbot",
+              "date": "03.06.2026"
             }
           ]
         }
@@ -237,67 +252,67 @@
       "count": 4,
       "items": [
         {
-          "num": 12,
-          "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Mistral AI Now Summit: Mistral Medium 3.5 als Open-Weights und Vibe-Plattform enthüllt",
-          "lede": "Auf seinem ersten AI Now Summit in Paris hat Mistral das 128-Milliarden-Parameter-Modell Mistral Medium 3.5 als Open-Weights unter modifizierter MIT-Lizenz veröffentlicht und die Enterprise-Agent-Plattform Vibe vorgestellt.",
-          "detail": "Medium 3.5 kombiniert Instruction-Following, Reasoning und Coding in einem einzigen dichten Modell; Vibe ermöglicht Remote Agents für Coding- und Wissensarbeitsaufgaben.",
-          "sources": [
-            {
-              "name": "Mistral AI",
-              "url": "https://mistral.ai/news/ai-now-summit-2026/",
-              "date": "28.05.2026"
-            },
-            {
-              "name": "Mistral AI (Vibe)",
-              "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
-              "date": "28.05.2026"
-            }
-          ]
-        },
-        {
           "num": 13,
           "featured": false,
-          "tag": "Infrastruktur",
-          "headline": "Mistral baut 10-MW-Inferenz-Rechenzentrum in Frankreich",
-          "lede": "Mistral eröffnet im Q3 2026 ein dediziertes 10-MW-Inferenz-Rechenzentrum in Les Ulis (Essonne) – Grundstein für eine souveräne KI-Infrastruktur unabhängig von US-Cloud-Anbietern.",
-          "detail": null,
+          "tag": "Politik",
+          "headline": "EU AI Act: Wissenschaftlicher Beirat und Advisory Forum offiziell ernannt – Enforcement wird operativ",
+          "lede": "Die Europäische Kommission hat am 1. Juni die Mitglieder des Wissenschaftlichen Beirats und des Advisory Forums für den EU AI Act bestellt – das EU AI Office verfügt damit über die unabhängige Experteninfrastruktur für aktive Durchsetzungsmaßnahmen.",
+          "detail": "Die Ernennung gilt als Startsignal für operative GPAI-Compliance-Entscheidungen. Die Durchsetzungsmaschine ist rechtzeitig vor der August-Frist des AI Act einsatzbereit.",
           "sources": [
             {
-              "name": "Futurum",
-              "url": "https://futurumgroup.com/insights/mistral-ai-shifts-to-full-stack-strategy-with-vibe-and-industrial-ai/",
-              "date": "28.05.2026"
+              "name": "Europäische Kommission",
+              "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+              "date": "01.06.2026"
             }
           ]
         },
         {
           "num": 14,
           "featured": false,
-          "tag": "Enterprise",
-          "headline": "Airbus und Mistral AI schließen strategische KI-Partnerschaft",
-          "lede": "Airbus hat eine strategische Partnerschaft mit Mistral AI unterzeichnet, um souveräne KI über alle Unternehmensbereiche einzusetzen – von der Flugzeugentwicklung bis zu Verteidigungs- und Weltraumanwendungen.",
-          "detail": null,
+          "tag": "Politik",
+          "headline": "EU-Kommission schlägt Technologie-Souveränitätspaket vor – digitale Autonomie als strategische Priorität",
+          "lede": "Die Europäische Kommission hat am 3. Juni ein Paket zur Stärkung der technologischen Souveränität Europas vorgeschlagen, das KI-Infrastruktur und digitale Eigenständigkeit in den Mittelpunkt stellt.",
+          "detail": "Das Paket verknüpft EU-Regulierung erstmals explizit mit industriepolitischer Souveränität und kommt zu einem Zeitpunkt, da US-Tech-Konzerne aggressiv Energie, Chips und Rechenzentrumskapazitäten in Europa sichern.",
           "sources": [
             {
-              "name": "Airbus",
-              "url": "https://www.airbus.com/en/newsroom/press-releases/2026-05-airbus-partners-with-mistral-ai-to-strengthen-the-use-of-artificial-intelligence-in-sovereign",
-              "date": "28.05.2026"
+              "name": "Europäische Kommission",
+              "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+              "date": "03.06.2026"
             }
           ]
         },
         {
           "num": 15,
           "featured": false,
-          "tag": "Hardware",
-          "headline": "Mistral CEO: Eigene Chip-Entwicklung als strategische Option",
-          "lede": "Arthur Mensch hat CNBC bestätigt, dass Mistral AI die Entwicklung eigener Chips erkundet – ein Schritt hin zu vollständiger technologischer Unabhängigkeit nach dem Vorbild von OpenAI und Google.",
-          "detail": null,
+          "tag": "Regulierung",
+          "headline": "EU AI Office veröffentlicht GPAI-Compliance-FAQ – acht Wochen bis zur August-Frist",
+          "lede": "Das EU-KI-Büro hat Klarstellungen zu GPAI-Pflichten nach dem AI Act veröffentlicht – acht Wochen vor dem Stichtag 2. August 2026 für Anbieter von Allzweck-KI-Modellen.",
+          "detail": "Parallel läuft eine öffentliche Konsultation zu den Leitlinien für Hochrisiko-KI-Systeme bis zum 23. Juni. Industrieverbände beziffern potenzielle wirtschaftliche Schäden durch TDM-Urheberrechtsbeschränkungen auf 600 Milliarden Euro.",
+          "sources": [
+            {
+              "name": "EU AI Act Info",
+              "url": "https://artificialintelligenceact.eu/",
+              "date": "Jun 2026"
+            },
+            {
+              "name": "Inside Global Tech",
+              "url": "https://www.insideglobaltech.com/2026/06/05/eu-ai-act-update-the-european-commission-publishes-draft-guidelines-on-hrais/",
+              "date": "05.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 16,
+          "featured": false,
+          "tag": "Markt",
+          "headline": "Mistral-CEO Mensch auf CNBC: „Wir verwandeln Elektronen in Tokens – das ist unser Geschäft\"",
+          "lede": "Arthur Mensch, CEO von Mistral AI, erklärt im CNBC-Interview, warum KI-Infrastruktur letztlich ein Kampf um Energie, Chips und Rechenzentrumskapazität ist – und wie Mistral sich als europäischer Vollstack-Anbieter positioniert.",
+          "detail": "Das Unternehmen beschäftigt inzwischen 1.000 Mitarbeiter und peilt 1 Milliarde Euro Umsatz für 2026 an. Mensch warnte zuvor, Europa könne innerhalb von zwei Jahren zum KI-Vasallenstaat Amerikas werden, falls es nicht in eigene Infrastruktur investiere.",
           "sources": [
             {
               "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html",
-              "date": "28.05.2026"
+              "url": "https://www.cnbc.com/video/2026/06/03/mistral-ceo-on-ai-infrastructure-sovereignty-and-europes-ai-future.html",
+              "date": "03.06.2026"
             }
           ]
         }
@@ -310,87 +325,67 @@
       "count": 6,
       "items": [
         {
-          "num": 16,
-          "featured": false,
-          "tag": "Markt",
-          "headline": "CNN verklagt Perplexity AI wegen Urheberrechtsverletzung",
-          "lede": "CNN hat Perplexity AI wegen unrechtmäßiger Übernahme und Verbreitung von Nachrichtenartikeln verklagt – nachdem Lizenzverhandlungen im Vorjahr gescheitert waren.",
-          "detail": "Die Klage reiht sich in eine Welle ähnlicher Verfahren ein; kurz zuvor hatten fünf Verlage Meta wegen Nutzung ihrer Werke zum Training des Llama-Modells verklagt.",
-          "sources": [
-            {
-              "name": "CNN Business",
-              "url": "https://www.cnn.com/2026/05/28/media/cnn-sues-perplexity-ai-copyright",
-              "date": "28.05.2026"
-            },
-            {
-              "name": "PYMNTS",
-              "url": "https://www.pymnts.com/legal/2026/cnn-lawsuit-accuses-perplexity-of-illegally-copying-content/",
-              "date": "28.05.2026"
-            }
-          ]
-        },
-        {
           "num": 17,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Microsoft Copilot erhält neues Design – Super-App in Entwicklung",
-          "lede": "Microsoft hat am 28. Mai ein grundlegendes Redesign für Microsoft 365 Copilot vorgestellt; parallel wird eine Super-App entwickelt, die GitHub Copilot, Copilot Chat und das interne Autopilot-Tool vereint.",
-          "detail": "Das neue Design macht Copilot zu einem aufgabenbewussten Workspace statt einer statischen Prompt-Zeile; die Super-App soll bis Ende Sommer verfügbar sein.",
+          "tag": "Hardware",
+          "headline": "NVIDIA RTX Spark: erster Windows-PC-Chip von NVIDIA – Marktstart mit Dell, HP, Lenovo im Herbst",
+          "lede": "NVIDIA hat auf der Computex den RTX Spark Superchip vorgestellt – ein ARM-basierter Kombinations-Prozessor für Windows-Laptops und -Desktops, entwickelt mit MediaTek, der KI direkt auf Consumer-Geräte bringt.",
+          "detail": "CEO Jensen Huang erklärte, er wolle den PC gemeinsam mit Microsoft neu erfinden. Der Marktstart im Herbst 2026 erfolgt mit ASUS, Dell, HP, Lenovo, Microsoft Surface und MSI.",
           "sources": [
             {
-              "name": "Microsoft",
-              "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-a-new-design-for-microsoft-365-copilot/",
-              "date": "28.05.2026"
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd",
+              "date": "01.06.2026"
             },
             {
-              "name": "Fortune",
-              "url": "https://fortune.com/2026/05/29/microsoft-working-on-super-app/",
-              "date": "29.05.2026"
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+              "date": "01.06.2026"
             }
           ]
         },
         {
           "num": 18,
           "featured": false,
-          "tag": "Enterprise",
-          "headline": "Copilot Studio: Agent-zu-Agent-Kommunikation und Computer-Using Agents allgemein verfügbar",
-          "lede": "Microsoft hat in Copilot Studio die Agent-zu-Agent-Kommunikation (A2A) und Computer-Using Agents als allgemein verfügbare Features freigegeben – Grundlage für komplexe Multi-Agent-Workflows in Unternehmen.",
-          "detail": null,
+          "tag": "Markt",
+          "headline": "DeepSeek senkt API-Preis für Flaggschiff-Modell dauerhaft um 75 % – Branche diskutiert Konsequenzen",
+          "lede": "DeepSeek hat ab dem 1. Juni 2026 den API-Preis seines Flaggschiff-Modells permanent um 75 Prozent gesenkt und löst damit eine globale Debatte über KI-Infrastruktur-Ökonomie aus.",
+          "detail": "Amazon AWS kommentierte, der Schritt sei weniger ein klassischer Preiskampf als ein strategischer Versuch, die gesamte KI-Infrastrukturarchitektur neu zu gestalten. DeepSeek-Modelle sind bereits in Amazon Bedrock integriert.",
           "sources": [
             {
-              "name": "Microsoft Copilot Blog",
-              "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
-              "date": "Mai 2026"
+              "name": "Digitimes",
+              "url": "https://www.digitimes.com/news/a20260601PD213/deepseek-ai-api-price-hardware.html",
+              "date": "01.06.2026"
             }
           ]
         },
         {
           "num": 19,
           "featured": false,
-          "tag": "Hardware",
-          "headline": "Erste Windows-PCs mit NVIDIA-Hauptprozessor angekündigt",
-          "lede": "NVIDIA und Microsoft planen die ersten Windows-PCs, bei denen ein NVIDIA-Chip als Hauptprozessor fungiert; RTX Spark mit Blackwell-Architektur und 20 CPU-Kernen soll noch diese Woche auf Geräten von Microsoft Surface und Dell debütieren.",
-          "detail": null,
+          "tag": "Finanzierung",
+          "headline": "DeepSeek kurz vor historischer $7-Mrd.-Runde – Tencent und CATL als Hauptinvestoren",
+          "lede": "Das chinesische KI-Lab DeepSeek steht kurz vor dem Abschluss einer Finanzierungsrunde von rund 50 Milliarden Renminbi (ca. 7 Mrd. Dollar) – eine der größten Startup-Finanzierungen in Chinas Geschichte.",
+          "detail": "Hauptinvestoren sind Tencent und CATL; auch der staatliche Nationale KI-Industriefonds beteiligt sich. Die anvisierte Bewertung liegt zwischen 48 und 55 Milliarden Dollar. Term Sheets wurden diese Woche unterzeichnet.",
           "sources": [
             {
-              "name": "Axios",
-              "url": "https://www.axios.com/2026/05/30/nvidia-microsoft-pcs-ai-surface-dell",
-              "date": "30.05.2026"
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-06-03/deepseek-close-to-sealing-7-billion-funding-in-historic-ai-deal",
+              "date": "03.06.2026"
             }
           ]
         },
         {
           "num": 20,
           "featured": false,
-          "tag": "Markt",
-          "headline": "DeepSeek kämpft gleichzeitig an drei KI-Fronten",
-          "lede": "Bloomberg analysiert DeepSeek als einziges KI-Unternehmen, das parallel Frontier-Modelle, kosteneffiziente Open-Source-Systeme und KI-Infrastruktur konkurrenzfähig entwickelt – trotz wachsender Lücke zu amerikanischen Spitzenmodellen.",
-          "detail": null,
+          "tag": "Produkt",
+          "headline": "Perplexity zeigt hybrides Inferenz-System: Sensible Daten lokal, komplexe Tasks in der Cloud",
+          "lede": "Perplexity AI hat auf der Computex sein hybrides Inferenzsystem für den „Personal Computer\"-Agenten vorgestellt: Sensible Daten werden auf dem Gerät verarbeitet, komplexe Aufgaben in der Cloud erledigt.",
+          "detail": "Das gemeinsam mit Intel entwickelte System soll im Juli starten und auch auf NVIDIA RTX Spark laufen. Perplexity Computer ist bereits in Microsoft 365 integriert.",
           "sources": [
             {
-              "name": "Bloomberg",
-              "url": "https://www.bloomberg.com/opinion/articles/2026-05-26/deepseek-is-now-running-three-ai-races-at-once",
-              "date": "26.05.2026"
+              "name": "VentureBeat",
+              "url": "https://venturebeat.com/technology/perplexity-ai-unveils-hybrid-local-cloud-inference-system-at-computex-2026/",
+              "date": "02.06.2026"
             }
           ]
         },
@@ -398,14 +393,29 @@
           "num": 21,
           "featured": false,
           "tag": "Finanzierung",
-          "headline": "Cognition AI sammelt $1 Mrd. bei $26-Mrd.-Bewertung",
-          "lede": "Cognition, Entwickler des KI-Coding-Agenten Devin, hat eine Milliarde Dollar eingesammelt und erhöht damit seine Bewertung auf 26 Milliarden Dollar.",
+          "headline": "Flourish AI sichert $500 Mio. Startfinanzierung – Bezos, Google Ventures und Lux Capital an Bord",
+          "lede": "Das KI-Startup Flourish, das neuartige an Hirnstrukturen angelehnte KI-Architekturen als Gegenmodell zu klassischen Transformern entwickelt, hat 500 Millionen Dollar in seiner ersten Finanzierungsrunde eingesammelt.",
           "detail": null,
           "sources": [
             {
               "name": "Crunchbase",
-              "url": "https://news.crunchbase.com/ai/biggest-funding-rounds-ai-anthropic-65b-dominates/",
-              "date": "29.05.2026"
+              "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+              "date": "05.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 22,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Supabase schließt $500-Mio.-Runde bei $10,5-Mrd.-Bewertung – Plattform für KI-App-Entwickler",
+          "lede": "Supabase, die Open-Source-Plattform für Entwickler und KI-App-Builder, hat eine neue Finanzierungsrunde über 500 Millionen Dollar bei einer Bewertung von 10,5 Milliarden Dollar abgeschlossen, angeführt von GIC.",
+          "detail": null,
+          "sources": [
+            {
+              "name": "Crunchbase",
+              "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+              "date": "05.06.2026"
             }
           ]
         }
