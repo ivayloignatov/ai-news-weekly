@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "kw": 25,
+  "kw": 26,
   "year": 2026,
-  "period": "15. – 21. Juni 2026",
-  "generated": "2026-06-22T07:00:00",
-  "prevHref": "archiv/2026-kw24.html",
+  "period": "22. – 28. Juni 2026",
+  "generated": "2026-06-29T07:00:00",
+  "prevHref": "archiv/2026-kw25.html",
   "categoryCount": 6,
-  "itemCount": 14,
+  "itemCount": 12,
   "labs": [
     {
       "id": "anthropic",
@@ -17,45 +17,35 @@
         {
           "num": null,
           "featured": true,
-          "tag": "Sicherheit",
-          "headline": "US-Exportverbot trifft Anthropics Flagship-Modelle Fable 5 und Mythos 5",
-          "lede": "Das US-Handelsministerium verpflichtet Anthropic, Nicht-US-Bürger – einschließlich eigener Mitarbeiter – von seinen leistungsfähigsten Modellen auszusperren; Anthropic deaktiviert daraufhin beide Modelle weltweit.",
-          "detail": "Auslöser war ein simpler Jailbreak: Drei Worte – „Fix this code\" – reichten aus, um Fable 5 zur Erzeugung gefährlicher Inhalte zu bringen. Anthropic hatte nur 90 Minuten zur Reaktion und bestreitet, dass das Ausmaß des Exploits eine derart extreme Maßnahme rechtfertigt. Die Sperre löst in Europa und unter US-Verbündeten scharfe Kritik aus und beschleunigt die Debatte um strategische KI-Unabhängigkeit.",
+          "tag": "Infrastruktur",
+          "headline": "Micron investiert in Anthropics Series H und schließt mehrjährigen Liefervertrag für KI-Infrastruktur",
+          "lede": "Micron Technology und Anthropic haben eine strategische Partnerschaft in vier Säulen bekanntgegeben: gemeinsames Memory- und Storage-Architektur-Design, einen mehrjährigen Liefervertrag für Rechenzentrums-Hardware, den unternehmensweiten Claude-Einsatz bei Micron sowie eine direkte Kapitaleinlage in Anthropics laufende Series-H-Finanzierungsrunde.",
+          "detail": "Die technische Zusammenarbeit zielt auf verbesserte Speicher-Performance, Energieeffizienz und Token-Ökonomie in Anthropics KI-Infrastruktur ab. Micron setzt Claude intern bereits für Coding und agentische Unternehmensworkloads ein. Finanzielle Details des Liefervertrags und der Beteiligungsgröße blieben vertraulich.",
           "sources": [
             {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
-              "date": "15.06.2026"
+              "name": "Micron IR",
+              "url": "https://investors.micron.com/news-releases/news-release-details/micron-and-anthropic-announce-strategic-agreement-scale-next",
+              "date": "22.06.2026"
             },
             {
-              "name": "Bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-06-15/anthropic-block-marks-us-reversal-warning-to-silicon-valley",
-              "date": "15.06.2026"
-            },
-            {
-              "name": "Fortune",
-              "url": "https://fortune.com/2026/06/15/fix-this-code-three-words-behind-us-government-shut-down-anthropic-fable-mythos-ai-models-katie-moussouris-open-letter/",
-              "date": "15.06.2026"
+              "name": "GlobeNewswire",
+              "url": "https://www.globenewswire.com/news-release/2026/06/22/3315307/14450/en/micron-and-anthropic-announce-strategic-agreement-to-scale-next-generation-ai-infrastructure.html",
+              "date": "22.06.2026"
             }
           ]
         },
         {
           "num": 1,
           "featured": false,
-          "tag": "Expansion",
-          "headline": "Seoul-Büro eröffnet trotz Exportsperre – Partnerschaften mit NAVER, Samsung SDS und LG CNS",
-          "lede": "Anthropic eröffnet sein drittes Büro im Asien-Pazifik-Raum in Seoul und schließt Kooperationen mit führenden koreanischen Tech-Konzernen – während zeitgleich das US-Exportverbot den Zugang zu den stärksten Modellen blockiert.",
-          "detail": "Zu den Partnern zählen NAVER (Claude Code für die gesamte Engineering-Organisation), Samsung SDS, LG CNS und der Spieleentwickler Nexon. Zudem unterzeichnete Anthropic ein MOU mit dem koreanischen Ministerium für Wissenschaft und IKT zur Förderung der KI-Sicherheitsforschung.",
+          "tag": "Forschung",
+          "headline": "Anthropic Economic Index „Cadences\": Neue Studie zu Rhythmen KI-gestützter Arbeit",
+          "lede": "Anthropic hat seinen neuesten Economic Index unter dem Titel „Cadences\" veröffentlicht – er untersucht, wie der Einsatz von Claude die zeitlichen Muster und Taktgeber menschlicher Arbeit verändert.",
+          "detail": null,
           "sources": [
             {
-              "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-              "date": "17.06.2026"
-            },
-            {
-              "name": "UPI",
-              "url": "https://www.upi.com/Top_News/World-News/2026/06/18/korea-Anthropic-Seoul-office-Korea-partnerships-Washington-AI-export-controls/4641781769900/",
-              "date": "18.06.2026"
+              "name": "Anthropic Research",
+              "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+              "date": "Juni 2026"
             }
           ]
         }
@@ -65,55 +55,75 @@
       "id": "openai",
       "name": "OpenAI",
       "color": "#0f9d63",
-      "count": 3,
+      "count": 4,
       "items": [
         {
           "num": 2,
           "featured": false,
-          "tag": "Personal",
-          "headline": "Transformer-Miterfinder Noam Shazeer wechselt von Google zu OpenAI als Head of Architecture Research",
-          "lede": "Noam Shazeer, Ko-Autor des Transformer-Papers „Attention Is All You Need\" und bisheriger Gemini-Co-Lead bei Google, tritt kurz vor dem OpenAI-Börsengang als Leiter der Architekturforschung ein.",
-          "detail": "Google hatte Shazeer erst 2024 für 2,7 Mrd. USD aus seinem Startup Character AI zurückgeholt. Sein erneuter Wechsel – nach weniger als zwei Jahren – gilt als symbolischer Coup für OpenAI und unterstreicht den anhaltend harten Talentkampf unter den großen KI-Labs.",
+          "tag": "Modell-Release",
+          "headline": "GPT-5.6 Sol: Drei-Varianten-Modell im Trusted-Partner-Preview – Rollout auf US-Regierungswunsch limitiert",
+          "lede": "OpenAI startet eine limitierte Vorschau auf GPT-5.6 Sol, die leistungsstärkste der drei neuen Varianten (Sol, Terra, Luna), zunächst nur für eine kleine Gruppe von Trusted Partners – auf ausdrückliches Ersuchen der US-Regierung.",
+          "detail": "Sol führt ein neues „Max\"-Reasoning-Niveau für tiefere, mehrstufige Analyse ein und ist OpenAIs bislang fähigstes Modell für Cybersicherheitsanwendungen. Terra bietet ähnliche Performance wie GPT-5.5 bei halben Kosten, Luna ist die günstigste Option. Das Vorgehen folgt einem KI-Cybersicherheitserlass, der Labs verpflichtet, Frontier-Modelle 30 Tage vor dem Breitrollout staatlich reviewen zu lassen.",
           "sources": [
             {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
-              "date": "18.06.2026"
+              "name": "OpenAI",
+              "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+              "date": "26.06.2026"
             },
             {
               "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html",
-              "date": "18.06.2026"
+              "url": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
+              "date": "26.06.2026"
             }
           ]
         },
         {
           "num": 3,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "GPT-5.5 Instant erreicht Frontier-Niveau bei medizinischen Benchmarks",
-          "lede": "OpenAI verbessert die Gesundheitsintelligenz in ChatGPT erheblich: GPT-5.5 Instant erzielt auf dem HealthBench Professional nun vergleichbare Ergebnisse wie die leistungsstärksten Frontier-Modelle.",
-          "detail": "Der Sprung gegenüber GPT-5.3 Instant ist substanziell und stärkt OpenAIs Position im wachsenden Healthcare-Markt, nachdem ChatGPT Health seit Januar 2026 Millionen Nutzer an die Plattform bindet.",
+          "tag": "Hardware",
+          "headline": "OpenAI enthüllt eigenen Inference-Chip „Jalapeño\" – entwickelt mit Broadcom",
+          "lede": "OpenAI hat erstmals einen eigenen, auf Inference spezialisierten Prozessor vorgestellt: „Jalapeño\" wurde in Kooperation mit Broadcom entwickelt und zeigt laut frühen Tests signifikant bessere Performance-per-Watt als aktuelle Alternativen.",
+          "detail": "Der Chip befindet sich noch in der Testphase und ist explizit auf OpenAIs Inference-Anforderungen zugeschnitten – erster Schritt hin zu eigener Silizium-Kontrolle unabhängig von Nvidia-Hardware.",
           "sources": [
             {
-              "name": "OpenAI",
-              "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
-              "date": "18.06.2026"
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+              "date": "24.06.2026"
             }
           ]
         },
         {
           "num": 4,
           "featured": false,
-          "tag": "Strategie",
-          "headline": "Ex-Weißhaus-KI-Berater Dean Ball leitet neues „Strategic Futures\"-Team bei OpenAI",
-          "lede": "OpenAI baut vor dem Börsengang seine politische Schlagkraft aus: Dean Ball, ehemaliger KI-Politikberater im Weißen Haus, leitet ab Juli ein neues Team für strategische Zukunftspositionen.",
+          "tag": "Sicherheit",
+          "headline": "Daybreak: OpenAI baut Cybersecurity-Plattform mit GPT-5.5-Cyber und Patch-the-Planet-Initiative aus",
+          "lede": "OpenAI hat Daybreak mit neuen Komponenten ausgebaut: GPT-5.5-Cyber erzielt 85,6 % auf dem CyberGym-Benchmark (1.507 Schwachstellen aus 188 Open-Source-Projekten); gleichzeitig startet die Patch-the-Planet-Initiative gemeinsam mit Trail of Bits und HackerOne.",
+          "detail": "Codex Security hat seit dem Launch im März über 30 Millionen Commits in mehr als 30.000 Codebasen analysiert; über 70.000 Findings wurden manuell als behoben markiert. Mehr als 30 Open-Source-Projekte haben sich zur Teilnahme verpflichtet. Daybreak adressiert den gesamten Vulnerability-Lifecycle von Erkennung bis Patch.",
+          "sources": [
+            {
+              "name": "OpenAI",
+              "url": "https://openai.com/index/daybreak-securing-the-world/",
+              "date": "22.06.2026"
+            },
+            {
+              "name": "Help Net Security",
+              "url": "https://www.helpnetsecurity.com/2026/06/23/openai-expanded-daybreak-cybersecurity-initiative/",
+              "date": "23.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 5,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "GPT-4.5 aus ChatGPT abgezogen – auch Custom GPTs betroffen",
+          "lede": "Seit dem 26. Juni 2026 ist GPT-4.5 nicht mehr über ChatGPT verfügbar, einschließlich sämtlicher Custom GPTs, die auf dieser Modellversion basieren.",
           "detail": null,
           "sources": [
             {
-              "name": "The AI Insider",
-              "url": "https://theaiinsider.tech/2026/06/19/openai-hires-transformer-co-author-noam-shazeer-and-former-white-house-ai-official-dean-ball-ahead-of-ipo/",
-              "date": "19.06.2026"
+              "name": "OpenAI News",
+              "url": "https://openai.com/news/product-releases/",
+              "date": "26.06.2026"
             }
           ]
         }
@@ -126,42 +136,32 @@
       "count": 2,
       "items": [
         {
-          "num": 5,
+          "num": 6,
           "featured": false,
-          "tag": "Personal",
-          "headline": "Gemini-Co-Lead Shazeer verlässt Google – 2,7-Mrd.-Dollar-Rückkauf ohne Rendite",
-          "lede": "Googles kostspieliger Rückkauf von Noam Shazeer aus Character AI rechnet sich nicht: Weniger als zwei Jahre nach dem 2,7-Mrd.-Dollar-Deal wechselt der Gemini-Co-Lead zu OpenAI.",
-          "detail": "Shazeer war maßgeblich an der Architektur von Gemini beteiligt. Sein Abgang ist ein empfindlicher Rückschlag für das Gemini-Team und verdeutlicht, wie intensiv der Wettbewerb um Spitzenkräfte in der KI-Branche ist.",
+          "tag": "Modell-Release",
+          "headline": "Gemini 3 Deep Think: Googles stärkster Reasoning-Modus erstmals via API für Forscher und Enterprise",
+          "lede": "Google DeepMind hat Gemini 3 Deep Think für Ultra-Abonnenten der Gemini-App signifikant ausgebaut und gleichzeitig erstmals einen API-Zugang für ausgewählte Forscher, Ingenieure und Unternehmen freigegeben – ausgelegt auf Mathematik, Wissenschaft und komplexe mehrstufige Probleme.",
+          "detail": "Gemini 3 Deep Think ist Googles Frontier-Reasoning-Modus für wissenschaftliche und ingenieurtechnische Herausforderungen. Mit dem dualen Zugang via Gemini-App und API erschließt Google den Modus erstmals systematisch für Enterprise-Anwendungen und externe Forschung.",
           "sources": [
             {
-              "name": "9to5Google",
-              "url": "https://9to5google.com/2026/06/17/geminis-co-lead-is-leaving-google-to-join-openai/",
-              "date": "17.06.2026"
-            },
-            {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html",
-              "date": "18.06.2026"
+              "name": "Google Blog",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+              "date": "22.06.2026"
             }
           ]
         },
         {
-          "num": 6,
+          "num": 7,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Pixel Drop Juni: Gemini Omni bringt KI-Videoerstellung und Musikkomposition auf Pixel-Geräte",
-          "lede": "Googles Juni-Pixel-Drop bringt Gemini Omni auf Pixel-Geräte und ermöglicht erstmals KI-generierte Videos sowie individuelle Musik per Text- oder Bild-Prompt über das neue Lyria-3-Modell.",
-          "detail": "Gemini Omni ist zunächst AI-Pro-Abonnenten vorbehalten. Zusätzlich führt Google C2PA Content Credentials in der Gemini-App ein, um KI-generierte und bearbeitete Inhalte transparent zu kennzeichnen.",
+          "tag": "Modell-Release",
+          "headline": "Gemini 3.5 Flash: Neue Modellgeneration übertrifft 3.1 Pro auf nahezu allen Benchmarks bei vierfacher Geschwindigkeit",
+          "lede": "Google DeepMind hat Gemini 3.5 Flash als neue Modellgeneration veröffentlicht: Sie übertrifft Gemini 3.1 Pro auf nahezu allen Benchmarks und liefert dabei vierfache Verarbeitungsgeschwindigkeit – primär konzipiert für Agenten-Workloads und komplexe Coding-Aufgaben.",
+          "detail": "Gemini 3.5 Flash ist für langfristige, mehrstufige Agenten-Aufgaben mit realem Nutzwert ausgelegt und positioniert sich als Standard-Modell für agentenbasierte Produktivitätsanwendungen in Google Cloud und der Gemini API.",
           "sources": [
             {
-              "name": "Google Blog",
-              "url": "https://blog.google/products-and-platforms/devices/pixel/june-2026-pixel-drop/",
-              "date": "18.06.2026"
-            },
-            {
-              "name": "Android Authority",
-              "url": "https://www.androidauthority.com/june-2026-pixel-drop-3677777/",
-              "date": "18.06.2026"
+              "name": "Google DeepMind",
+              "url": "https://deepmind.google/models/gemini/",
+              "date": "Juni 2026"
             }
           ]
         }
@@ -171,45 +171,25 @@
       "id": "xai",
       "name": "xAI & Grok",
       "color": "#5b5751",
-      "count": 2,
+      "count": 1,
       "items": [
-        {
-          "num": 7,
-          "featured": false,
-          "tag": "Enterprise",
-          "headline": "Grok 4.3 jetzt auf Amazon Bedrock – niedrigste Halluzinationsrate unter Frontier-Modellen",
-          "lede": "xAI debütiert auf Amazon Bedrock mit Grok 4.3: 1-Million-Token-Kontextfenster, konfigurierbare Reasoning-Intensität und die niedrigste Halluzinationsrate aller Frontier-Modelle laut Artificial Analysis Omniscience Benchmark.",
-          "detail": "Das Modell kostet auf dem On-Demand-Tier 1,25 USD pro Million Eingabe-Tokens und 2,50 USD pro Million Ausgabe-Tokens. AWS führt mit Mantle außerdem einen neuen Hochleistungs-Inferenzpfad für extreme Durchsatzraten und niedrige Latenz ein.",
-          "sources": [
-            {
-              "name": "AWS",
-              "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock/",
-              "date": "15.06.2026"
-            },
-            {
-              "name": "xAI",
-              "url": "https://x.ai/news/grok-amazon-bedrock",
-              "date": "15.06.2026"
-            }
-          ]
-        },
         {
           "num": 8,
           "featured": false,
-          "tag": "Enterprise",
-          "headline": "Grok nativ auf Databricks – direkte KI-Analyse über Unternehmensdaten im Lakehouse",
-          "lede": "Beim Databricks Data+AI Summit 2026 kündigt xAI die native Integration von Grok-Modellen in Databricks Agent Bricks an: Agenten können direkt auf strukturierte und unstrukturierte Unternehmensdaten im Lakehouse zugreifen – ohne externe Datenpipelines.",
-          "detail": "Grok ist damit auf vier großen Cloud-Plattformen verfügbar: Oracle, Azure, Amazon Bedrock und Databricks. Die Lakehouse-Integration ist besonders für Unternehmen attraktiv, die eigene Daten nicht an externe Dienste übermitteln wollen.",
+          "tag": "Tooling",
+          "headline": "xAI führt /goal in Grok Build ein: Autonomer Agentenmodus plant, führt aus und verifiziert selbstständig",
+          "lede": "xAI hat /goal als neuen autonomen Langzeit-Ausführungsmodus in Grok Build eingeführt: Nutzer übergeben dem Agenten ein einziges Ziel – etwa die Migration eines Auth-Moduls –, der Agent erstellt einen Plan, arbeitet ihn iterativ ab und verifiziert das Ergebnis ohne Zwischenfreigaben.",
+          "detail": "Die Zwei-Modell-Pipeline kombiniert Composer 2.5 mit Grok Build 0.1 für Planung, Ausführung und dreistufige Verifikation. Nutzer können Status abfragen sowie die Ausführung pausieren, fortsetzen oder abbrechen. Zugänglich per CLI für SuperGrok- und X-Premium-Plus-Abonnenten.",
           "sources": [
             {
               "name": "xAI",
-              "url": "https://x.ai/news/grok-databricks",
-              "date": "18.06.2026"
+              "url": "https://x.ai/news/introducing-goal",
+              "date": "22.06.2026"
             },
             {
-              "name": "Basenor",
-              "url": "https://www.basenor.com/blogs/news/xai-grok-lands-on-databricks-at-the-2026-data-ai-summit",
-              "date": "18.06.2026"
+              "name": "MarkTechPost",
+              "url": "https://www.marktechpost.com/2026/06/22/xai-launches-goal-in-grok-build-adding-long-running-autonomous-execution-with-built-in-verification-for-multi-step-coding-tasks/",
+              "date": "22.06.2026"
             }
           ]
         }
@@ -219,70 +199,45 @@
       "id": "europe",
       "name": "AI in Europa",
       "color": "#8a4fd0",
-      "count": 3,
+      "count": 2,
       "items": [
         {
           "num": 9,
           "featured": false,
-          "tag": "Politik",
-          "headline": "Frankreich stellt €655 Mio. bereit: Mistral für alle 5,7 Mio. Staatsbediensteten – Palantir durch ChapsVision ersetzt",
-          "lede": "Premierminister Lecornu kündigt ein KI-Paket von 655 Mio. Euro bis 2030 an – inklusive eines Mistral-basierten Assistenten für die gesamte Staatsverwaltung und der Ablösung von Palantir beim Inlandsgeheimdienst DGSI durch das französische Unternehmen ChapsVision.",
-          "detail": "Lecornu begründete die Entscheidung direkt mit der Anthropic-Exportsperre: „Wir können nicht von der Kulanz von Partnern abhängig sein, die in der Lage sind, uns den Zugang zu sperren.\" Der Schritt gilt als Grundstein eines souveränen französischen KI-Technologie-Stacks.",
+          "tag": "Produkt",
+          "headline": "Mistral OCR 4: On-Premises-Dokumentenintelligenz für 170 Sprachen ohne Cloud-Abhängigkeit",
+          "lede": "Mistral AI hat OCR 4 veröffentlicht – ein Dokumentenintelligenz-Modell, das vollständig in der eigenen Infrastruktur betrieben werden kann: als einzelner Container, ohne dass sensible Daten an externe Cloud-APIs übermittelt werden.",
+          "detail": "Das Modell unterstützt 170 Sprachen, liefert absatzgenaue Bounding-Boxes zusammen mit extrahiertem Text und richtet sich explizit an regulierte Branchen wie Finanz- und Gesundheitswesen. Mistral besetzt damit einen Markt, den US-Cloud-Anbieter aufgrund europäischer Datenschutzauflagen nur eingeschränkt adressieren können.",
           "sources": [
             {
-              "name": "Bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-06-16/french-security-service-to-replace-palantir-with-local-software",
-              "date": "16.06.2026"
+              "name": "VentureBeat",
+              "url": "https://venturebeat.com/data/mistral-launches-ocr-4-turning-document-extraction-into-a-full-enterprise-ai-play",
+              "date": "24.06.2026"
             },
             {
-              "name": "The Next Web",
-              "url": "https://thenextweb.com/news/france-to-spend-e655m-on-ai",
-              "date": "16.06.2026"
+              "name": "TechTimes",
+              "url": "https://www.techtimes.com/articles/318978/20260624/mistral-ocr-4-ships-structure-aware-document-ai-runs-your-own-infrastructure.htm",
+              "date": "24.06.2026"
             }
           ]
         },
         {
           "num": 10,
           "featured": false,
-          "tag": "Strategie",
-          "headline": "Mistral-CEO Mensch: „KI muss außerhalb zentralisierter Kontrolle existieren\" – Finanzierungsrunde bei €20-Mrd.-Bewertung",
-          "lede": "Anthropics Exportsperre katapultiert Mistral in den Fokus: CEO Arthur Mensch positioniert offen quelloffene KI als Schutzwall gegen staatliche Einflussnahme und verhandelt gleichzeitig eine Finanzierungsrunde bei einer Bewertung von rund 20 Mrd. Euro.",
-          "detail": "Mistral soll rund 3 Mrd. Euro aufnehmen – fast doppelt so viel wie bei der Series-C-Runde im September 2025. Das Unternehmen erzielte $400 Mio. ARR nach nur drei Jahren und gilt durch den US-Eingriff als strategischer Gewinner.",
+          "tag": "Politik",
+          "headline": "EU AI Act: Konsultation zu Hochrisiko-Leitlinien abgeschlossen – Vollgültigkeit ab 2. August 2026",
+          "lede": "Am 23. Juni 2026 endete die öffentliche Konsultation zu den Entwurfs-Leitlinien der EU-Kommission zur Klassifizierung von Hochrisiko-KI-Systemen – ein zentraler Baustein des EU AI Act, der am 2. August 2026 vollständig in Kraft tritt.",
+          "detail": "Die Entwurfsleitlinien wurden am 19. Mai veröffentlicht und stehen nun vor der Finalisierung. GPAI-Regelungen gelten bereits seit August 2025; Pflichten für Hochrisiko-KI in regulierten Produkten greifen erst ab August 2028. Das Digital-Omnibus-Paket hat zudem im Mai erste Vereinfachungen beschlossen, u. a. Fristverlängerungen und neue Verbote für Nudification-Apps.",
           "sources": [
             {
-              "name": "Let's Data Science",
-              "url": "https://letsdatascience.com/news/mistral-pitches-open-source-ai-after-anthropic-ban-beb96449",
-              "date": "16.06.2026"
+              "name": "Global Policy Watch",
+              "url": "https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/",
+              "date": "23.06.2026"
             },
             {
-              "name": "GuruFocus",
-              "url": "https://www.gurufocus.com/news/8918523/anthropic-ban-could-boost-mistrals-20-billion-ai-push",
-              "date": "16.06.2026"
-            }
-          ]
-        },
-        {
-          "num": 11,
-          "featured": false,
-          "tag": "Regulierung",
-          "headline": "Verbündete fordern KI-Souveränität: Anthropic-Exportsperre als geopolitischer Wendepunkt",
-          "lede": "Der US-Bann auf Anthropics Top-Modelle löst unter Verbündeten scharfe Reaktionen aus und beschleunigt die Debatte um KI als kritische Infrastruktur – vergleichbar mit Strom oder Internet.",
-          "detail": "Kanadas Premier Mark Carney: „Wir werden etwas falsch gemacht haben, wenn wir das einfach hinnehmen.\" Französische Politiker wie Édouard Philippe und Bruno Retailleau fordern nationale KI-Resilienz. Der IAPP wertet die Episode als Governance-Versagen, nicht als technisches KI-Problem.",
-          "sources": [
-            {
-              "name": "Al Jazeera",
-              "url": "https://www.aljazeera.com/news/2026/6/19/us-export-ban-on-anthropics-ai-models-further-strains-alliances",
-              "date": "19.06.2026"
-            },
-            {
-              "name": "Fortune",
-              "url": "https://fortune.com/2026/06/16/anthropic-shutdown-sparks-global-scramble-for-sovereign-ai/",
-              "date": "16.06.2026"
-            },
-            {
-              "name": "IAPP",
-              "url": "https://iapp.org/news/a/the-anthropic-episode-probably-a-security-challenge-in-need-of-governance-certainly-not-europe-s-kill-switch",
-              "date": "19.06.2026"
+              "name": "AI Act Tracker",
+              "url": "https://artificialintelligenceact.eu/",
+              "date": "23.06.2026"
             }
           ]
         }
@@ -292,50 +247,20 @@
       "id": "general",
       "name": "Sonstige KI-News",
       "color": "#b7841f",
-      "count": 2,
+      "count": 1,
       "items": [
         {
-          "num": 12,
+          "num": 11,
           "featured": false,
-          "tag": "Akquisition",
-          "headline": "SpaceX kauft KI-Coding-Tool Cursor für 60 Mrd. USD – größte Startup-Übernahme aller Zeiten",
-          "lede": "SpaceX schließt die Übernahme von Cursor für 60 Mrd. USD in eigenen Aktien ab – vier Tage nach dem Nasdaq-Börsengang – und katapultiert den KI-Coding-Assistenten zur teuersten Startup-Transaktion der Geschichte.",
-          "detail": "Cursor erzielte zuletzt 4 Mrd. USD ARR und wird von 67 % der Fortune-500-Unternehmen eingesetzt. SpaceX zahlt ausschließlich in Aktien; der Deal soll im dritten Quartal 2026 abgeschlossen werden, vorbehaltlich behördlicher Genehmigungen.",
+          "tag": "Produkt",
+          "headline": "Meta entwickelt Vorhersagemarkt-App „Arena\" mit Llama als KI-Schiedsrichter",
+          "lede": "Meta baut laut Berichten eine eigenständige Vorhersagemarkt-App namens Arena, bei der Metas Llama-Modell als Schiedsrichter binäre Ja/Nein-Urteile zu Märkten über Wahlen, Sport, Geopolitik und Trendthemen fällt.",
+          "detail": "Die Enthüllung löste umgehend Debatten über die Eignung von KI-Modellen als neutrale Schiedsrichter aus: Eine Forrester-Umfrage vom 25. Juni zeigt, dass 56 % der Befragten Meta bei einem solchen Vorhersageprodukt nicht vertrauen. Das CFTC reagierte noch am selben Tag mit einer weiteren staatlichen Klage im Vorhersagemarkt-Bereich.",
           "sources": [
             {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
-              "date": "16.06.2026"
-            },
-            {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
-              "date": "16.06.2026"
-            },
-            {
-              "name": "Axios",
-              "url": "https://www.axios.com/2026/06/16/spacex-cursor-60-billion-musk",
-              "date": "16.06.2026"
-            }
-          ]
-        },
-        {
-          "num": 13,
-          "featured": false,
-          "tag": "Markt",
-          "headline": "Microsoft erwägt DeepSeek V4 als günstigere Alternative für Copilot Cowork",
-          "lede": "Microsoft prüft den Einsatz einer selbst gehosteten Version von DeepSeek V4 als Kostenalternative zu den Anthropic- und OpenAI-Modellen, die bislang Copilot Cowork antreiben.",
-          "detail": "Parallel stellt Microsoft Copilot Cowork auf nutzungsbasierte Preisgestaltung um und weitet den Zugang aus. Die mögliche Abkehr von US-Modellen beim größten OpenAI-Investor gilt als ungewöhnliches Signal für den wachsenden Kostendruck im Enterprise-KI-Markt.",
-          "sources": [
-            {
-              "name": "Axios",
-              "url": "https://www.axios.com/2026/06/16/microsoft-copilot-cowork-tokenmaxxing-cowork",
-              "date": "16.06.2026"
-            },
-            {
-              "name": "Gizmodo",
-              "url": "https://gizmodo.com/microsoft-mulls-chinas-deepseek-for-copilot-probably-to-trumps-chagrin-2000772649",
-              "date": "16.06.2026"
+              "name": "TechTimes",
+              "url": "https://www.techtimes.com/articles/319067/20260625/meta-prediction-market-app-puts-llama-charge-deciding-what-true.htm",
+              "date": "25.06.2026"
             }
           ]
         }
