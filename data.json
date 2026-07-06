@@ -1,51 +1,121 @@
 {
   "schemaVersion": 1,
-  "kw": 26,
+  "kw": 27,
   "year": 2026,
-  "period": "22. – 28. Juni 2026",
-  "generated": "2026-06-29T07:00:00",
-  "prevHref": "archiv/2026-kw25.html",
+  "period": "29. Juni – 5. Juli 2026",
+  "generated": "2026-07-06T07:00:00",
+  "prevHref": "archiv/2026-kw26.html",
   "categoryCount": 6,
-  "itemCount": 12,
+  "itemCount": 27,
   "labs": [
     {
       "id": "anthropic",
       "name": "Anthropic",
       "color": "#b5512f",
-      "count": 2,
+      "count": 5,
       "items": [
         {
           "num": null,
           "featured": true,
-          "tag": "Infrastruktur",
-          "headline": "Micron investiert in Anthropics Series H und schließt mehrjährigen Liefervertrag für KI-Infrastruktur",
-          "lede": "Micron Technology und Anthropic haben eine strategische Partnerschaft in vier Säulen bekanntgegeben: gemeinsames Memory- und Storage-Architektur-Design, einen mehrjährigen Liefervertrag für Rechenzentrums-Hardware, den unternehmensweiten Claude-Einsatz bei Micron sowie eine direkte Kapitaleinlage in Anthropics laufende Series-H-Finanzierungsrunde.",
-          "detail": "Die technische Zusammenarbeit zielt auf verbesserte Speicher-Performance, Energieeffizienz und Token-Ökonomie in Anthropics KI-Infrastruktur ab. Micron setzt Claude intern bereits für Coding und agentische Unternehmensworkloads ein. Finanzielle Details des Liefervertrags und der Beteiligungsgröße blieben vertraulich.",
+          "tag": "Sicherheit",
+          "headline": "US-Regierung hebt Exportstopp für Claude Fable 5 und Mythos 5 auf",
+          "lede": "Das US-Handelsministerium hat nach 19 Tagen die Exportkontrollen für Anthropics leistungsstärkste Modelle Claude Fable 5 und Mythos 5 aufgehoben, Anthropic stellt den globalen Zugang seit 1. Juli wieder her.",
+          "detail": "Die Modelle waren seit 12. Juni wegen einer über Amazon-Forscher entdeckten Jailbreak-Technik gesperrt worden. Anthropic hat einen neuen Sicherheitsklassifikator trainiert, der die Technik in über 99 % der Fälle blockiert, und mit Amazon, Microsoft und Google ein branchenweites Jailbreak-Framework vereinbart.",
           "sources": [
             {
-              "name": "Micron IR",
-              "url": "https://investors.micron.com/news-releases/news-release-details/micron-and-anthropic-announce-strategic-agreement-scale-next",
-              "date": "22.06.2026"
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html",
+              "date": "30.06.2026"
             },
             {
-              "name": "GlobeNewswire",
-              "url": "https://www.globenewswire.com/news-release/2026/06/22/3315307/14450/en/micron-and-anthropic-announce-strategic-agreement-to-scale-next-generation-ai-infrastructure.html",
-              "date": "22.06.2026"
+              "name": "Fortune",
+              "url": "https://fortune.com/2026/07/01/anthropic-fable-mythos-ai-models-restored-trump-administration-export-controls/",
+              "date": "01.07.2026"
+            },
+            {
+              "name": "Al Jazeera",
+              "url": "https://www.aljazeera.com/economy/2026/7/1/us-lifts-restrictions-on-powerful-ai-models-fable-mythos-anthropic-says",
+              "date": "01.07.2026"
             }
           ]
         },
         {
           "num": 1,
           "featured": false,
-          "tag": "Forschung",
-          "headline": "Anthropic Economic Index „Cadences\": Neue Studie zu Rhythmen KI-gestützter Arbeit",
-          "lede": "Anthropic hat seinen neuesten Economic Index unter dem Titel „Cadences\" veröffentlicht – er untersucht, wie der Einsatz von Claude die zeitlichen Muster und Taktgeber menschlicher Arbeit verändert.",
-          "detail": null,
+          "tag": "Politik",
+          "headline": "Kalifornien holt Anthropic ins Regierungsgeschäft",
+          "lede": "Kaliforniens Gouverneur Gavin Newsom hat mit Anthropic eine Vereinbarung geschlossen, die allen Landesbehörden sowie Städten und Landkreisen Zugang zu Claude mit 50 % Rabatt verschafft.",
+          "detail": "Claude wird damit das erste KI-Produktivitätstool, das landesweit über Kaliforniens zentrales Software-Portal verfügbar ist; im Paket enthalten sind kostenlose Schulungen und technischer Support durch Anthropic-Ingenieure. Behörden wie die DMV und das Department of Health Care Services nutzen Claude bereits für interne Prozesse.",
           "sources": [
             {
-              "name": "Anthropic Research",
-              "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
-              "date": "Juni 2026"
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
+              "date": "29.06.2026"
+            },
+            {
+              "name": "CBS Sacramento",
+              "url": "https://www.cbsnews.com/sacramento/news/california-claude-deal-gavin-newsom/",
+              "date": "30.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 2,
+          "featured": false,
+          "tag": "Modell-Release",
+          "headline": "Claude Sonnet 5: günstigere Agenten-Power für alle",
+          "lede": "Anthropic hat Claude Sonnet 5 veröffentlicht, ein neues Mittelklasse-Modell mit deutlich verbesserter eigenständiger Werkzeugnutzung, das ab sofort Standardmodell für alle Free- und Pro-Nutzer ist.",
+          "detail": "Sonnet 5 bietet ein natives 1-Millionen-Token-Kontextfenster und startet mit Einführungspreisen von 2 $/10 $ pro Million Input-/Output-Token bis 31. August 2026 (danach 3 $/15 $). Laut Anthropic liegt die Leistung nahe an Opus 4.8, bei geringeren Kosten.",
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+              "date": "30.06.2026"
+            },
+            {
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/claude-sonnet-5",
+              "date": "30.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 3,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "Claude Science: Anthropics KI-Werkbank für Forscher",
+          "lede": "Anthropic hat mit Claude Science eine öffentliche Beta-Version einer KI-Forschungsumgebung für Wissenschaftler und die Pharmaindustrie vorgestellt.",
+          "detail": "Die Anwendung ist mit über 60 wissenschaftlichen Datenbanken vorkonfiguriert, erstellt reproduzierbare Artefakte wie 3D-Proteinstrukturen und Genom-Browser-Tracks und steht Claude Pro-, Max-, Team- und Enterprise-Nutzern zur Verfügung. Anthropic fördert zusätzlich bis zu 50 Forschungsprojekte mit je bis zu 30.000 $ an Rechenkredit.",
+          "sources": [
+            {
+              "name": "STAT News",
+              "url": "https://www.statnews.com/2026/06/30/anthropic-release-claude-science-ceo-dario-amodei/",
+              "date": "30.06.2026"
+            },
+            {
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+              "date": "30.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 4,
+          "featured": false,
+          "tag": "Enterprise",
+          "headline": "Neues Gateway erleichtert Claude-Code-Betrieb in Konzernen",
+          "lede": "Anthropic hat das Claude Apps Gateway für Amazon Bedrock und Google Cloud eingeführt, eine selbst gehostete Kontrollebene mit Unternehmens-SSO für Claude Code.",
+          "detail": "Das Gateway läuft als einzelner zustandsloser Container mit PostgreSQL-Backend, erzwingt zentrale Richtlinien und rollenbasierten Zugriff, verfolgt Kosten pro Nutzer und leitet Inferenz-Traffic mit optionalem Failover an Claude API, Bedrock oder Google Cloud weiter.",
+          "sources": [
+            {
+              "name": "Claude (Anthropic Blog)",
+              "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+              "date": "30.06.2026"
+            },
+            {
+              "name": "DevOps.com",
+              "url": "https://devops.com/anthropic-adds-enterprise-gateway-to-simplify-claude-code-access-on-aws-and-google-cloud/",
+              "date": "01.07.2026"
             }
           ]
         }
@@ -55,75 +125,65 @@
       "id": "openai",
       "name": "OpenAI",
       "color": "#0f9d63",
-      "count": 4,
+      "count": 3,
       "items": [
-        {
-          "num": 2,
-          "featured": false,
-          "tag": "Modell-Release",
-          "headline": "GPT-5.6 Sol: Drei-Varianten-Modell im Trusted-Partner-Preview – Rollout auf US-Regierungswunsch limitiert",
-          "lede": "OpenAI startet eine limitierte Vorschau auf GPT-5.6 Sol, die leistungsstärkste der drei neuen Varianten (Sol, Terra, Luna), zunächst nur für eine kleine Gruppe von Trusted Partners – auf ausdrückliches Ersuchen der US-Regierung.",
-          "detail": "Sol führt ein neues „Max\"-Reasoning-Niveau für tiefere, mehrstufige Analyse ein und ist OpenAIs bislang fähigstes Modell für Cybersicherheitsanwendungen. Terra bietet ähnliche Performance wie GPT-5.5 bei halben Kosten, Luna ist die günstigste Option. Das Vorgehen folgt einem KI-Cybersicherheitserlass, der Labs verpflichtet, Frontier-Modelle 30 Tage vor dem Breitrollout staatlich reviewen zu lassen.",
-          "sources": [
-            {
-              "name": "OpenAI",
-              "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-              "date": "26.06.2026"
-            },
-            {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
-              "date": "26.06.2026"
-            }
-          ]
-        },
-        {
-          "num": 3,
-          "featured": false,
-          "tag": "Hardware",
-          "headline": "OpenAI enthüllt eigenen Inference-Chip „Jalapeño\" – entwickelt mit Broadcom",
-          "lede": "OpenAI hat erstmals einen eigenen, auf Inference spezialisierten Prozessor vorgestellt: „Jalapeño\" wurde in Kooperation mit Broadcom entwickelt und zeigt laut frühen Tests signifikant bessere Performance-per-Watt als aktuelle Alternativen.",
-          "detail": "Der Chip befindet sich noch in der Testphase und ist explizit auf OpenAIs Inference-Anforderungen zugeschnitten – erster Schritt hin zu eigener Silizium-Kontrolle unabhängig von Nvidia-Hardware.",
-          "sources": [
-            {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
-              "date": "24.06.2026"
-            }
-          ]
-        },
-        {
-          "num": 4,
-          "featured": false,
-          "tag": "Sicherheit",
-          "headline": "Daybreak: OpenAI baut Cybersecurity-Plattform mit GPT-5.5-Cyber und Patch-the-Planet-Initiative aus",
-          "lede": "OpenAI hat Daybreak mit neuen Komponenten ausgebaut: GPT-5.5-Cyber erzielt 85,6 % auf dem CyberGym-Benchmark (1.507 Schwachstellen aus 188 Open-Source-Projekten); gleichzeitig startet die Patch-the-Planet-Initiative gemeinsam mit Trail of Bits und HackerOne.",
-          "detail": "Codex Security hat seit dem Launch im März über 30 Millionen Commits in mehr als 30.000 Codebasen analysiert; über 70.000 Findings wurden manuell als behoben markiert. Mehr als 30 Open-Source-Projekte haben sich zur Teilnahme verpflichtet. Daybreak adressiert den gesamten Vulnerability-Lifecycle von Erkennung bis Patch.",
-          "sources": [
-            {
-              "name": "OpenAI",
-              "url": "https://openai.com/index/daybreak-securing-the-world/",
-              "date": "22.06.2026"
-            },
-            {
-              "name": "Help Net Security",
-              "url": "https://www.helpnetsecurity.com/2026/06/23/openai-expanded-daybreak-cybersecurity-initiative/",
-              "date": "23.06.2026"
-            }
-          ]
-        },
         {
           "num": 5,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "GPT-4.5 aus ChatGPT abgezogen – auch Custom GPTs betroffen",
-          "lede": "Seit dem 26. Juni 2026 ist GPT-4.5 nicht mehr über ChatGPT verfügbar, einschließlich sämtlicher Custom GPTs, die auf dieser Modellversion basieren.",
-          "detail": null,
+          "tag": "Politik",
+          "headline": "OpenAI bietet US-Regierung 5-Prozent-Anteil an",
+          "lede": "OpenAI hat der US-Regierung in vorläufigen Gesprächen einen 5-Prozent-Anteil am Unternehmen angeboten, um politischem Druck aus Washington zu begegnen.",
+          "detail": "Der Anteil wäre nach der Rekord-Finanzierungsrunde vom März (Bewertung: 852 Mrd. USD) rund 42,6 Mrd. USD wert. CEO Sam Altman bringt die Idee seit über einem Jahr in Gesprächen mit der Trump-Regierung ein, als Teil eines breiteren Plans, wonach der Staat auch bei anderen führenden US-KI-Firmen Anteile halten soll.",
           "sources": [
             {
-              "name": "OpenAI News",
-              "url": "https://openai.com/news/product-releases/",
-              "date": "26.06.2026"
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says",
+              "date": "02.07.2026"
+            },
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
+              "date": "02.07.2026"
+            },
+            {
+              "name": "Forbes",
+              "url": "https://www.forbes.com/sites/siladityaray/2026/07/02/openai-reportedly-pitches-granting-us-government-5-stake/",
+              "date": "02.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 6,
+          "featured": false,
+          "tag": "Markt",
+          "headline": "Anthropic zieht bei Umsatz und Nutzerzahlen an OpenAI vorbei",
+          "lede": "Anthropic hat OpenAI beim selbst berichteten Umsatz überholt und holt auch bei Nutzerzahlen auf.",
+          "detail": "OpenAI rechnet mit einem Jahresumsatz von 25–33 Mrd. USD, während Anthropic im Mai bereits 47 Mrd. USD in Aussicht stellte und Profitabilität für 2029 ankündigte — ein Jahr vor OpenAI. Die monatlichen ChatGPT-Zugriffe fielen im Mai laut Bericht erstmals unter die Mehrheit des Generative-AI-Marktes.",
+          "sources": [
+            {
+              "name": "Fortune",
+              "url": "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/",
+              "date": "02.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 7,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "OpenAI stellt Biologie-Benchmark GeneBench-Pro vor",
+          "lede": "OpenAI hat mit GeneBench-Pro einen neuen, besonders anspruchsvollen Forschungs-Benchmark für KI in der Computational Biology veröffentlicht.",
+          "detail": "Der Benchmark umfasst 129 Aufgaben aus zehn Teilgebieten wie Statistischer Genetik, Krebsgenomik und Pharmakogenomik. OpenAIs eigenes Modell GPT-5.6 Sol erreichte im Pro-Modus nur 31,5 % Erfolgsquote, das stärkste Konkurrenzmodell (Anthropic Claude Opus 4.8) kam auf 16,0 %.",
+          "sources": [
+            {
+              "name": "OpenAI",
+              "url": "https://openai.com/index/introducing-genebench-pro/",
+              "date": "30.06.2026"
+            },
+            {
+              "name": "Tech Times",
+              "url": "https://www.techtimes.com/articles/319495/20260702/openai-genomics-benchmark-ai-judgment-gap-exposed-research-grade-tasks.htm",
+              "date": "02.07.2026"
             }
           ]
         }
@@ -133,35 +193,65 @@
       "id": "google",
       "name": "Google & Gemini",
       "color": "#2f6ddb",
-      "count": 2,
+      "count": 3,
       "items": [
         {
-          "num": 6,
+          "num": 8,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Gemini 3 Deep Think: Googles stärkster Reasoning-Modus erstmals via API für Forscher und Enterprise",
-          "lede": "Google DeepMind hat Gemini 3 Deep Think für Ultra-Abonnenten der Gemini-App signifikant ausgebaut und gleichzeitig erstmals einen API-Zugang für ausgewählte Forscher, Ingenieure und Unternehmen freigegeben – ausgelegt auf Mathematik, Wissenschaft und komplexe mehrstufige Probleme.",
-          "detail": "Gemini 3 Deep Think ist Googles Frontier-Reasoning-Modus für wissenschaftliche und ingenieurtechnische Herausforderungen. Mit dem dualen Zugang via Gemini-App und API erschließt Google den Modus erstmals systematisch für Enterprise-Anwendungen und externe Forschung.",
+          "tag": "Produkt",
+          "headline": "Gemini erstellt jetzt persönliche Bilder — kostenlos für alle US-Nutzer",
+          "lede": "Google macht die personalisierte Bildgenerierung von Gemini (powered by Nano Banana) ab sofort für alle berechtigten Nutzer in den USA kostenlos zugänglich, statt sie Plus-, Pro- und Ultra-Abonnenten vorzubehalten.",
+          "detail": "Die Funktion nutzt mit Zustimmung der Nutzer verknüpfte Google-Dienste wie Gmail, Google Fotos, YouTube und Suche, um Bilder ohne detaillierte Prompts zu erzeugen. Die Funktion ist Opt-in und für Nutzer ab 13 Jahren verfügbar, Bildbearbeitung bleibt auf Erwachsene beschränkt.",
           "sources": [
             {
-              "name": "Google Blog",
-              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
-              "date": "22.06.2026"
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
+              "date": "29.06.2026"
+            },
+            {
+              "name": "Google (Blog)",
+              "url": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana-us-expansion/",
+              "date": "29.06.2026"
             }
           ]
         },
         {
-          "num": 7,
+          "num": 9,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Gemini 3.5 Flash: Neue Modellgeneration übertrifft 3.1 Pro auf nahezu allen Benchmarks bei vierfacher Geschwindigkeit",
-          "lede": "Google DeepMind hat Gemini 3.5 Flash als neue Modellgeneration veröffentlicht: Sie übertrifft Gemini 3.1 Pro auf nahezu allen Benchmarks und liefert dabei vierfache Verarbeitungsgeschwindigkeit – primär konzipiert für Agenten-Workloads und komplexe Coding-Aufgaben.",
-          "detail": "Gemini 3.5 Flash ist für langfristige, mehrstufige Agenten-Aufgaben mit realem Nutzwert ausgelegt und positioniert sich als Standard-Modell für agentenbasierte Produktivitätsanwendungen in Google Cloud und der Gemini API.",
+          "tag": "Markt",
+          "headline": "Rechenkraft-Engpass: Google kappt Metas Zugang zu Gemini-Modellen",
+          "lede": "Google hat laut Financial Times den Zugriff von Meta auf seine Gemini-KI-Modelle begrenzt, weil die eigene Rechenkapazität nicht ausreicht, um Metas Bedarf zu decken.",
+          "detail": "Meta nutzte Gemini unter anderem für Sicherheits- und Moderationsprozesse; die Einschränkung führt zu spürbaren Verzögerungen bei internen KI-Projekten. Meta verlagert betroffene Workloads inzwischen zunehmend auf ein eigenes Modell namens Muse Spark.",
           "sources": [
             {
-              "name": "Google DeepMind",
-              "url": "https://deepmind.google/models/gemini/",
-              "date": "Juni 2026"
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+              "date": "28.06.2026"
+            },
+            {
+              "name": "Forbes",
+              "url": "https://www.forbes.com/sites/jonmarkman/2026/06/29/google-limits-metas-gemini-usage-over-compute-shortages/",
+              "date": "29.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 10,
+          "featured": false,
+          "tag": "Tooling",
+          "headline": "Gemini baut jetzt komplette, editierbare Präsentationen in Google Slides",
+          "lede": "Google rollt eine neue Gemini-Funktion in Google Slides aus, mit der auf einen einzigen Prompt hin vollständige, mehrseitige und nativ editierbare Präsentationen entstehen — statt starrer Bild-Templates.",
+          "detail": "Die Präsentationen lassen sich auf Basis vorhandener Drive-Inhalte erstellen oder im Stil einer anderen Präsentation gestalten; jedes Element bleibt danach frei bearbeitbar. Workspace-Kunden erhalten bis mindestens 1. August 2026 erhöhte Nutzungslimits zum Testen.",
+          "sources": [
+            {
+              "name": "Google Workspace Updates",
+              "url": "https://workspaceupdates.googleblog.com/2026/06/create-fully-native-and-editable-presentations-with-Gemini-in-Google-Slides.html",
+              "date": "29.06.2026"
+            },
+            {
+              "name": "9to5Google",
+              "url": "https://9to5google.com/2026/06/30/google-drive-ask-gemini-android-ios/",
+              "date": "30.06.2026"
             }
           ]
         }
@@ -171,25 +261,55 @@
       "id": "xai",
       "name": "xAI & Grok",
       "color": "#5b5751",
-      "count": 1,
+      "count": 3,
       "items": [
         {
-          "num": 8,
+          "num": 11,
           "featured": false,
-          "tag": "Tooling",
-          "headline": "xAI führt /goal in Grok Build ein: Autonomer Agentenmodus plant, führt aus und verifiziert selbstständig",
-          "lede": "xAI hat /goal als neuen autonomen Langzeit-Ausführungsmodus in Grok Build eingeführt: Nutzer übergeben dem Agenten ein einziges Ziel – etwa die Migration eines Auth-Moduls –, der Agent erstellt einen Plan, arbeitet ihn iterativ ab und verifiziert das Ergebnis ohne Zwischenfreigaben.",
-          "detail": "Die Zwei-Modell-Pipeline kombiniert Composer 2.5 mit Grok Build 0.1 für Planung, Ausführung und dreistufige Verifikation. Nutzer können Status abfragen sowie die Ausführung pausieren, fortsetzen oder abbrechen. Zugänglich per CLI für SuperGrok- und X-Premium-Plus-Abonnenten.",
+          "tag": "Produkt",
+          "headline": "xAI erklärt Grok Imagine für fertig entwickelt",
+          "lede": "Elon Musk verkündete am 5. Juli 2026 knapp „Done with Grok Imagine\" und erklärte damit die Bild- und Videogenerierungsfunktion von Grok für entwicklungstechnisch abgeschlossen.",
+          "detail": "Grok Imagine war seit August 2025 in Entwicklung und lief zunächst als Beta für SuperGrok- und Premium+-Abonnenten in der Grok-App, mittlerweile ist es auch direkt in die X-App integriert.",
           "sources": [
             {
-              "name": "xAI",
-              "url": "https://x.ai/news/introducing-goal",
-              "date": "22.06.2026"
+              "name": "Basenor",
+              "url": "https://www.basenor.com/blogs/news/grok-imagine-is-done-xai-completes-image-generation-feature",
+              "date": "05.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 12,
+          "featured": false,
+          "tag": "Tooling",
+          "headline": "xAI startet No-Code-Baukasten für Sprachagenten",
+          "lede": "xAI hat am 1. Juli 2026 den „Voice Agent Builder\" in der Beta vorgestellt, mit dem sich in unter zwei Minuten ohne Code ein produktionsreifer Sprachagent auf Basis von Grok Voice erstellen lässt.",
+          "detail": "Das Angebot bündelt Telefonie, Wissensabruf, Tool-Nutzung, Guardrails und Monitoring in einer einzigen Speech-to-Speech-Lösung und kostet ab 0,05 $ pro Minute Agenten-Audio plus 0,01 $ für Telefonie — deutlich günstiger als etablierte Anbieter wie ElevenLabs oder Vapi.",
+          "sources": [
+            {
+              "name": "x.ai",
+              "url": "https://x.ai/news/grok-voice-agent-builder",
+              "date": "01.07.2026"
             },
             {
-              "name": "MarkTechPost",
-              "url": "https://www.marktechpost.com/2026/06/22/xai-launches-goal-in-grok-build-adding-long-running-autonomous-execution-with-built-in-verification-for-multi-step-coding-tasks/",
-              "date": "22.06.2026"
+              "name": "Let's Data Science",
+              "url": "https://letsdatascience.com/news/xai-launches-voice-agent-builder-for-grok-voice-706092b4",
+              "date": "01.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 13,
+          "featured": false,
+          "tag": "Tooling",
+          "headline": "Grok Build jetzt direkt in Railway-Sandboxes verfügbar",
+          "lede": "xAI hat seinen Coding-Agenten Grok Build in die Cloud-Sandboxes von Railway integriert, seit Anfang Juli vorinstalliert abrufbar.",
+          "detail": "Entwickler erhalten damit eine sofort einsatzbereite Instanz des terminalbasierten Agenten, ohne die Rust-CLI lokal installieren zu müssen — neben Claude Code und OpenAI Codex ist Grok Build damit einer von mehreren Coding-Agenten in Railways seit 26. Juni allgemein verfügbaren Sandboxes.",
+          "sources": [
+            {
+              "name": "Basenor",
+              "url": "https://www.basenor.com/blogs/news/grok-build-now-available-in-railway-sandboxes",
+              "date": "02.07.2026"
             }
           ]
         }
@@ -199,45 +319,75 @@
       "id": "europe",
       "name": "AI in Europa",
       "color": "#8a4fd0",
-      "count": 2,
+      "count": 4,
       "items": [
         {
-          "num": 9,
+          "num": 14,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Mistral OCR 4: On-Premises-Dokumentenintelligenz für 170 Sprachen ohne Cloud-Abhängigkeit",
-          "lede": "Mistral AI hat OCR 4 veröffentlicht – ein Dokumentenintelligenz-Modell, das vollständig in der eigenen Infrastruktur betrieben werden kann: als einzelner Container, ohne dass sensible Daten an externe Cloud-APIs übermittelt werden.",
-          "detail": "Das Modell unterstützt 170 Sprachen, liefert absatzgenaue Bounding-Boxes zusammen mit extrahiertem Text und richtet sich explizit an regulierte Branchen wie Finanz- und Gesundheitswesen. Mistral besetzt damit einen Markt, den US-Cloud-Anbieter aufgrund europäischer Datenschutzauflagen nur eingeschränkt adressieren können.",
+          "tag": "Politik",
+          "headline": "Brüssel gibt grünes Licht für entschärften AI Act",
+          "lede": "Der Rat der EU hat am 29. Juni final das Vereinfachungspaket „Omnibus VII\" zum AI Act gebilligt, das die Fristen für Hochrisiko-KI-Systeme um bis zu 16 Monate verschiebt.",
+          "detail": "Die Pflichten für eigenständige Hochrisiko-KI-Systeme gelten nun erst ab 2. Dezember 2027 statt 2. August 2026, für in Produkte eingebettete Systeme sogar erst ab 2. August 2028. Neu ins Gesetz aufgenommen wurde zudem ein Verbot von KI-Systemen zur Erzeugung nicht-einvernehmlicher intimer Inhalte und CSAM.",
           "sources": [
             {
-              "name": "VentureBeat",
-              "url": "https://venturebeat.com/data/mistral-launches-ocr-4-turning-document-extraction-into-a-full-enterprise-ai-play",
-              "date": "24.06.2026"
-            },
-            {
-              "name": "TechTimes",
-              "url": "https://www.techtimes.com/articles/318978/20260624/mistral-ocr-4-ships-structure-aware-document-ai-runs-your-own-infrastructure.htm",
-              "date": "24.06.2026"
+              "name": "Consilium (Rat der EU)",
+              "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+              "date": "29.06.2026"
             }
           ]
         },
         {
-          "num": 10,
+          "num": 15,
           "featured": false,
-          "tag": "Politik",
-          "headline": "EU AI Act: Konsultation zu Hochrisiko-Leitlinien abgeschlossen – Vollgültigkeit ab 2. August 2026",
-          "lede": "Am 23. Juni 2026 endete die öffentliche Konsultation zu den Entwurfs-Leitlinien der EU-Kommission zur Klassifizierung von Hochrisiko-KI-Systemen – ein zentraler Baustein des EU AI Act, der am 2. August 2026 vollständig in Kraft tritt.",
-          "detail": "Die Entwurfsleitlinien wurden am 19. Mai veröffentlicht und stehen nun vor der Finalisierung. GPAI-Regelungen gelten bereits seit August 2025; Pflichten für Hochrisiko-KI in regulierten Produkten greifen erst ab August 2028. Das Digital-Omnibus-Paket hat zudem im Mai erste Vereinfachungen beschlossen, u. a. Fristverlängerungen und neue Verbote für Nudification-Apps.",
+          "tag": "Modell-Release",
+          "headline": "Mistral bringt Leanstral 1.5 für formal verifiziertes Coden",
+          "lede": "Mistral AI hat Leanstral 1.5 veröffentlicht, ein Open-Source-Code-Agent-Modell für den Beweisassistenten Lean 4, das 587 von 672 PutnamBench-Aufgaben löst.",
+          "detail": "Das Modell (119B Parameter, MoE mit 128 Experten) steht unter Apache-2.0-Lizenz und erreicht 100 % auf miniF2F; in 57 geprüften Repositories fand es 11 echte, teils unbekannte Bugs. Zugang via Hugging Face, kostenlose API oder lokal via vLLM.",
           "sources": [
             {
-              "name": "Global Policy Watch",
-              "url": "https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/",
-              "date": "23.06.2026"
+              "name": "MarkTechPost",
+              "url": "https://www.marktechpost.com/2026/07/03/mistral-ai-releases-leanstral-1-5-an-apache-2-0-lean-4-code-agent-model-solving-587-of-672-putnambench-problems/",
+              "date": "03.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 16,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Slowenisches KI-Startup Codeplain sichert sich Seed-Runde",
+          "lede": "Codeplain aus Ljubljana hat eine Seed-Finanzierung von 3 Mio. US-Dollar (2,6 Mio. Euro) unter Führung von GapMinder und Silicon Gardens erhalten.",
+          "detail": "Das Startup lässt KI-Agenten aus Klartext-Spezifikationen produktionsreifen Code generieren, testen und aktualisieren. Gegründet wurde es von Dušan Omerčević (zuvor Cleanshelf/SAP LeanIX), das Unternehmen hat Standorte in Ljubljana, Berlin und San Francisco.",
+          "sources": [
+            {
+              "name": "GapMinder",
+              "url": "https://gapminder.vc/gapminder-leads-3-million-seed-round-in-slovenian-ai-software-startup-codeplain-alongside-silicon-gardens/",
+              "date": "30.06.2026"
             },
             {
-              "name": "AI Act Tracker",
-              "url": "https://artificialintelligenceact.eu/",
-              "date": "23.06.2026"
+              "name": "The Recursive",
+              "url": "https://www.therecursive.com/slovenian-codeplain-seed-round-gapminder/",
+              "date": "30.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 17,
+          "featured": false,
+          "tag": "Markt",
+          "headline": "ElevenLabs sondiert Mitarbeiter-Aktienverkauf bei 22-Milliarden-Bewertung",
+          "lede": "Der Londoner Voice-AI-Anbieter ElevenLabs führt laut Bloomberg erste Gespräche über ein Tender-Angebot, das den Wert des Unternehmens auf rund 22 Mrd. US-Dollar verdoppeln würde.",
+          "detail": "Die im Februar 2026 bei 11 Mrd. Dollar bewertete Firma (500-Mio.-Dollar-Series-D unter Sequoia) würde damit ihre Bewertung binnen fünf Monaten verdoppeln; ein Abschluss wird bis September erwartet. Bei einem Tender-Angebot verkaufen bestehende Anteilseigner Aktien, es fließt kein frisches Kapital ins Unternehmen.",
+          "sources": [
+            {
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-07-02/elevenlabs-in-talks-for-tender-offer-at-22-billion-valuation",
+              "date": "02.07.2026"
+            },
+            {
+              "name": "Tech Startups",
+              "url": "https://techstartups.com/2026/07/02/ai-voice-startup-elevenlabs-eyes-22b-valuation-through-employee-stock-sale/",
+              "date": "02.07.2026"
             }
           ]
         }
@@ -247,20 +397,185 @@
       "id": "general",
       "name": "Sonstige KI-News",
       "color": "#b7841f",
-      "count": 1,
+      "count": 9,
       "items": [
         {
-          "num": 11,
+          "num": 18,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Meta entwickelt Vorhersagemarkt-App „Arena\" mit Llama als KI-Schiedsrichter",
-          "lede": "Meta baut laut Berichten eine eigenständige Vorhersagemarkt-App namens Arena, bei der Metas Llama-Modell als Schiedsrichter binäre Ja/Nein-Urteile zu Märkten über Wahlen, Sport, Geopolitik und Trendthemen fällt.",
-          "detail": "Die Enthüllung löste umgehend Debatten über die Eignung von KI-Modellen als neutrale Schiedsrichter aus: Eine Forrester-Umfrage vom 25. Juni zeigt, dass 56 % der Befragten Meta bei einem solchen Vorhersageprodukt nicht vertrauen. Das CFTC reagierte noch am selben Tag mit einer weiteren staatlichen Klage im Vorhersagemarkt-Bereich.",
+          "tag": "Sicherheit",
+          "headline": "Gefälschte Perplexity-Erweiterung spioniert Chrome-Nutzer aus",
+          "lede": "Microsofts Defender-Sicherheitsteam deckte eine bösartige Chrome-Erweiterung auf, die sich als Perplexity AI ausgab und heimlich jede Sucheingabe protokollierte.",
+          "detail": "Die Erweiterung „Search for perplexity ai\" leitete jedes eingegebene Zeichen in der Adressleiste — auch unvollständige, nie abgeschickte Suchen — an einen von Angreifern kontrollierten Server weiter, inklusive IP-Adresse und Browser-Kennung. Google entfernte die Erweiterung aus dem Chrome Web Store, bereits installierte Kopien bleiben aber aktiv gefährlich.",
+          "sources": [
+            {
+              "name": "Microsoft Security Blog",
+              "url": "https://www.microsoft.com/en-us/security/blog/2026/06/29/chromium-extension-uses-airelated-branding-redirect-browser-search/",
+              "date": "29.06.2026"
+            },
+            {
+              "name": "Malwarebytes",
+              "url": "https://www.malwarebytes.com/blog/privacy/2026/07/fake-perplexity-chrome-extension-spies-on-your-searches",
+              "date": "01.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 19,
+          "featured": false,
+          "tag": "Modell-Release",
+          "headline": "DeepSeek kündigt V4 für Mitte Juli an — mit Spitzenlast-Preisen",
+          "lede": "DeepSeek hat die offizielle Version von V4 für Mitte Juli angekündigt und führt dabei erstmals zeitabhängige API-Preise ein.",
+          "detail": "Während der Spitzenzeiten (9–12 Uhr und 14–18 Uhr Pekinger Zeit) verdoppeln sich die API-Kosten für V4 Pro und V4 Flash gegenüber Nebenzeiten. Die Ankündigung folgt auf eine 51-Milliarden-Yuan-Finanzierungsrunde, die DeepSeek Mitte Juni abschloss.",
+          "sources": [
+            {
+              "name": "TechNode",
+              "url": "https://technode.com/2026/06/30/deepseek-to-launch-v4-in-mid-july-with-new-peak-time-api-pricing/",
+              "date": "30.06.2026"
+            },
+            {
+              "name": "Pandaily",
+              "url": "https://pandaily.com/deepseek-v4-official-july-peak-pricing-jun2026",
+              "date": "30.06.2026"
+            }
+          ]
+        },
+        {
+          "num": 20,
+          "featured": false,
+          "tag": "Tooling",
+          "headline": "Microsoft verschmilzt Copilot-Apps zu einer einzigen KI-App",
+          "lede": "Microsoft plant, die Consumer- und Business-Versionen von Copilot bis August 2026 in einer einzigen App zusammenzuführen.",
+          "detail": "Ein internes Memo von EVP Jacob Andreou fordert, Copilot müsse sich „das Recht auf Existenz verdienen\" — nur 4,5 % der 450 Millionen Microsoft-365-Sitze haben bislang auf bezahlte KI-Funktionen umgestellt. Wenig genutzte Features wie Copilot Podcasts und Labs werden gestrichen, neue kostenpflichtige „AutoPilot\"-Agenten sollen im Gegenzug den Umsatz steigern.",
           "sources": [
             {
               "name": "TechTimes",
-              "url": "https://www.techtimes.com/articles/319067/20260625/meta-prediction-market-app-puts-llama-charge-deciding-what-true.htm",
-              "date": "25.06.2026"
+              "url": "https://www.techtimes.com/articles/319706/20260704/microsoft-copilot-merges-one-app-august-feature-cuts-reveal-paid-adoption-crisis.htm",
+              "date": "04.07.2026"
+            },
+            {
+              "name": "Winbuzzer",
+              "url": "https://winbuzzer.com/2026/07/04/microsoft-plans-copilot-app-merge-to-prove-its-value-xcxwbn/",
+              "date": "04.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 21,
+          "featured": false,
+          "tag": "Enterprise",
+          "headline": "AWS steckt eine Milliarde Dollar in eigene KI-Einsatztruppe",
+          "lede": "Amazon Web Services hat eine neue interne Einheit aus „Forward Deployed Engineers\" angekündigt und investiert dafür 1 Mrd. US-Dollar.",
+          "detail": "Kleine Teams von fünf bis sechs Ingenieuren werden für rund 45-tägige Einsätze direkt bei Kundenunternehmen platziert, um agentenbasierte KI-Systeme einzuführen. AWS folgt damit ähnlichen Modellen von Anthropic (mit Blackstone) und OpenAI (mit TPG u. a.); erste Projekte laufen bereits mit dem Allen Institute, Cox Automotive und der NFL.",
+          "sources": [
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/06/30/aws-amazon-ai-forward-deployed-engineers.html",
+              "date": "30.06.2026"
+            },
+            {
+              "name": "About Amazon",
+              "url": "https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers",
+              "date": "02.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 22,
+          "featured": false,
+          "tag": "Partnerschaft",
+          "headline": "Australischer Medienkonzern Nine öffnet Microsoft Copilot seine Artikel",
+          "lede": "Nine Entertainment und Microsoft haben eine erstmalige Vereinbarung geschlossen, die Copilot vollen Zugriff auf Nines Journalismus jenseits der Bezahlschranke gewährt.",
+          "detail": "Die einjährige Pilotvereinbarung deckt Titel wie The Australian Financial Review, Sydney Morning Herald und The Age ab; Copilot zeigt Snippets und verlinkt zur Originalquelle. Finanzielle Details wurden nicht offengelegt.",
+          "sources": [
+            {
+              "name": "Microsoft News Source (Asia)",
+              "url": "https://news.microsoft.com/source/asia/2026/07/03/nine-microsoft-copilot-agreement/",
+              "date": "03.07.2026"
+            },
+            {
+              "name": "Mi3",
+              "url": "https://www.mi-3.com.au/03-07-2026/nine-entertainment-and-microsoft-forge-ai-content-agreement",
+              "date": "03.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 23,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Together AI holt sich 800 Millionen Dollar für offene KI-Infrastruktur",
+          "lede": "Together AI hat eine Series-C-Runde über 800 Mio. US-Dollar bei einer Bewertung von 8,3 Mrd. Dollar abgeschlossen.",
+          "detail": "Angeführt wurde die Runde von Aramco Ventures, mit Beteiligung u. a. von Nvidia, Vista Equity Partners und General Catalyst. Das auf GPU-Cloud-Infrastruktur für Open-Source-Modelle spezialisierte Unternehmen verzeichnete zuletzt ein jährliches Buchungsvolumen von über 1,15 Mrd. Dollar.",
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+              "date": "01.07.2026"
+            },
+            {
+              "name": "Businesswire",
+              "url": "https://www.businesswire.com/news/home/20260701243402/en/Together-AI-Raises-$800-Million-at-$8.3-Billion-Valuation-to-Make-Frontier-AI-Accessible-to-All",
+              "date": "01.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 24,
+          "featured": false,
+          "tag": "Markt",
+          "headline": "Meta will überschüssige KI-Rechenleistung als Cloud-Business verkaufen",
+          "lede": "Meta plant laut Bloomberg-Recherche den Aufbau eines eigenen Cloud-Geschäfts namens „Meta Compute\", um überschüssige KI-Rechenkapazität an externe Kunden zu verkaufen.",
+          "detail": "Das neue Geschäftsfeld wird von Infrastruktur-Chef Santosh Janardhan, Meta-Superintelligence-Labs-Leiter Daniel Gross und Präsidentin Dina Powell McCormick geleitet und würde Meta in direkte Konkurrenz zu AWS, Azure und Google Cloud bringen. Die Aktie legte am Tag der Meldung um fast 9 % zu.",
+          "sources": [
+            {
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-07-01/meta-is-building-a-cloud-business-to-sell-excess-ai-compute",
+              "date": "01.07.2026"
+            },
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html",
+              "date": "01.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 25,
+          "featured": false,
+          "tag": "Hardware",
+          "headline": "NVIDIA wird zum Finanzierer der KI-Cloud-Branche",
+          "lede": "NVIDIA hat ein Umsatzbeteiligungs- und Kreditmodell gestartet, mit dem es GPU-Ausbauten kapitalschwacher KI-Cloud-Anbieter vorfinanziert und im Gegenzug an künftigen Cloud-Umsätzen beteiligt wird.",
+          "detail": "Erste Partner sind die australischen Firmen Sharon AI (bis zu 40.000 Grace-Blackwell-GB300-GPUs) und Firmus Technologies (bis zu 170.000 GPUs) — zusammen rund 210.000 GPUs. Kritiker warnen, das Modell könnte NVIDIA einem „Vendor-Finance\"-Risiko aussetzen, sollte die KI-Nachfrage nicht wie erwartet wachsen.",
+          "sources": [
+            {
+              "name": "TechTimes",
+              "url": "https://www.techtimes.com/articles/319704/20260704/nvidia-revenue-sharing-ai-cloud-debuts-210000-gpus-flywheel-vendor-finance-risk.htm",
+              "date": "04.07.2026"
+            },
+            {
+              "name": "Winbuzzer",
+              "url": "https://winbuzzer.com/2026/07/04/nvidia-ties-ai-cloud-financing-to-future-cloud-revenue-xcxwbn/",
+              "date": "04.07.2026"
+            }
+          ]
+        },
+        {
+          "num": 26,
+          "featured": false,
+          "tag": "Hardware",
+          "headline": "Amazon bestätigt eigene KI-Chips für Alexa und Echo-Geräte",
+          "lede": "Amazons Geräte-Chef Panos Panay bestätigte erstmals öffentlich, dass Amazon eigene End-to-End-Chips (AZ3) für Alexa, Echo und weitere Consumer-Hardware entwickelt.",
+          "detail": "Panay skizzierte eine Strategie, bei der KI-Geräte „verschwinden\" und durch ambiente, kontextbewusste Assistenz ersetzt werden — gestützt auf eigene Chips und das Satellitennetzwerk Amazon Leo (vormals Kuiper). Ein Sortiment neuer tragbarer Geräte sei in Entwicklung.",
+          "sources": [
+            {
+              "name": "CNBC (The Tech Download)",
+              "url": "https://www.cnbc.com/video/2026/07/02/amazon-panos-panay-the-tech-download.html",
+              "date": "02.07.2026"
+            },
+            {
+              "name": "TechTimes",
+              "url": "https://www.techtimes.com/articles/319705/20260704/amazon-alexa-device-ai-confirmed-what-az3-chip-handles-what-still-goes-cloud.htm",
+              "date": "04.07.2026"
             }
           ]
         }
