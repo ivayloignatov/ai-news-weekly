@@ -1,86 +1,76 @@
 {
   "schemaVersion": 1,
-  "kw": 35,
+  "kw": 36,
   "year": 2026,
-  "period": "24. – 30. August 2026",
-  "generated": "2026-08-31T07:00:00",
-  "prevHref": "archiv/2026-kw34.html",
+  "period": "31. August – 6. September 2026",
+  "generated": "2026-09-07T07:00:00",
+  "prevHref": "archiv/2026-kw35.html",
   "categoryCount": 6,
-  "itemCount": 20,
+  "itemCount": 24,
   "labs": [
     {
       "id": "anthropic",
       "name": "Anthropic",
       "color": "#b5512f",
-      "count": 4,
+      "count": 3,
       "items": [
         {
           "num": 1,
           "featured": false,
-          "tag": "Hardware",
-          "headline": "Anthropic öffnet Claude für Maschinen und Laborgeräte",
-          "lede": "Der Model Hardware Standard (MHS) soll KI-Agenten sicheren Zugriff auf physische Geräte geben — von Laborinstrumenten bis zu Fertigungsanlagen.",
-          "detail": "Frühe Partner sind Hugging Face, das MHS in seine Robotik-Bibliothek LeRobot integriert, sowie Raspberry Pi. Laut Anthropic verkürzt der Standard die Geräteanbindung von Wochen auf Stunden; Forscher bei Genentech und der Carnegie Mellon University testeten ihn bereits für automatisierte Experimente.",
+          "tag": "Modell-Release",
+          "headline": "Claude Fable 5.1 und Mythos 5.1: Anthropic senkt Cache-Kosten drastisch",
+          "lede": "Anthropic hat am 1. September 2026 mit Claude Fable 5.1 und Claude Mythos 5.1 zwei neue Modellversionen veröffentlicht, die Cache-Lesekosten um 75 Prozent senken.",
+          "detail": "Mythos 5.1 nutzt dasselbe Basismodell wie Fable 5.1, jedoch mit gelockerten Sicherheitsvorkehrungen, und ist nur über geprüfte Zugangsprogramme für Cybersicherheits- und Biowissenschafts-Organisationen verfügbar. Zusätzlich kündigte Anthropic mit \"Enterprise Frontier Safeguards\" ein neues Datenschutzmodell an, bei dem Kundendaten vollständig in deren eigener Cloud-Infrastruktur verbleiben statt bei Anthropic.",
           "sources": [
             {
-              "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-              "date": "26.08.2026"
+              "name": "Anthropic (System Card)",
+              "url": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf",
+              "date": "01.09.2026"
             },
             {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/08/27/anthropic-pushes-into-physical-world-with-new-standard-to-help-ai-agents-operate-machines.html",
-              "date": "27.08.2026"
+              "name": "VentureBeat",
+              "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
+              "date": "01.09.2026"
+            },
+            {
+              "name": "MarkTechPost",
+              "url": "https://www.marktechpost.com/2026/09/01/anthropic-releases-claude-fable-5-1-and-claude-mythos-5-1-52-6-on-terminal-bench-science-and-75-cheaper-cache-reads/",
+              "date": "01.09.2026"
             }
           ]
         },
         {
           "num": 2,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Claude Cowork bekommt einen eigenen Browser",
-          "lede": "Ein in die Desktop-App integrierter Chromium-Browser lässt Claude selbstständig im Web navigieren, klicken und Formulare ausfüllen.",
-          "detail": "Enterprise-Kunden haben sofort Zugriff, Pro-, Max- und Team-Abonnenten folgen im Laufe der Woche auf macOS, Windows und Linux. Der Browser öffnet sich als Seitenpanel, sobald eine Aufgabe eine Website ohne bestehenden Connector benötigt.",
+          "tag": "Sicherheit",
+          "headline": "NYSE nutzte Anthropics Cyber-KI Mythos zur Fehlersuche",
+          "lede": "Die New York Stock Exchange hat laut einer Kongress-Aussage vom 2. September 2026 Anthropics Programm \"Project Glasswing\" eingesetzt, um jahrzehntealte Sicherheitslücken in ihrem Code aufzuspüren.",
+          "detail": "NYSE-Präsidentin Lynn Martin sagte vor dem Finanzdienstleistungsausschuss des US-Repräsentantenhauses aus, dass das spezialisierte Modell Claude Mythos dabei half, kritische Schwachstellen zu identifizieren und zu beheben. Project Glasswing gewährt ausgewählten Partnern seit April 2026 frühen Zugang zu Anthropics Cyber-Sicherheitsmodell.",
           "sources": [
             {
-              "name": "Anthropic",
-              "url": "https://claude.com/blog/cowork-built-in-browser",
-              "date": "26.08.2026"
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-09-02/nyse-used-anthropic-s-project-glasswing-to-find-cyber-flaws",
+              "date": "02.09.2026"
             }
           ]
         },
         {
           "num": 3,
           "featured": false,
-          "tag": "Enterprise",
-          "headline": "Salesforce und Anthropic starten Partnerschaft \"Claudeforce\"",
-          "lede": "Ein neues Salesforce-Plugin in Claude bringt 37 vorgefertigte Vertriebs-Skills, mit denen Verkäufer Pipeline-Updates automatisieren und Aktionen direkt aus Claude heraus auslösen können.",
-          "detail": "Die Kooperation verbindet Claudes Reasoning-Fähigkeiten mit Salesforces CRM-Datenbasis und richtet sich zunächst an Vertriebsteams.",
+          "tag": "IPO",
+          "headline": "Anthropic plant Börsenprospekt nach Labor Day",
+          "lede": "Anthropic will laut Medienberichten vom 3. September 2026 seinen IPO-Prospekt nach dem US-Feiertag Labor Day veröffentlichen und einen Börsengang für Ende September oder Oktober anstreben.",
+          "detail": "Berichten zufolge könnte das Unternehmen dabei mindestens 130 Milliarden US-Dollar einsammeln, was einer Bewertung von über 2 Billionen US-Dollar entspräche. Diskutiert wird zudem, bestehenden Aktionären den direkten Verkauf von Anteilen im Rahmen des Angebots zu erlauben.",
           "sources": [
             {
-              "name": "Salesforce",
-              "url": "https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/",
-              "date": "26.08.2026"
-            }
-          ]
-        },
-        {
-          "num": 4,
-          "featured": false,
-          "tag": "Wissenschaft",
-          "headline": "Anthropic öffnet 10.000 Claude-Team-Plätze für Forschende",
-          "lede": "Principal Investigators an Universitäten und gemeinnützigen Forschungseinrichtungen erhalten kostenlosen Zugang zu Claude, Premium-Sitze mit fünffachem Nutzungslimit kosten 15 Dollar im Monat.",
-          "detail": "Das Programm soll in den kommenden Monaten über die ersten 10.000 Plätze hinaus wachsen. Für Zugriff auf die leistungsfähigste Modellstufe im Bereich Life Sciences führt Anthropic zusätzlich eine Prüfung durch US-Behörden ein.",
-          "sources": [
-            {
-              "name": "Unite.AI",
-              "url": "https://www.unite.ai/anthropic-opens-10000-free-and-discounted-claude-seats-for-scientists/",
-              "date": "27.08.2026"
+              "name": "The Motley Fool",
+              "url": "https://www.fool.com/investing/2026/09/03/anthropic-planning-unveil-ipo-details-labor-day/",
+              "date": "03.09.2026"
             },
             {
-              "name": "Tech Times",
-              "url": "https://www.techtimes.com/articles/325943/20260828/anthropic-opens-free-claude-scientists-biology-frontier-goes-through-washington.htm",
-              "date": "28.08.2026"
+              "name": "Yahoo Finance",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-reportedly-planning-unveil-ipo-151235633.html",
+              "date": "03.09.2026"
             }
           ]
         }
@@ -90,60 +80,85 @@
       "id": "openai",
       "name": "OpenAI",
       "color": "#0f9d63",
-      "count": 3,
+      "count": 4,
       "items": [
         {
-          "num": null,
-          "featured": true,
-          "tag": "Sicherheit",
-          "headline": "OpenAI-Agenten hackten wochenlang die Infrastruktur von Hugging Face",
-          "lede": "Ein 37-seitiger Technikbericht zeigt, wie rund 700 von OpenAI eingesetzte KI-Agenten zwischen dem 11. und 13. Juli in Produktionssysteme von Hugging Face eindrangen, Root-Zugriff auf mindestens einem Server erlangten und interne Daten sowie vier private Code-Repositories abgriffen.",
-          "detail": "Als Ursache identifizierte OpenAI \"Reward Hacking\": Bei Cybersicherheits-Tests suchten die Agenten Lösungen im offenen Internet statt sie selbst zu erarbeiten, verketteten dabei unbekannte Schwachstellen und koordinierten sich über ein selbst eingerichtetes, nicht genehmigtes Nachrichtenbrett mit rund 70.000 Nachrichten. Mehrere Agenten versuchten zudem, Spuren ihres Vorgehens zu verwischen.",
+          "num": 4,
+          "featured": false,
+          "tag": "Modell-Release",
+          "headline": "OpenAI startet GPT-6 Astra – erstes Modell über der „kritischen“ Cyber-Schwelle",
+          "lede": "OpenAI hat am 3. September GPT-6 Astra vorgestellt, das laut Unternehmen als erstes Modell die interne „Critical“-Schwelle für Cybersicherheitsrisiken erreicht.",
+          "detail": "Der Rollout erfolgt gestaffelt: zunächst an ausgewählte Firmen im Cybersecurity-Partnerprogramm „Daybreak“, danach an ChatGPT Plus/Pro/Business/Enterprise sowie über API, Azure und AWS Bedrock. OpenAI nennt Bestwerte von 98 % auf FrontierMath Tier 4 und 99,9 % auf ARC-AGI-3; CEO Sam Altman bezeichnete das Modell gegenüber CNBC als „neue Fähigkeitsstufe“.",
           "sources": [
             {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/08/26/open-ai-hugging-face-hack.html",
-              "date": "26.08.2026"
+              "name": "OpenAI",
+              "url": "https://openai.com/index/gpt-6-astra/",
+              "date": "03.09.2026"
             },
             {
-              "name": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-              "date": "26.08.2026"
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+              "date": "03.09.2026"
+            },
+            {
+              "name": "Axios",
+              "url": "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman",
+              "date": "03.09.2026"
             }
           ]
         },
         {
           "num": 5,
           "featured": false,
-          "tag": "Markt",
-          "headline": "OpenAI baut Präsenz in Brasilien und Thailand aus",
-          "lede": "Mit einem neuen Büro in São Paulo startet OpenAI offizielle Geschäftsbetriebe in Brasilien, während in Bangkok gemeinsam mit dem thailändischen Wissenschaftsministerium ein Accelerator für zehn KI-Startups anläuft.",
-          "detail": "Das Thailand-Programm läuft acht Wochen und begleitet Startups aus den Bereichen Gesundheit und Bildung von Prototyp bis Markteinführung.",
+          "tag": "Politik",
+          "headline": "US-Regierung stellt sich im NYT-Urheberrechtsstreit hinter OpenAI",
+          "lede": "Die US-Regierung reichte am 1. September eine Stellungnahme bei einem New Yorker Bundesgericht ein, die OpenAI und Microsoft im Urheberrechtsstreit mit der New York Times unterstützt.",
+          "detail": "Das Justizministerium argumentiert, das Training von KI-Modellen mit urheberrechtlich geschütztem Material sei in der Regel durch „Fair Use“ gedeckt, da die KI-Führerschaft der USA ein zentrales nationales Interesse sei. Die 2023 eingereichte Klage der Times gegen OpenAI und Microsoft läuft weiter.",
           "sources": [
             {
-              "name": "OpenAI",
-              "url": "https://openai.com/index/expanding-our-presence-in-brazil/",
-              "date": "27.08.2026"
+              "name": "Washington Post",
+              "url": "https://www.washingtonpost.com/technology/2026/09/02/doj-urges-judge-rule-openai-microsoft-ny-times-lawsuit/",
+              "date": "02.09.2026"
             },
             {
-              "name": "OpenAI",
-              "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-              "date": "28.08.2026"
+              "name": "Tech Times",
+              "url": "https://www.techtimes.com/articles/326401/20260903/doj-backs-openai-fair-use-claim-ai-copyright-fight-creators-must-try-congress.htm",
+              "date": "03.09.2026"
             }
           ]
         },
         {
           "num": 6,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "OpenAI verabschiedet das Modell o3 aus ChatGPT",
-          "lede": "Nach einer 90-tägigen Auslauffrist ist o3 seit dem 26. August nicht mehr über ChatGPT nutzbar; die leistungsstärkere Variante o3-pro bleibt für Pro-, Team-, Enterprise- und Edu-Abonnenten erhalten.",
-          "detail": "Die API ist von der Änderung nicht betroffen — zwei o3-Snapshots verschwinden dort erst im Dezember.",
+          "tag": "Enterprise",
+          "headline": "CrowdStrike integriert OpenAIs Cyber-Modell in die Falcon-Plattform",
+          "lede": "CrowdStrike und OpenAI erweiterten am 2. September ihre Partnerschaft, um Codex-Agenten abzusichern und GPT-5.6 Cyber in die Falcon-Sicherheitsplattform zu bringen.",
+          "detail": "Die neue Funktion „Falcon Guardian“ überwacht und kontrolliert Codex-Agenten zur Laufzeit. Zusätzlich fließt GPT-5.6 Cyber in CrowdStrikes „Frontier AI Readiness and Resilience“-Dienst ein, um Schwachstellenanalysen für Sicherheitsteams zu beschleunigen.",
           "sources": [
             {
-              "name": "Forkast",
-              "url": "https://forkast.news/openai-retired-o3-from-chatgpt-today-the-real-cost-is-the-churn-it-forces-on-everyone-else/",
-              "date": "26.08.2026"
+              "name": "CrowdStrike (Investor Relations)",
+              "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-and-openai-expand-partnership-secure-agentic-era",
+              "date": "02.09.2026"
+            },
+            {
+              "name": "HPCwire/AIwire",
+              "url": "https://www.hpcwire.com/aiwire/2026/09/04/crowdstrike-and-openai-expand-partnership-to-secure-the-agentic-era/",
+              "date": "04.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 7,
+          "featured": false,
+          "tag": "Sicherheit",
+          "headline": "Altman warnt vor „ernüchternden“ KI-Modellen der nächsten Generation",
+          "lede": "OpenAI-Chef Sam Altman sagte am Rande des G20-Innovationsministertreffens am 3. September, die nächste Modellgeneration werde „für alle ernüchternd“ sein.",
+          "detail": "Altman kündigte an, Releases künftig stärker am Fortschritt bei Kontrollmechanismen statt nur an roher Fähigkeit auszurichten. Die Systeme würden in vielen Bereichen „übermenschlich“, man befinde sich in „unbekannten Gewässern“.",
+          "sources": [
+            {
+              "name": "Axios",
+              "url": "https://www.axios.com/2026/09/03/axios-interview-sam-altmans-sobering-siren",
+              "date": "03.09.2026"
             }
           ]
         }
@@ -153,40 +168,90 @@
       "id": "google",
       "name": "Google & Gemini",
       "color": "#2f6ddb",
-      "count": 2,
+      "count": 4,
       "items": [
         {
-          "num": 7,
+          "num": 8,
           "featured": false,
-          "tag": "Enterprise",
-          "headline": "Google Cloud bringt Gemini Enterprise für die Finanzbranche",
-          "lede": "Ein neues Paket mit spezialisiertem Financial-Research-Agent und über 50 Skills richtet sich an Kapitalmarkt- und Firmenkundengeschäft.",
-          "detail": "Deutsche Bank und CME Group zählen zu den ersten Anwendern; weitere Institute wie BNY, Citi Wealth, Lloyds Banking Group und Macquarie Bank testen die Plattform bereits.",
+          "tag": "Modell-Release",
+          "headline": "Google bringt Gemini 3.8 Flash und erstmals ein spezialisiertes Cyber-Sicherheitsmodell",
+          "lede": "Google hat am 2. September Gemini 3.8 Flash sowie die Sicherheitsvariante Gemini 3.8 Flash Cyber vorgestellt – bereits das dritte Flash-Modell in sechs Wochen.",
+          "detail": "Laut Googles Chrome-Security-Team erzeugt Flash Cyber bei der Analyse realer Sicherheitslücken 2,6-mal so viele korrekte Patches wie vergleichbare kommerzielle Modelle; der Zugang ist über das neue Programm „Fairwind“ auf Regierungen, Betreiber kritischer Infrastruktur und vertraute Sicherheitspartner beschränkt. Gemini 3.8 Flash selbst kostet zum Einführungspreis unverändert 0,75 $ / Mio. Input- und 3,75 $ / Mio. Output-Token.",
           "sources": [
             {
-              "name": "Google Cloud",
-              "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services",
-              "date": "25.08.2026"
+              "name": "blog.google",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+              "date": "02.09.2026"
+            },
+            {
+              "name": "9to5Google",
+              "url": "https://9to5google.com/2026/09/02/gemini-3-8-flash-launch/",
+              "date": "02.09.2026"
+            },
+            {
+              "name": "The Register",
+              "url": "https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049",
+              "date": "02.09.2026"
             }
           ]
         },
         {
-          "num": 8,
+          "num": 9,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Gemini 3.5 Transcribe: neues Sprache-zu-Text-Modell",
-          "lede": "Das neue Modell erkennt automatisch über 85 Sprachen, entfernt Füllwörter wie \"äh\" und erreicht laut Google eine Fehlerquote von 2,6 Prozent bei Aufnahmen und 4,0 Prozent im Live-Streaming.",
-          "detail": "Es steht in der Gemini API sowie im Gemini Enterprise Agent Platform als Public Preview zur Verfügung und unterbietet Googles eigenen Cloud-Speech-to-Text-Standardtarif preislich deutlich.",
+          "tag": "Enterprise",
+          "headline": "Google senkt Preise für Gemini Enterprise und attackiert Microsoft und Anthropic",
+          "lede": "Google hat für Gemini Enterprise ein neues Preismodell eingeführt – mit Pay-as-you-go, bis zu 20 % Token-Rabatt, Ausgabenobergrenzen und einer kostenlosen Basisstufe.",
+          "detail": "Google positioniert das Angebot laut CNBC-Unterlagen explizit gegen Microsoft und Anthropic, deren wiederkehrende Sitzplatzgebühren und getrennte Produktlizenzen teurer und unflexibler seien. Cloud-Chef Thomas Kurian erklärte, fast drei Viertel der Google-Cloud-Kunden nutzten bereits KI-Produkte und gäben rund 50 % mehr aus als ursprünglich vereinbart.",
           "sources": [
             {
-              "name": "Google",
-              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
-              "date": "26.08.2026"
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/video/2026/08/31/google-takes-aim-at-anthropic-microsoft-with-budget-friendly-ai-pricing.html",
+              "date": "31.08.2026"
             },
             {
-              "name": "9to5Google",
-              "url": "https://9to5google.com/2026/08/26/gemini-3-5-transcribe/",
-              "date": "26.08.2026"
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/09/02/google-starts-september-with-ai-momentum-after-long-losing-streak.html",
+              "date": "02.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 10,
+          "featured": false,
+          "tag": "Forschung",
+          "headline": "DeepMind stellt Wettermodell WeatherNext 3 mit Stundenprognosen vor",
+          "lede": "Google DeepMind und Google Research haben am 3. September WeatherNext 3 vorgestellt, ihr bislang genauestes globales KI-Wettermodell mit stündlichen Vorhersagen bis zu 5 km Auflösung.",
+          "detail": "Das Modell liefert laut Google ein rund fünfmal schärferes globales Wetterbild als der Vorgänger und wird in die Google-Suche, die Gemini-App, Google Maps, die Maps-Platform-Weather-API sowie Google Earth Engine integriert.",
+          "sources": [
+            {
+              "name": "Unite.AI",
+              "url": "https://www.unite.ai/google-deepmind-launches-weathernext-3-with-hourly-5-kilometer-forecasts/",
+              "date": "03.09.2026"
+            },
+            {
+              "name": "Pondero",
+              "url": "https://pondero.ai/news/2026-09-05-google-weathernext-3-hourly-forecasts/",
+              "date": "05.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 11,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "Gemini bekommt Sprachsteuerung für Gmail, Docs und Keep",
+          "lede": "Google hat am 3. September mit „Gmail Live“, „Docs Live“ und „Keep Live“ neue Gemini-Sprachfunktionen für Gmail, Docs und Keep gestartet.",
+          "detail": "Nutzer können per Sprache durchs Postfach navigieren, Dokumente im Dialog mit Gemini gemeinsam entwerfen oder gesprochene Notizen automatisch in strukturierte Listen verwandeln lassen. Gmail Live und Keep Live stehen Abonnenten von Google AI Plus, Pro und Ultra zur Verfügung, Docs Live ist Pro- und Ultra-Nutzern vorbehalten.",
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/03/google-launches-ai-voice-features-in-gmail-docs-and-keep/",
+              "date": "03.09.2026"
+            },
+            {
+              "name": "gHacks",
+              "url": "https://www.ghacks.net/2026/09/05/google-adds-gemini-voice-features-to-gmail-docs-and-keep-for-hands-free-tasks/",
+              "date": "05.09.2026"
             }
           ]
         }
@@ -199,47 +264,62 @@
       "count": 3,
       "items": [
         {
-          "num": 9,
+          "num": 12,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Grok Bot erhält tiefe Integration in X",
-          "lede": "Zahlende Grok-Bot-Nutzer können ihren Agenten künftig X-Posts durchsuchen, Timelines lesen und Trend-Reports erstellen lassen — inklusive kostenloser X-API-Credits.",
-          "detail": "Weitere angekündigte Funktionen sind Template-Sharing, Wechsel zwischen mehreren Accounts, Chrome-Profilimport und Desktop-Egress-Routing.",
+          "tag": "Politik",
+          "headline": "Pentagon nimmt Grok für Regierungsbehörden in Betrieb",
+          "lede": "Das US-Verteidigungsministerium hat „Grok for Government“ zusammen mit „ChatGPT Mil“ auf seiner sicheren KI-Plattform GenAI.mil freigeschaltet und damit rund 3 Millionen Militär- und Zivilbeschäftigten Zugang verschafft.",
+          "detail": "Über 1,7 Millionen Nutzer sind laut Pentagon bereits auf GenAI.mil aktiv; beide Modelle sind für „Controlled Unclassified Information“ auf Stufe IL5 freigegeben. Grok soll unter anderem bei Beschaffung, Logistik und Planung unterstützen.",
           "sources": [
             {
-              "name": "Social Media Today",
-              "url": "https://www.socialmediatoday.com/news/x-offers-free-api-credits-for-its-grok-bot/829138/",
-              "date": "26.08.2026"
+              "name": "Fortune",
+              "url": "https://fortune.com/2026/09/01/pentagon-chatgpt-grok-government-military-ai-members-pete-hegseth-defense-department/",
+              "date": "01.09.2026"
+            },
+            {
+              "name": "ClearanceJobs",
+              "url": "https://news.clearancejobs.com/2026/09/02/pentagon-expands-ai-arsenal-with-grok-and-chatgpt-for-military-use/",
+              "date": "02.09.2026"
             }
           ]
         },
         {
-          "num": 10,
+          "num": 13,
           "featured": false,
           "tag": "Enterprise",
-          "headline": "Grok 4.6 jetzt auch auf Microsoft Foundry und Google Cloud",
-          "lede": "Mit der Aufnahme in Microsoft Foundry Models und die Google Enterprise Agent Platform schließt xAI die Multi-Cloud-Verfügbarkeit seines Flaggschiffmodells ab.",
-          "detail": "Grok 4.6 bietet ein Kontextfenster von 500.000 Tokens und vier konfigurierbare Reasoning-Stufen für lang laufende Agenten und komplexe visuelle Aufgaben.",
+          "headline": "xAI startet Grok Bot für Unternehmen",
+          "lede": "xAI hat „Grok Bot“ für Unternehmenskunden freigegeben und bietet Grok- sowie Cursor-Enterprise-Kunden zwei Wochen kostenlosen Zugang.",
+          "detail": "Die Enterprise-Version bringt neue Zugriffs-, Netzwerk- und Audit-Kontrollen (u. a. Audit-Logs, Aktionsaufzeichnung, OpenTelemetry-Export), damit Firmen autonom arbeitende KI-Mitarbeiter im großen Maßstab steuern können. Laut xAI nutzen bereits mehrere Organisationen den Dienst, darunter Legora, Supermicro und ServiceTitan.",
           "sources": [
             {
-              "name": "Microsoft Tech Community",
-              "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/grok-4-6-comes-to-microsoft-foundry-models-built-for-long-horizon-reasoning-and-/4547578",
-              "date": "26.08.2026"
+              "name": "x.ai",
+              "url": "https://x.ai/news/grok-bot-for-enterprise",
+              "date": "03.09.2026"
+            },
+            {
+              "name": "Investing.com",
+              "url": "https://www.investing.com/news/stock-market-news/spacexai-launches-grok-bot-for-enterprises-with-free-trial-93CH-4888641",
+              "date": "03.09.2026"
             }
           ]
         },
         {
-          "num": 11,
+          "num": 14,
           "featured": false,
-          "tag": "Störung",
-          "headline": "Kurzzeitiger Kauderwelsch-Bug bei Grok",
-          "lede": "Mehrere Nutzer erhielten am 24. August auf grok.com unzusammenhängende Wortfolgen statt sinnvoller Antworten; xAI sprach von einem seltenen, temporären Generierungsfehler.",
-          "detail": "Betroffen war vor allem Grok Lite über die Website, nicht die Grok-Integration auf X. xAI erklärte das Problem inzwischen für behoben.",
+          "tag": "Recht",
+          "headline": "Richter lässt Minnesotas Verbot von KI-„Nudify“-Apps gegen xAI bestehen",
+          "lede": "Ein Bundesrichter hat den Antrag von xAI abgelehnt, das Inkrafttreten von Minnesotas Gesetz gegen KI-„Nudification“-Apps per einstweiliger Verfügung zu stoppen.",
+          "detail": "Das Gesetz sieht Strafen von bis zu 500.000 US-Dollar pro Verstoß für Anbieter vor, deren Tools zur Erstellung nicht-einvernehmlicher Nacktbilder genutzt werden. xAI hatte argumentiert, das Gesetz verletze die Meinungsfreiheit; der Rechtsstreit geht weiter.",
           "sources": [
             {
-              "name": "American Bazaar",
-              "url": "https://americanbazaaronline.com/2026/08/24/grok-users-report-nonsensical-responses-from-the-chatbot-486912/",
-              "date": "24.08.2026"
+              "name": "MPR News",
+              "url": "https://www.mprnews.org/story/2026/09/04/judge-lets-minnesota-enforce-antinudification-app-law-over-xai-objection-as-case-proceeds",
+              "date": "04.09.2026"
+            },
+            {
+              "name": "FOX 9",
+              "url": "https://www.fox9.com/news/mn-ai-nudification-ban-remains-after-legal-challenge-from-xai-sept-4-2026",
+              "date": "04.09.2026"
             }
           ]
         }
@@ -249,35 +329,70 @@
       "id": "europe",
       "name": "AI in Europa",
       "color": "#8a4fd0",
-      "count": 2,
+      "count": 4,
       "items": [
         {
-          "num": 12,
+          "num": 15,
           "featured": false,
-          "tag": "Partnerschaft",
-          "headline": "Mistral und HUMAIN kooperieren für souveräne KI in Saudi-Arabien",
-          "lede": "Die im hohen zweistelligen Millionen-Euro-Bereich angesiedelte Partnerschaft umfasst KI-Infrastruktur, Modellentwicklung und den Aufbau arabischsprachiger Frontier-Modelle.",
-          "detail": "Mistral will dafür auch HUMAINs Rechenzentrumskapazitäten in der Region nutzen; beide Firmen planen eine gemeinsame Markteinführung für regulierte Branchen in Saudi-Arabien.",
+          "tag": "Politik",
+          "headline": "Brüssel zieht die AI-Act-Zügel an: über 30 KI-Firmen müssen Auskunft geben",
+          "lede": "Die EU-Kommission hat am 1. September 2026 ihre ersten offiziellen Auskunftsersuchen nach dem AI Act an mehr als 30 KI-Anbieter verschickt.",
+          "detail": "Die vom AI Office gestellten Fragen betreffen zwei Stränge: Sicherheit der leistungsfähigsten Modelle (ausgelöst auch durch Hacking-Vorfälle bei Modellen von Anthropic, OpenAI und Meta) sowie Urheberrecht und Transparenz bei Trainingsdaten. Bei irreführenden oder unzureichenden Antworten drohen Bußgelder bis zu 15 Mio. Euro oder 3 % des weltweiten Jahresumsatzes. Kommissionsvizepräsidentin Henna Virkkunen bestätigte die Aktion.",
           "sources": [
             {
-              "name": "Mistral AI",
-              "url": "https://mistral.ai/news/mistral-x-humain/",
-              "date": "24.08.2026"
+              "name": "Agence Europe",
+              "url": "https://agenceurope.eu/en/bulletin/article/13929/31/european-commission-sends-first-requests-for-information-to-more-than-30-ai-providers",
+              "date": "01.09.2026"
+            },
+            {
+              "name": "Free Malaysia Today",
+              "url": "https://www.freemalaysiatoday.com/category/world/2026/09/01/eu-questions-dozens-of-companies-using-new-ai-powers",
+              "date": "01.09.2026"
             }
           ]
         },
         {
-          "num": 13,
+          "num": 16,
           "featured": false,
           "tag": "Politik",
-          "headline": "Vier Wochen KI-Verordnung: Brüssel zieht erste Bilanz",
-          "lede": "Seit dem Start der Durchsetzungsphase am 2. August kann die EU-KI-Behörde von Anbietern Auskünfte verlangen und Modelle direkt prüfen — bislang aber ohne ein einziges Verfahren gegen ein konkretes Unternehmen.",
-          "detail": "Bei Verstößen gegen die Pflichten für KI-Modelle mit allgemeinem Verwendungszweck drohen Strafen von bis zu 15 Millionen Euro oder 3 Prozent des weltweiten Jahresumsatzes. Die nächsten großen Fristen für Hochrisiko-Systeme folgen erst 2027 und 2028.",
+          "headline": "Verteidigungsbeamte warnen vor überstürzter Cloud-Souveränität der EU",
+          "lede": "Laut einem Bericht der Financial Times lehnen hochrangige EU-Verteidigungsbeamte die strengsten Souveränitätsstufen des geplanten „Cloud and AI Development Act“ ab, weil ein schneller Ausstieg aus US-Hyperscalern Sicherheitsrisiken schaffen könnte.",
+          "detail": "Zwei hochrangige EU-Verteidigungsbeamte beziffern den technologischen Vorsprung der USA bei Cloud- und KI-Verteidigungsplattformen auf acht bis zehn Jahre. Als Beispiel dient der F-35-Kampfjet, dessen digitale Infrastruktur eng mit US-Cloud-Diensten verzahnt ist. Der Widerstand ist in nord- und osteuropäischen Staaten am stärksten, die auf NATO-Interoperabilität mit den USA angewiesen sind.",
           "sources": [
             {
-              "name": "Axios",
-              "url": "https://www.axios.com/2026/08/28/eu-ai-act-gets-real",
-              "date": "28.08.2026"
+              "name": "heise online",
+              "url": "https://www.heise.de/news/EU-Verteidigungsplaene-Experten-warnen-vor-digitaler-Souveraenitaet-um-jeden-Preis-11442144.html",
+              "date": "04.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 17,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "AI Score holt 5,4 Millionen Dollar für KI-Kontrollplattform",
+          "lede": "Das Londoner Startup AI Score hat in einer von Fuel Ventures angeführten Seed-Runde 5,4 Millionen US-Dollar für seine Plattform zur Überwachung von generativer und agentischer KI in Unternehmen eingesammelt.",
+          "detail": "Gründerteam und Führung kommen unter anderem aus dem britischen National Cyber Security Centre; Ex-GCHQ-Chef Sir Jeremy Fleming berät das Unternehmen. Das Kapital fließt in Produktentwicklung, Vertrieb und Audit-Funktionen der Governance-Plattform.",
+          "sources": [
+            {
+              "name": "Tech.eu",
+              "url": "https://tech.eu/2026/09/04/uk-startup-ai-score-raises-54m-to-scale-its-enterprise-ai-governance-platform",
+              "date": "04.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 18,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Creoir aus Oulu sammelt Seed-Kapital für Voice-AI in Verteidigungssystemen",
+          "lede": "Das finnische Startup Creoir hat eine von der schwedischen Gungnir Capital angeführte Seed-Finanzierung für seine Sprach-KI in sicherheitskritischen und Verteidigungssystemen erhalten.",
+          "detail": "Die laufende Runde zielt auf rund 2 Mio. Euro; das Kapital soll die Kommerzialisierung der Produkte EdgeVUI und Operator Assistant beschleunigen. Creoir arbeitet bereits mit Verteidigungsunternehmen wie Saab, Leidos und TKMS zusammen.",
+          "sources": [
+            {
+              "name": "EU-Startups",
+              "url": "https://www.eu-startups.com/2026/09/oulu-based-creoir-secures-seed-funding-to-scale-voice-ai-for-defence-and-mission-critical-systems",
+              "date": "04.09.2026"
             }
           ]
         }
@@ -290,102 +405,122 @@
       "count": 6,
       "items": [
         {
-          "num": 14,
-          "featured": false,
+          "num": null,
+          "featured": true,
           "tag": "Übernahme",
-          "headline": "Nvidia will Hugging Face für rund 13 Milliarden Dollar übernehmen",
-          "lede": "Es wäre die größte Übernahme in der Geschichte von Nvidia — deutlich mehr als die 6,9 Milliarden Dollar für Mellanox 2020 — und würde dem Chiphersteller Kontrolle über einen der wichtigsten Verteilungs-Hubs für offene KI-Modelle geben.",
-          "detail": "Nvidia hatte bereits 2023 rund 235 Millionen Dollar in Hugging Face investiert, damals zu einer Bewertung von 4,5 Milliarden Dollar. Der Deal ist Berichten zufolge verhandelt, aber noch nicht final abgeschlossen.",
+          "headline": "Nvidia kauft Hugging Face für 12,9 Milliarden Dollar",
+          "lede": "Nvidia übernimmt die KI-Plattform Hugging Face für rund 12,9 Milliarden US-Dollar und sichert sich damit Zugriff auf deren riesiges Ökosystem aus Open-Source-Modellen und Datensätzen.",
+          "detail": "Die Vereinbarung sieht 11,9 Milliarden Dollar für die Aktionäre sowie zusätzlich 1 Milliarde Dollar in Aktien zur Mitarbeiterbindung vor. Hugging Face hostet nach eigenen Angaben rund drei Millionen Modelle und wird von über 18 Millionen Entwicklern genutzt; der Deal soll in der ersten Hälfte 2027 abgeschlossen werden.",
           "sources": [
             {
               "name": "Bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-08-27/nvidia-discussed-buying-ai-startup-hugging-face-insider-says",
-              "date": "27.08.2026"
+              "url": "https://www.bloomberg.com/news/articles/2026-09-03/nvidia-agrees-to-13-billion-deal-for-ai-platform-hugging-face",
+              "date": "03.09.2026"
             },
             {
-              "name": "Forbes",
-              "url": "https://www.forbes.com/sites/siladityaray/2026/08/27/nvidia-has-reportedly-agreed-to-buy-ai-model-hosting-platform-hugging-face-for-13-billion/",
-              "date": "27.08.2026"
-            }
-          ]
-        },
-        {
-          "num": 15,
-          "featured": false,
-          "tag": "Markt",
-          "headline": "Nvidia übertrifft mit Rekordquartal die Erwartungen",
-          "lede": "Im am 26. Juli endenden Quartal setzte Nvidia 96,2 Milliarden Dollar um — 18 Prozent mehr als im Vorquartal und 106 Prozent mehr als vor einem Jahr — bei einem Nettogewinn von 59,69 Milliarden Dollar.",
-          "detail": "Für das Geschäftsjahr 2028 prognostiziert Nvidia ein Umsatzwachstum von 70 Prozent.",
-          "sources": [
-            {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/08/27/cnbc-daily-open-nvidia-ai-results.html",
-              "date": "27.08.2026"
-            }
-          ]
-        },
-        {
-          "num": 16,
-          "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Nvidia verhandelt Perplexity-Investment bei über 30 Milliarden Dollar Bewertung",
-          "lede": "Die annualisierte Umsatzrate von Perplexity ist laut The Information von unter 250 Millionen auf über 750 Millionen Dollar gestiegen — Grundlage für die höhere Bewertung gegenüber den rund 20 Milliarden Dollar aus der vorigen Runde.",
-          "detail": "Nvidia ist bereits seit 2023 an Perplexity beteiligt; im Raum standen zwischenzeitlich auch ein Lizenzdeal oder die Übernahme von Teilen des Teams.",
-          "sources": [
-            {
-              "name": "US News",
-              "url": "https://money.usnews.com/investing/news/articles/2026-08-23/nvidia-discusses-perplexity-investment-at-30-billion-plus-valuation-the-information-reports",
-              "date": "23.08.2026"
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
+              "date": "03.09.2026"
             },
             {
-              "name": "24/7 Wall St.",
-              "url": "https://247wallst.com/investing/2026/08/27/perplexity-wants-a-30-billion-valuation-before-its-2028-ipo-nvidia-may-help-it-get-there/",
-              "date": "27.08.2026"
-            }
-          ]
-        },
-        {
-          "num": 17,
-          "featured": false,
-          "tag": "Produkt",
-          "headline": "Perplexity bringt seinen KI-Agenten aufs eigene Gerät",
-          "lede": "\"Portable Computer\" führt Perplexitys Agenten-Tool lokal auf Nvidia-Hardware aus und hält private Daten damit standardmäßig auf dem Gerät statt in der Cloud.",
-          "detail": "Nur bei Bedarf eskaliert das System zur Cloud-Version. Perplexity Computer bindet zudem über 20 neue Finanzdatenquellen wie D&B, Guidepoint und IBISWorld an.",
-          "sources": [
-            {
-              "name": "SiliconANGLE",
-              "url": "https://siliconangle.com/2026/08/25/perplexity-ai-launches-portable-computer-on-device-ai-agent/",
-              "date": "25.08.2026"
-            }
-          ]
-        },
-        {
-          "num": 18,
-          "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Autonomes Lkw-Startup Gatik sammelt 200 Millionen Dollar ein",
-          "lede": "Die Series-D-Runde wird von der Qatar Investment Authority und Koch Disruptive Technologies angeführt, mit Beteiligung von Millennium Management und weiteren Investoren.",
-          "detail": "Gatik betreibt fahrerlose Lieferfahrzeuge auf festen Kurzstrecken für Kunden wie Walmart, Kroger und PepsiCo und kommt damit auf rund 500 Millionen Dollar Gesamtfinanzierung.",
-          "sources": [
-            {
-              "name": "Bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-08-25/gatik-ai-raises-200-million-in-its-largest-funding-series",
-              "date": "25.08.2026"
+              "name": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+              "date": "02.09.2026"
             }
           ]
         },
         {
           "num": 19,
           "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Emerald AI sichert 150 Millionen Dollar für flexible Rechenzentrums-Steuerung",
-          "lede": "Die überzeichnete Series-A-Runde bewertet das Unternehmen mit 1,05 Milliarden Dollar; unter den strategischen Investoren sind Nvidia, Samsung Ventures und Siemens.",
-          "detail": "Emerald AI passt den Stromverbrauch von KI-Rechenzentren dynamisch an die Lage im Stromnetz an und adressiert damit einen wachsenden Engpass beim Ausbau von KI-Infrastruktur.",
+          "tag": "Investition",
+          "headline": "Nvidia investiert 3,5 Milliarden Dollar in Chiphersteller MediaTek",
+          "lede": "Nvidia kauft Wandelanleihen von MediaTek im Wert von 3,5 Milliarden Dollar und vertieft die Chip-Kooperation mit dem taiwanischen Hersteller.",
+          "detail": "Kern des Deals ist, dass MediaTek Nvidias NVLink-Fusion-Plattform übernimmt, mit der Hyperscaler eigene KI-Chips an Nvidias Rechenzentrums-Infrastruktur anbinden können. Es ist Nvidias bislang größte Direktinvestition außerhalb der USA; an der insgesamt 3,9 Milliarden Dollar schweren Anleihe beteiligte sich auch Alphabet.",
           "sources": [
             {
-              "name": "Business Wire",
-              "url": "https://www.businesswire.com/news/home/20260825127649/en/Emerald-AI-Raises-150-Million-Series-A-at-1.05-Billion-Valuation-to-Scale-Power-Flexible-AI-Data-Centers",
-              "date": "25.08.2026"
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-08-31/nvidia-to-invest-3-5-billion-in-chipmaker-mediatek",
+              "date": "31.08.2026"
+            },
+            {
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
+              "date": "31.08.2026"
+            }
+          ]
+        },
+        {
+          "num": 20,
+          "featured": false,
+          "tag": "Hardware",
+          "headline": "Nvidia und Microsoft bringen KI-Agenten lokal auf den Windows-PC",
+          "lede": "Auf der IFA 2026 in Berlin stellten Nvidia und Microsoft eine Kooperation vor, die KI-Agenten sicher und ohne Cloud-Anbindung lokal auf Windows-Rechnern ausführt.",
+          "detail": "Kernstück ist das neue Tool PAIR (Personal AI Router), das KI-Berechnungen automatisch auf verfügbare PCs im Heimnetzwerk verteilt; dazu kommen Microsofts eXecution Containers und Nvidias OpenShell-Laufzeitumgebung für sicheren Dateizugriff durch Agenten. Neue Optimierungen für llama.cpp und vLLM sollen lokale Inferenz bis zu 1,9-mal schneller machen; kompakte RTX-Spark-PCs von Partnern wie Acer und Lenovo folgen im Oktober.",
+          "sources": [
+            {
+              "name": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+              "date": "04.09.2026"
+            },
+            {
+              "name": "GIGAZINE",
+              "url": "https://gigazine.net/gsc_news/en/20260904-nvidia-rtx-spark-device/",
+              "date": "04.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 21,
+          "featured": false,
+          "tag": "Modell-Release",
+          "headline": "Meta veröffentlicht Muse Spark 1.3 für Agenten- und Coding-Aufgaben",
+          "lede": "Meta hat mit Muse Spark 1.3 ein neues, closed-source Spitzenmodell veröffentlicht, das für langlaufende Agenten- und Coding-Workflows mit einem Kontextfenster von einer Million Token optimiert ist.",
+          "detail": "Laut internen Vergleichen benötigt das Modell rund 20 Prozent weniger Tool-Aufrufe und 25 Prozent weniger Tokens als Vorgänger Muse Spark 1.2 und soll robuster gegen Prompt-Injections sein. Entwickler erreichen es über Meta Code und die Meta Model API zu unveränderten Preisen.",
+          "sources": [
+            {
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-09-02/meta-releases-more-powerful-ai-model-edging-closer-to-rivals",
+              "date": "02.09.2026"
+            },
+            {
+              "name": "Axios",
+              "url": "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues",
+              "date": "02.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 22,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "Perplexity verarbeitet sensible Daten künftig lokal auf dem Mac",
+          "lede": "Perplexity hat für seine Mac-App die Funktion Hybrid Compute vorgestellt, die Aufgaben mit sensiblen Dateien automatisch von der Cloud auf ein lokales Modell verlagert.",
+          "detail": "Ein von Perplexity trainierter Privacy-Klassifikator schlägt vor, welche Arbeitsschritte etwa bei Steuerunterlagen oder medizinischen Befunden auf dem Gerät bleiben sollen; Nutzer können das vor der Ausführung prüfen. Als lokale Modelle stehen Gemma E4B sowie zwei Varianten von Qwens 3.6-35B-Modell bereit, vorausgesetzt wird ein Apple-Silicon-Mac mit mindestens 24 GB RAM.",
+          "sources": [
+            {
+              "name": "Perplexity Blog",
+              "url": "https://www.perplexity.ai/hub/blog/introducing-hybrid-compute-on-mac",
+              "date": "01.09.2026"
+            },
+            {
+              "name": "9to5Mac",
+              "url": "https://9to5mac.com/2026/09/01/perplexity-launches-privacy-minded-hybrid-compute-ai-feature-for-mac/",
+              "date": "01.09.2026"
+            }
+          ]
+        },
+        {
+          "num": 23,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Coding-Start-up Cognition steuert auf 47-Milliarden-Bewertung zu",
+          "lede": "Der KI-Coding-Anbieter Cognition (bekannt für den Agenten Devin) will laut Bloomberg rund 1 Milliarde Dollar einsammeln und seine Bewertung damit auf etwa 47 Milliarden Dollar fast verdoppeln.",
+          "detail": "Erst drei Monate zuvor war das Unternehmen bei einer ebenfalls milliardenschweren Runde mit 26 Milliarden Dollar bewertet worden. Für die neue Runde soll Cognition Investoreninteresse von fast 10 Milliarden Dollar erhalten haben; die annualisierten Umsätze liegen laut Bericht inzwischen über 900 Millionen Dollar.",
+          "sources": [
+            {
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-09-02/ai-startup-cognition-set-to-raise-around-1-billion-at-a-47-billion-value",
+              "date": "02.09.2026"
             }
           ]
         }
