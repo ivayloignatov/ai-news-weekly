@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Weekly — KW 40 / 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfbfc;--panel:#ffffff;--ink:#15171d;--dim:#5a6070;--faint:#9aa0ad;--rule:#e7e9ef;--rule2:#dde0e8;
+  --fd:"Fraunces",Georgia,serif;--fb:"Hanken Grotesk",system-ui,sans-serif;--fm:"JetBrains Mono",monospace;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 30px}
+.mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;padding:30px 0 20px;flex-wrap:wrap}
+.brand{font-family:var(--fd);font-size:28px;font-weight:900;letter-spacing:-.02em;line-height:1;display:flex;align-items:center;gap:11px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:#b5512f}
+.mast-meta{font-family:var(--fm);font-size:12px;color:var(--dim);letter-spacing:.02em;text-align:right;line-height:1.7}
+.mast-meta b{color:var(--ink);font-weight:500}
+/* sticky horizontal nav */
+.topbar{position:sticky;top:0;z-index:30;background:rgba(251,251,252,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);transition:box-shadow .2s,border-color .2s}
+.topbar.stuck{box-shadow:0 6px 20px -16px rgba(0,0,0,.5);border-color:var(--rule2)}
+.nav{max-width:880px;margin:0 auto;padding:11px 30px;display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.nav-label{font-family:var(--fm);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-right:8px}
+.chip{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:13.5px;border:1px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.chip .od{width:8px;height:8px;border-radius:50%;flex:none;background:var(--oc)}
+.chip .oc{font-family:var(--fm);font-size:11.5px;font-weight:500;color:var(--faint)}
+.chip:hover{border-color:var(--rule2)}
+.chip.active{background:var(--oc);color:#fff;border-color:var(--oc)}
+.chip.active .od{background:#fff}
+.chip.active .oc{color:rgba(255,255,255,.82)}
+/* content */
+.lab{padding:38px 0 14px;scroll-margin-top:74px}
+.lab+.lab{border-top:1px solid var(--rule)}
+.lab-head{display:flex;align-items:center;gap:11px;margin-bottom:18px}
+.lab-dot{width:11px;height:11px;border-radius:50%;background:var(--c)}
+.lab-name{font-family:var(--fd);font-size:22px;font-weight:600;letter-spacing:-.01em}
+.lab-count{margin-left:auto;font-family:var(--fm);font-size:11px;color:var(--faint)}
+.item{display:grid;grid-template-columns:36px 1fr;gap:15px;padding:18px 0;border-top:1px solid var(--rule)}
+.item:first-of-type{border-top:none}
+.inum{font-family:var(--fm);font-size:12px;color:var(--faint);font-weight:500;padding-top:3px}
+.irow{display:flex;align-items:center;gap:10px;margin-bottom:7px;flex-wrap:wrap}
+.tag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--c);background:var(--ctint);padding:3px 8px;border-radius:4px}
+.item h3{font-family:var(--fb);font-size:17.5px;font-weight:700;line-height:1.32;letter-spacing:-.005em;margin-bottom:5px;text-wrap:pretty}
+.lede{color:var(--ink);font-weight:600;font-size:15px;margin-bottom:5px;text-wrap:pretty}
+.detail{color:var(--dim);font-size:14.5px;margin-bottom:11px;text-wrap:pretty}
+.item.featured{background:var(--panel);border:1px solid var(--rule2);border-left:3px solid var(--c);border-radius:11px;padding:20px 22px;margin-bottom:6px;display:block}
+.item.featured .inum{display:none}
+.item.featured .eyebrow{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--c);margin-bottom:11px;display:flex;align-items:center;gap:8px}
+.item.featured h3{font-family:var(--fd);font-size:23px;font-weight:600;line-height:1.22;margin-bottom:11px;letter-spacing:-.01em}
+.item.featured .lede{font-size:16.5px}
+.item.featured .detail{font-size:15px}
+.sources{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.src{font-family:var(--fm);font-size:10.5px;color:var(--dim);text-decoration:none;border:1px solid var(--rule2);border-radius:5px;padding:4px 9px;display:inline-flex;gap:7px;align-items:center;background:var(--panel);transition:all .16s}
+.src:hover{border-color:var(--c);color:var(--ink)}
+.src::before{content:"↗";color:var(--c)}
+.src-date{color:var(--faint)}
+footer{padding:34px 0 70px;border-top:1px solid var(--rule);margin-top:30px;display:flex;flex-direction:column;gap:18px}
+.prev-link{font-family:var(--fm);font-size:13px;color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:10px;align-self:flex-start;border:1px solid var(--rule2);padding:9px 15px;border-radius:7px;background:var(--panel);transition:all .18s}
+.prev-link:hover{border-color:var(--ink);color:var(--ink)}
+.meta-foot{font-family:var(--fm);font-size:11px;color:var(--faint);line-height:1.85}
+@media (max-width:560px){.item{grid-template-columns:1fr;gap:0}.inum{display:none}.nav-label{width:100%;margin-bottom:4px}}
+</style>
+</head>
+<body>
+<header class="wrap mast"><div class="brand"><span class="dot"></span>AI Weekly</div><div class="mast-meta">Kalenderwoche 40 · 2026<br><b>28. September – 4. Oktober 2026</b> · 5 Kategorien · 10 Meldungen</div></header>
+<div class="topbar" id="topbar"><nav class="nav"><span class="nav-label">10 Meldungen</span><a class="chip" data-chip="anthropic" href="#anthropic" style="--oc:#b5512f"><span class="od"></span>Anthropic<span class="oc">4</span></a><a class="chip" data-chip="openai" href="#openai" style="--oc:#0f9d63"><span class="od"></span>OpenAI<span class="oc">1</span></a><a class="chip" data-chip="google" href="#google" style="--oc:#2f6ddb"><span class="od"></span>Google & Gemini<span class="oc">1</span></a><a class="chip" data-chip="europe" href="#europe" style="--oc:#8a4fd0"><span class="od"></span>AI in Europa<span class="oc">1</span></a><a class="chip" data-chip="general" href="#general" style="--oc:#b7841f"><span class="od"></span>Sonstige KI-News<span class="oc">3</span></a></nav></div>
+<main class="wrap">
+<section class="lab" id="anthropic" style="--c:#b5512f;--ctint:#b5512f1a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">Anthropic</span><span class="lab-count">4 Meldungen</span></div><article class="item"><div class="inum">01</div><div><div class="irow"><span class="tag">Modell-Release</span></div><h3>Claude Sonnet 5.5 erscheint</h3><p class="lede">Sonnet 5.5 läuft über 30 % schneller als Sonnet 5 und kostet bei den meisten Aufgaben bis zu 30 % weniger.</p><p class="detail">Preis unverändert bei 2 $ / 10 $ pro Mio. Tokens (Input/Output); der Spareffekt kommt aus weniger Output-Tokens. Terminal-Bench 4.0: 70,6 % (Sonnet 5: 10,3 %). Verfügbar bei AWS, Google Cloud und Azure.</p><div class="sources"><a class="src" href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">anthropic.com<span class="src-date">28.09.2026</span></a></div></div></article><article class="item"><div class="inum">02</div><div><div class="irow"><span class="tag">Enterprise</span></div><h3>Anthropic investiert 100 Mio. $ in die „Claude Frontier Academy“</h3><p class="lede">Bis Ende 2027 sollen 10.000 „Frontier Deployed Engineers“ ausgebildet werden.</p><p class="detail">Zwölfwöchiges Residency-Programm in San Francisco, New York und London; erste Partner u. a. Accenture, Bain, Capgemini, Deloitte, McKinsey, Morgan Stanley. Erste Absolventen Anfang 2027.</p><div class="sources"><a class="src" href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">anthropic.com<span class="src-date">02.10.2026</span></a></div></div></article><article class="item"><div class="inum">03</div><div><div class="irow"><span class="tag">Enterprise</span></div><h3>Barclays weitet den Claude-Einsatz aus</h3><p class="lede">Barclays will Claude Code bis Ende 2026 für 50 % der Entwickler ausrollen, 2027 für die Mehrheit.</p><p class="detail">Der Knowledge-Assistent nutzt über 16.000 Mitarbeitende; Global Markets verarbeitet rund 120.000 E-Mails täglich mit Claude-Modellen.</p><div class="sources"><a class="src" href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">anthropic.com<span class="src-date">01.10.2026</span></a></div></div></article><article class="item"><div class="inum">04</div><div><div class="irow"><span class="tag">IPO</span></div><h3>Anthropic plant Investorentag vor dem Börsengang</h3><p class="lede">Laut Bloomberg trifft Anthropic am 14. Oktober potenzielle Investoren zur IPO-Vorbereitung.</p><div class="sources"><a class="src" href="https://www.bloomberg.com/news/articles/2026-10-01/anthropic-is-said-to-plan-pre-ipo-investor-day-as-listing-nears" target="_blank" rel="noopener">Bloomberg<span class="src-date">01.10.2026</span></a></div></div></article></section><section class="lab" id="openai" style="--c:#0f9d63;--ctint:#0f9d631a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">OpenAI</span><span class="lab-count">1 Meldung</span></div><article class="item"><div class="inum">05</div><div><div class="irow"><span class="tag">Modell-Release</span></div><h3>DevDay: GPT-6.1 Sol und Computer Use in der Agents API</h3><p class="lede">OpenAI bringt GPT-6.1 Sol und erlaubt Agenten in der Agents API, Software über grafische Oberflächen zu bedienen.</p><p class="detail">GPT-6.1 Sol hat 1,05 Mio. Tokens Kontext und kostet 2 $ / 10 $ pro Mio. Tokens, laut Berichten nahe an GPT-6 Astra. Daneben kündigte OpenAI u. a. cloudbasierte Codex-Umgebungen an.</p><div class="sources"><a class="src" href="https://www.business-standard.com/technology/tech-news/openai-devday-2026-dots-gpt-6-1-sol-codex-developer-tools-126093000396_1.html" target="_blank" rel="noopener">Business Standard<span class="src-date">30.09.2026</span></a></div></div></article></section><section class="lab" id="google" style="--c:#2f6ddb;--ctint:#2f6ddb1a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">Google & Gemini</span><span class="lab-count">1 Meldung</span></div><article class="item featured"><div class="eyebrow">◆ Top der Woche</div><div class="irow"><span class="tag">Modell-Release</span></div><h3>Google stellt Gemini 4 Argon vor</h3><p class="lede">Gemini 4 Argon ist Googles neues Frontier-Modell, zunächst nur für ausgewählte Partner.</p><p class="detail">Der Zugang startet im „Fairwind Program“, damit Partner Schwachstellen in eigener Software vor dem breiten Release finden. Einführungspreis 2 $ / 10 $ pro Mio. Tokens; Argon führt in 13 von 19 von Google veröffentlichten Benchmark-Zeilen.</p><div class="sources"><a class="src" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google Blog<span class="src-date">30.09.2026</span></a><a class="src" href="https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/" target="_blank" rel="noopener">TechCrunch<span class="src-date">30.09.2026</span></a><a class="src" href="https://www.cnbc.com/2026/10/01/google-gemini-4-arrives-as-wall-street-shifts-to-personal-agents.html" target="_blank" rel="noopener">CNBC<span class="src-date">01.10.2026</span></a></div></article></section><section class="lab" id="europe" style="--c:#8a4fd0;--ctint:#8a4fd01a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">AI in Europa</span><span class="lab-count">1 Meldung</span></div><article class="item"><div class="inum">06</div><div><div class="irow"><span class="tag">Standort</span></div><h3>Mistral eröffnet Hub in München</h3><p class="lede">Mistral baut in München ein Zentrum für Physics AI und Industrial AI auf und will bis 2030 ein Gigawatt europäische Rechenkapazität schaffen.</p><p class="detail">Der Hub bündelt Forschung, Engineering und Applied AI für Industriekunden; Basis sind u. a. die 30+ Physik-Expertinnen und -Experten aus der Emmi-AI-Übernahme.</p><div class="sources"><a class="src" href="https://mistral.ai/news/hallo-deutschland/" target="_blank" rel="noopener">mistral.ai<span class="src-date">28.09.2026</span></a></div></div></article></section><section class="lab" id="general" style="--c:#b7841f;--ctint:#b7841f1a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">Sonstige KI-News</span><span class="lab-count">3 Meldungen</span></div><article class="item"><div class="inum">07</div><div><div class="irow"><span class="tag">Politik</span></div><h3>Nvidia unter Druck wegen Chip-Schmuggels nach China</h3><p class="lede">US-Behörden fragen, ob Nvidia Warnzeichen bei Schmuggelfällen früher hätte erkennen müssen.</p><p class="detail">Bloomberg verweist auf Fälle mit entfernten Seriennummern und umgeleiteter Fracht; in Kalifornien wurde ein Mann wegen Schmuggels von Servern mit Nvidia-Chips im Wert von 300 Mio. $ angeklagt.</p><div class="sources"><a class="src" href="https://www.bloomberg.com/news/features/2026-10-01/nvidia-faces-questions-over-china-ai-chip-smuggling-cases" target="_blank" rel="noopener">Bloomberg<span class="src-date">01.10.2026</span></a></div></div></article><article class="item"><div class="inum">08</div><div><div class="irow"><span class="tag">Markt</span></div><h3>Nvidia-Aktie erreicht Rekordhoch</h3><p class="lede">Die Nvidia-Aktie lag am Freitag erstmals seit Mitte Mai wieder auf Rekordniveau.</p><div class="sources"><a class="src" href="https://cnbc.com/2026/10/02/nvidia-breaks-through-to-new-record-highs-plus-more-good-news-for-boeing.html" target="_blank" rel="noopener">CNBC<span class="src-date">02.10.2026</span></a></div></div></article><article class="item"><div class="inum">09</div><div><div class="irow"><span class="tag">Finanzierung</span></div><h3>Instinct sammelt 1 Mrd. $ ein, EliseAI 350 Mio. $</h3><p class="lede">Der KI-Assistent-Startup Instinct erhält 1 Mrd. $ (Series C) bei 10 Mrd. $ Bewertung.</p><p class="detail">EliseAI (KI für Wohnungsvermietung) schloss 350 Mio. $ bei 4 Mrd. $ Bewertung ab, angeführt von Andreessen Horowitz und Bessemer.</p><div class="sources"><a class="src" href="https://gtstu.com/weekly-ai-startup-news-roundup-2026-10-04/" target="_blank" rel="noopener">GTSTU Roundup<span class="src-date">04.10.2026</span></a></div></div></article></section>
+<footer><a class="prev-link" href="archiv/2026-kw39.html">← Vorherige Ausgabe · KW 39</a><div class="meta-foot">Automatisch erstellt durch eine wöchentliche Claude-Routine.<br>Jede Meldung basiert auf einer datierten Quelle der jeweiligen Woche. Ohne Beleg keine Aufnahme.<br>Generiert: 05.10.2026, 07:07</div></footer>
+</main>
+<script>
+(function(){
+  var bar=document.getElementById('topbar');
+  var sentinel=document.createElement('div');
+  bar.parentNode.insertBefore(sentinel,bar);
+  new IntersectionObserver(function(e){bar.classList.toggle('stuck',!e[0].isIntersecting);}).observe(sentinel);
+  var chips={};document.querySelectorAll('[data-chip]').forEach(function(c){chips[c.getAttribute('data-chip')]=c;});
+  var secs=document.querySelectorAll('section.lab');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ var id=en.target.id; Object.keys(chips).forEach(function(k){chips[k].classList.toggle('active',k===id);}); } });
+  },{rootMargin:'-45% 0px -50% 0px',threshold:0});
+  secs.forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>
