@@ -1,46 +1,76 @@
 {
   "schemaVersion": 1,
-  "kw": 41,
+  "kw": 42,
   "year": 2026,
-  "period": "5. – 11. Oktober 2026",
-  "generated": "2026-10-12T07:00:00",
-  "prevHref": "archiv/2026-kw40.html",
-  "categoryCount": 4,
+  "period": "12. – 18. Oktober 2026",
+  "generated": "2026-10-19T07:00:00",
+  "prevHref": "archiv/2026-kw41.html",
+  "categoryCount": 3,
   "itemCount": 6,
   "labs": [
     {
       "id": "anthropic",
       "name": "Anthropic",
       "color": "#b5512f",
-      "count": 2,
+      "count": 4,
       "items": [
+        {
+          "num": null,
+          "featured": true,
+          "tag": "Governance",
+          "headline": "Anthropic gründet Public Benefit Fund mit 5 % der Unternehmensanteile",
+          "lede": "Anthropic widmet vorbehaltlich der Zustimmung der Aktionäre 5 % seiner Anteile einem neuen Public Benefit Fund.",
+          "detail": "Pro 50 % Wertsteigerung über einer Basislinie kommen nach Ermessen des Boards 2 % hinzu. Der Fonds darf an Non-Profits spenden oder direkt an Bevölkerungsgruppen auszahlen, etwa für Arbeitsmarktfolgen; Lobbying und politische Spenden sind ausgeschlossen. Zusammen mit den Zusagen der Mitgründer und dem Mitarbeiter-Matching sollen rund 20 % der Anteile dem Gemeinwohl dienen.",
+          "sources": [
+            {
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/public-benefit-fund",
+              "date": "18.10.2026"
+            }
+          ]
+        },
         {
           "num": 1,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Claude Haiku 5.5: neues kleines Modell",
-          "lede": "Anthropic stellt Claude Haiku 5.5 vor und nennt es sein bisher schnellstes, günstigstes und leistungsfähigstes kleines Modell.",
-          "detail": "Preise und Benchmarks stammen bisher nur aus Drittberichten und sollten gegen die offizielle Preisseite geprüft werden.",
+          "tag": "Sicherheit",
+          "headline": "Anthropic bindet METR und SecureBio enger in die Modellbewertung ein",
+          "lede": "Sechs METR-Mitarbeitende erhalten mitarbeiterähnlichen Systemzugang, METR veröffentlicht seine Risikobewertungen.",
+          "detail": "SecureBio prüft ein Kapitel des Risk Reports vom August; für Partner gibt es drei Zugangsstufen. Anthropic nennt das freiwillig und fordert dasselbe von allen Frontier-Anbietern.",
           "sources": [
             {
-              "name": "anthropic.com",
-              "url": "https://www.anthropic.com/news",
-              "date": "07.10.2026"
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+              "date": "15.10.2026"
             }
           ]
         },
         {
           "num": 2,
           "featured": false,
-          "tag": "Sicherheit",
-          "headline": "Anthropic Cyber Mission: Programme für kritische Infrastruktur und Open Source",
-          "lede": "Mit der „Cyber Mission“ startet Anthropic das Critical Infrastructure Defense Program (CIDP) und den opt-in OSS Scanner für Open-Source-Projekte.",
-          "detail": "CIDP-Gründungspartner sind u. a. Accenture, CrowdStrike, Deloitte, Palo Alto Networks und Rockwell Automation. Projekt Glasswing ging zuvor im erweiterten Cyber Verification Program auf (06.10.). Der OSS Scanner liefert modellgenerierte Reports ohne menschliche Prüfung; Anthropic erwartet eine Trefferquote über 90 %.",
+          "tag": "Politik",
+          "headline": "Anthropic stärkt Schutzmaßnahmen vor den US-Midterms",
+          "lede": "Claude zieht amtliche, bundesstaatsspezifische Wahlinfos von Democracy Works und zeigt am Wahlabend Ergebnisse an.",
+          "detail": "Von rund 250.000 US-Gesprächen betrafen 0,51 % Wahlen, Wahlempfehlungen waren mit 0,01 % selten. Nach Tests externer Forscher kamen Klassifikatoren gegen verteilten Missbrauch über viele harmlose Anfragen hinzu; Konten mit Bezug zu Fake-News-Seiten wurden gesperrt.",
           "sources": [
             {
-              "name": "anthropic.com",
-              "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
-              "date": "08.10.2026"
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/2026-us-midterms",
+              "date": "14.10.2026"
+            }
+          ]
+        },
+        {
+          "num": 3,
+          "featured": false,
+          "tag": "Expansion",
+          "headline": "Anthropic eröffnet Büro in Singapur und schließt MOU mit der Regierung",
+          "lede": "Singapur ist der fünfte Asien-Pazifik-Standort; das MOU deckt KI-Sicherheit, Modellevaluierung und Adoptionsforschung ab.",
+          "detail": "Singapur liegt bei der Claude.ai-Nutzung pro Kopf auf Rang 2 von 121 Ländern. Zu den Nutzern zählen GovTech, DBS, GIC, Grab und Sea.",
+          "sources": [
+            {
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/singapore-office-opening",
+              "date": "14.10.2026"
             }
           ]
         }
@@ -53,50 +83,17 @@
       "count": 1,
       "items": [
         {
-          "num": null,
-          "featured": true,
-          "tag": "Modell-Release",
-          "headline": "GPT-6 mit „Intelligent UI“ startet in ChatGPT",
-          "lede": "OpenAI rollt GPT-6 mit Intelligent UI aus: ChatGPT zeigt interaktive Visualisierungen, Buttons und Werkzeuge wie Rechner direkt im Chat.",
-          "detail": "Start zuerst für Plus, Pro, Business und Enterprise, ab dem Folgetag auch für Free und Go.",
-          "sources": [
-            {
-              "name": "OpenAI",
-              "url": "https://openai.com/index/gpt-6-for-everyone/",
-              "date": "07.10.2026"
-            },
-            {
-              "name": "9to5Mac",
-              "url": "https://9to5mac.com/2026/10/07/openai-brings-gpt-6-to-chatgpt-and-debuts-intelligent-ui/",
-              "date": "07.10.2026"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "europe",
-      "name": "AI in Europa",
-      "color": "#8a4fd0",
-      "count": 1,
-      "items": [
-        {
-          "num": 3,
+          "num": 4,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Mistral Large 4 als Preview verfügbar",
-          "lede": "Mistral veröffentlicht Mistral Large 4, ein großes multimodales Modell, als Preview-API in Mistral Studio.",
-          "detail": "Laut Berichten sind die offenen Gewichte für den 27. Oktober 2026 angekündigt; die Series D (3 Mrd. €) wurde bereits im September abgeschlossen.",
+          "tag": "Regulierung",
+          "headline": "FTC schickt OpenAI und Anthropic Civil Investigative Demands",
+          "lede": "Die US-Handelsbehörde FTC hat beiden Unternehmen über 50-seitige Auskunftsverlangen zu Sicherheitsvorfällen zugestellt.",
+          "detail": "Gefragt wird nach Sicherheitsvorfällen, Schutzmaßnahmen, Marketingmaterial und Datenschutzrichtlinien. Es handelt sich um Beweiserhebung im Rahmen möglicher Verbraucherschutzverstöße, nicht um ein Verfahrensergebnis.",
           "sources": [
             {
-              "name": "University 365",
-              "url": "https://www.university-365.com/post/ai-news-wednesday-7-october-2026-mistral-large-4-openai-math-results-chatgpt-eu-watermarking",
-              "date": "07.10.2026"
-            },
-            {
-              "name": "AI Indigo Changelog",
-              "url": "https://aiindigo.com/tool/mistral-ai/changelog",
-              "date": "06.10.2026"
+              "name": "Axios",
+              "url": "https://axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
+              "date": "15.10.2026"
             }
           ]
         }
@@ -106,40 +103,20 @@
       "id": "general",
       "name": "Sonstige KI-News",
       "color": "#b7841f",
-      "count": 2,
+      "count": 1,
       "items": [
-        {
-          "num": 4,
-          "featured": false,
-          "tag": "Markt",
-          "headline": "Nvidia: Gespräche über größere Beteiligung an Reflection AI",
-          "lede": "Nvidia erwägt laut Berichten eine größere Beteiligung an Reflection AI; Optionen reichen von Aufstockung bis Übernahme, nichts ist bestätigt.",
-          "detail": "Reflection AI stellte zudem das Coding-/Agenten-Modell Beam vor (Leistungsangaben unabhängig nicht verifiziert). Nvidia-gestütztes Lambda sammelte laut Roundup 4 Mrd. $ ein.",
-          "sources": [
-            {
-              "name": "GTStu Roundup",
-              "url": "https://gtstu.com/weekly-ai-startup-news-roundup-2026-10-11/",
-              "date": "11.10.2026"
-            },
-            {
-              "name": "Tech Startups",
-              "url": "https://techstartups.com/2026/10/09/top-ai-news-stories-this-week-october-5-9-2026",
-              "date": "09.10.2026"
-            }
-          ]
-        },
         {
           "num": 5,
           "featured": false,
-          "tag": "Finanzierung",
-          "headline": "DeepSeek erwägt Finanzierungsrunde von bis zu 15 Mrd. $",
-          "lede": "DeepSeek erwägt laut Berichten, seine Finanzierungsrunde auf bis zu 15 Mrd. $ zu verdoppeln.",
-          "detail": "Es handelt sich um Berichte, nicht um eine Bestätigung des Unternehmens.",
+          "tag": "Modell-Release",
+          "headline": "Meta veröffentlicht offenes KI-Modell, hält die beste Technik zurück",
+          "lede": "Meta bringt ein Open-Weight-Modell heraus, behält seine fortschrittlichste Technologie aber unter Verschluss.",
+          "detail": null,
           "sources": [
             {
-              "name": "GTStu Roundup",
-              "url": "https://gtstu.com/weekly-ai-startup-news-roundup-2026-10-11/",
-              "date": "11.10.2026"
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-10-15/meta-releases-open-ai-model-while-keeping-its-best-tech-closed",
+              "date": "15.10.2026"
             }
           ]
         }
