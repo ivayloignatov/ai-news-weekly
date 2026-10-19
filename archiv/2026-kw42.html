@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Weekly — KW 42 / 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfbfc;--panel:#ffffff;--ink:#15171d;--dim:#5a6070;--faint:#9aa0ad;--rule:#e7e9ef;--rule2:#dde0e8;
+  --fd:"Fraunces",Georgia,serif;--fb:"Hanken Grotesk",system-ui,sans-serif;--fm:"JetBrains Mono",monospace;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 30px}
+.mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;padding:30px 0 20px;flex-wrap:wrap}
+.brand{font-family:var(--fd);font-size:28px;font-weight:900;letter-spacing:-.02em;line-height:1;display:flex;align-items:center;gap:11px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:#b5512f}
+.mast-meta{font-family:var(--fm);font-size:12px;color:var(--dim);letter-spacing:.02em;text-align:right;line-height:1.7}
+.mast-meta b{color:var(--ink);font-weight:500}
+/* sticky horizontal nav */
+.topbar{position:sticky;top:0;z-index:30;background:rgba(251,251,252,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);transition:box-shadow .2s,border-color .2s}
+.topbar.stuck{box-shadow:0 6px 20px -16px rgba(0,0,0,.5);border-color:var(--rule2)}
+.nav{max-width:880px;margin:0 auto;padding:11px 30px;display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.nav-label{font-family:var(--fm);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-right:8px}
+.chip{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:13.5px;border:1px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.chip .od{width:8px;height:8px;border-radius:50%;flex:none;background:var(--oc)}
+.chip .oc{font-family:var(--fm);font-size:11.5px;font-weight:500;color:var(--faint)}
+.chip:hover{border-color:var(--rule2)}
+.chip.active{background:var(--oc);color:#fff;border-color:var(--oc)}
+.chip.active .od{background:#fff}
+.chip.active .oc{color:rgba(255,255,255,.82)}
+/* content */
+.lab{padding:38px 0 14px;scroll-margin-top:74px}
+.lab+.lab{border-top:1px solid var(--rule)}
+.lab-head{display:flex;align-items:center;gap:11px;margin-bottom:18px}
+.lab-dot{width:11px;height:11px;border-radius:50%;background:var(--c)}
+.lab-name{font-family:var(--fd);font-size:22px;font-weight:600;letter-spacing:-.01em}
+.lab-count{margin-left:auto;font-family:var(--fm);font-size:11px;color:var(--faint)}
+.item{display:grid;grid-template-columns:36px 1fr;gap:15px;padding:18px 0;border-top:1px solid var(--rule)}
+.item:first-of-type{border-top:none}
+.inum{font-family:var(--fm);font-size:12px;color:var(--faint);font-weight:500;padding-top:3px}
+.irow{display:flex;align-items:center;gap:10px;margin-bottom:7px;flex-wrap:wrap}
+.tag{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--c);background:var(--ctint);padding:3px 8px;border-radius:4px}
+.item h3{font-family:var(--fb);font-size:17.5px;font-weight:700;line-height:1.32;letter-spacing:-.005em;margin-bottom:5px;text-wrap:pretty}
+.lede{color:var(--ink);font-weight:600;font-size:15px;margin-bottom:5px;text-wrap:pretty}
+.detail{color:var(--dim);font-size:14.5px;margin-bottom:11px;text-wrap:pretty}
+.item.featured{background:var(--panel);border:1px solid var(--rule2);border-left:3px solid var(--c);border-radius:11px;padding:20px 22px;margin-bottom:6px;display:block}
+.item.featured .inum{display:none}
+.item.featured .eyebrow{font-family:var(--fm);font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--c);margin-bottom:11px;display:flex;align-items:center;gap:8px}
+.item.featured h3{font-family:var(--fd);font-size:23px;font-weight:600;line-height:1.22;margin-bottom:11px;letter-spacing:-.01em}
+.item.featured .lede{font-size:16.5px}
+.item.featured .detail{font-size:15px}
+.sources{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.src{font-family:var(--fm);font-size:10.5px;color:var(--dim);text-decoration:none;border:1px solid var(--rule2);border-radius:5px;padding:4px 9px;display:inline-flex;gap:7px;align-items:center;background:var(--panel);transition:all .16s}
+.src:hover{border-color:var(--c);color:var(--ink)}
+.src::before{content:"↗";color:var(--c)}
+.src-date{color:var(--faint)}
+footer{padding:34px 0 70px;border-top:1px solid var(--rule);margin-top:30px;display:flex;flex-direction:column;gap:18px}
+.prev-link{font-family:var(--fm);font-size:13px;color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:10px;align-self:flex-start;border:1px solid var(--rule2);padding:9px 15px;border-radius:7px;background:var(--panel);transition:all .18s}
+.prev-link:hover{border-color:var(--ink);color:var(--ink)}
+.meta-foot{font-family:var(--fm);font-size:11px;color:var(--faint);line-height:1.85}
+@media (max-width:560px){.item{grid-template-columns:1fr;gap:0}.inum{display:none}.nav-label{width:100%;margin-bottom:4px}}
+</style>
+</head>
+<body>
+<header class="wrap mast"><div class="brand"><span class="dot"></span>AI Weekly</div><div class="mast-meta">Kalenderwoche 42 · 2026<br><b>12. – 18. Oktober 2026</b> · 3 Kategorien · 6 Meldungen</div></header>
+<div class="topbar" id="topbar"><nav class="nav"><span class="nav-label">6 Meldungen</span><a class="chip" data-chip="anthropic" href="#anthropic" style="--oc:#b5512f"><span class="od"></span>Anthropic<span class="oc">4</span></a><a class="chip" data-chip="openai" href="#openai" style="--oc:#0f9d63"><span class="od"></span>OpenAI<span class="oc">1</span></a><a class="chip" data-chip="general" href="#general" style="--oc:#b7841f"><span class="od"></span>Sonstige KI-News<span class="oc">1</span></a></nav></div>
+<main class="wrap">
+<section class="lab" id="anthropic" style="--c:#b5512f;--ctint:#b5512f1a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">Anthropic</span><span class="lab-count">4 Meldungen</span></div><article class="item featured"><div class="eyebrow">◆ Top der Woche</div><div class="irow"><span class="tag">Governance</span></div><h3>Anthropic gründet Public Benefit Fund mit 5 % der Unternehmensanteile</h3><p class="lede">Anthropic widmet vorbehaltlich der Zustimmung der Aktionäre 5 % seiner Anteile einem neuen Public Benefit Fund.</p><p class="detail">Pro 50 % Wertsteigerung über einer Basislinie kommen nach Ermessen des Boards 2 % hinzu. Der Fonds darf an Non-Profits spenden oder direkt an Bevölkerungsgruppen auszahlen, etwa für Arbeitsmarktfolgen; Lobbying und politische Spenden sind ausgeschlossen. Zusammen mit den Zusagen der Mitgründer und dem Mitarbeiter-Matching sollen rund 20 % der Anteile dem Gemeinwohl dienen.</p><div class="sources"><a class="src" href="https://www.anthropic.com/news/public-benefit-fund" target="_blank" rel="noopener">Anthropic<span class="src-date">18.10.2026</span></a></div></article><article class="item"><div class="inum">01</div><div><div class="irow"><span class="tag">Sicherheit</span></div><h3>Anthropic bindet METR und SecureBio enger in die Modellbewertung ein</h3><p class="lede">Sechs METR-Mitarbeitende erhalten mitarbeiterähnlichen Systemzugang, METR veröffentlicht seine Risikobewertungen.</p><p class="detail">SecureBio prüft ein Kapitel des Risk Reports vom August; für Partner gibt es drei Zugangsstufen. Anthropic nennt das freiwillig und fordert dasselbe von allen Frontier-Anbietern.</p><div class="sources"><a class="src" href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">Anthropic<span class="src-date">15.10.2026</span></a></div></div></article><article class="item"><div class="inum">02</div><div><div class="irow"><span class="tag">Politik</span></div><h3>Anthropic stärkt Schutzmaßnahmen vor den US-Midterms</h3><p class="lede">Claude zieht amtliche, bundesstaatsspezifische Wahlinfos von Democracy Works und zeigt am Wahlabend Ergebnisse an.</p><p class="detail">Von rund 250.000 US-Gesprächen betrafen 0,51 % Wahlen, Wahlempfehlungen waren mit 0,01 % selten. Nach Tests externer Forscher kamen Klassifikatoren gegen verteilten Missbrauch über viele harmlose Anfragen hinzu; Konten mit Bezug zu Fake-News-Seiten wurden gesperrt.</p><div class="sources"><a class="src" href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Anthropic<span class="src-date">14.10.2026</span></a></div></div></article><article class="item"><div class="inum">03</div><div><div class="irow"><span class="tag">Expansion</span></div><h3>Anthropic eröffnet Büro in Singapur und schließt MOU mit der Regierung</h3><p class="lede">Singapur ist der fünfte Asien-Pazifik-Standort; das MOU deckt KI-Sicherheit, Modellevaluierung und Adoptionsforschung ab.</p><p class="detail">Singapur liegt bei der Claude.ai-Nutzung pro Kopf auf Rang 2 von 121 Ländern. Zu den Nutzern zählen GovTech, DBS, GIC, Grab und Sea.</p><div class="sources"><a class="src" href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">Anthropic<span class="src-date">14.10.2026</span></a></div></div></article></section><section class="lab" id="openai" style="--c:#0f9d63;--ctint:#0f9d631a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">OpenAI</span><span class="lab-count">1 Meldung</span></div><article class="item"><div class="inum">04</div><div><div class="irow"><span class="tag">Regulierung</span></div><h3>FTC schickt OpenAI und Anthropic Civil Investigative Demands</h3><p class="lede">Die US-Handelsbehörde FTC hat beiden Unternehmen über 50-seitige Auskunftsverlangen zu Sicherheitsvorfällen zugestellt.</p><p class="detail">Gefragt wird nach Sicherheitsvorfällen, Schutzmaßnahmen, Marketingmaterial und Datenschutzrichtlinien. Es handelt sich um Beweiserhebung im Rahmen möglicher Verbraucherschutzverstöße, nicht um ein Verfahrensergebnis.</p><div class="sources"><a class="src" href="https://axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation" target="_blank" rel="noopener">Axios<span class="src-date">15.10.2026</span></a></div></div></article></section><section class="lab" id="general" style="--c:#b7841f;--ctint:#b7841f1a"><div class="lab-head"><span class="lab-dot"></span><span class="lab-name">Sonstige KI-News</span><span class="lab-count">1 Meldung</span></div><article class="item"><div class="inum">05</div><div><div class="irow"><span class="tag">Modell-Release</span></div><h3>Meta veröffentlicht offenes KI-Modell, hält die beste Technik zurück</h3><p class="lede">Meta bringt ein Open-Weight-Modell heraus, behält seine fortschrittlichste Technologie aber unter Verschluss.</p><div class="sources"><a class="src" href="https://www.bloomberg.com/news/articles/2026-10-15/meta-releases-open-ai-model-while-keeping-its-best-tech-closed" target="_blank" rel="noopener">Bloomberg<span class="src-date">15.10.2026</span></a></div></div></article></section>
+<footer><a class="prev-link" href="archiv/2026-kw41.html">← Vorherige Ausgabe · KW 41</a><div class="meta-foot">Automatisch erstellt durch eine wöchentliche Claude-Routine.<br>Jede Meldung basiert auf einer datierten Quelle der jeweiligen Woche. Ohne Beleg keine Aufnahme.<br>Generiert: 19.10.2026, 07:00</div></footer>
+</main>
+<script>
+(function(){
+  var bar=document.getElementById('topbar');
+  var sentinel=document.createElement('div');
+  bar.parentNode.insertBefore(sentinel,bar);
+  new IntersectionObserver(function(e){bar.classList.toggle('stuck',!e[0].isIntersecting);}).observe(sentinel);
+  var chips={};document.querySelectorAll('[data-chip]').forEach(function(c){chips[c.getAttribute('data-chip')]=c;});
+  var secs=document.querySelectorAll('section.lab');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ var id=en.target.id; Object.keys(chips).forEach(function(k){chips[k].classList.toggle('active',k===id);}); } });
+  },{rootMargin:'-45% 0px -50% 0px',threshold:0});
+  secs.forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>
