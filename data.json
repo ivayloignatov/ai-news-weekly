@@ -1,76 +1,66 @@
 {
   "schemaVersion": 1,
-  "kw": 42,
+  "kw": 43,
   "year": 2026,
-  "period": "12. – 18. Oktober 2026",
-  "generated": "2026-10-19T07:00:00",
-  "prevHref": "archiv/2026-kw41.html",
-  "categoryCount": 3,
-  "itemCount": 6,
+  "period": "19. – 25. Oktober 2026",
+  "generated": "2026-10-26T05:09:00",
+  "prevHref": "archiv/2026-kw42.html",
+  "categoryCount": 5,
+  "itemCount": 9,
   "labs": [
     {
       "id": "anthropic",
       "name": "Anthropic",
       "color": "#b5512f",
-      "count": 4,
+      "count": 3,
       "items": [
         {
           "num": null,
           "featured": true,
-          "tag": "Governance",
-          "headline": "Anthropic gründet Public Benefit Fund mit 5 % der Unternehmensanteile",
-          "lede": "Anthropic widmet vorbehaltlich der Zustimmung der Aktionäre 5 % seiner Anteile einem neuen Public Benefit Fund.",
-          "detail": "Pro 50 % Wertsteigerung über einer Basislinie kommen nach Ermessen des Boards 2 % hinzu. Der Fonds darf an Non-Profits spenden oder direkt an Bevölkerungsgruppen auszahlen, etwa für Arbeitsmarktfolgen; Lobbying und politische Spenden sind ausgeschlossen. Zusammen mit den Zusagen der Mitgründer und dem Mitarbeiter-Matching sollen rund 20 % der Anteile dem Gemeinwohl dienen.",
+          "tag": "Standard-Setzung",
+          "headline": "Anthropic gibt Agent Skills an die Agentic AI Foundation ab",
+          "lede": "Der offene Skills-Standard geht an die AAIF unter dem Dach der Linux Foundation; Anthropic übergibt Name, Logo, GitHub-Organisation und die Domain agentskills.io.",
+          "detail": "Laut Anthropic wurden bislang rund 1 Million Skills veröffentlicht und knapp 280 Millionen Mal installiert; über 70 Agent-Plattformen (u. a. ChatGPT, Cursor, GitHub Copilot, VS Code) unterstützen den Standard. Die Roadmap sieht versionierte Releases, einen formalen Proposal-Prozess und Sicherheitsrichtlinien vor.",
           "sources": [
             {
               "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/public-benefit-fund",
-              "date": "18.10.2026"
+              "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+              "date": "22.10.2026"
             }
           ]
         },
         {
           "num": 1,
           "featured": false,
-          "tag": "Sicherheit",
-          "headline": "Anthropic bindet METR und SecureBio enger in die Modellbewertung ein",
-          "lede": "Sechs METR-Mitarbeitende erhalten mitarbeiterähnlichen Systemzugang, METR veröffentlicht seine Risikobewertungen.",
-          "detail": "SecureBio prüft ein Kapitel des Risk Reports vom August; für Partner gibt es drei Zugangsstufen. Anthropic nennt das freiwillig und fordert dasselbe von allen Frontier-Anbietern.",
+          "tag": "Governance",
+          "headline": "Physiker Christopher Stubbs wird Mitglied im Long-Term Benefit Trust",
+          "lede": "Der frühere Harvard-Dekan der Naturwissenschaften ist der erste Physiker im Trust, der die Mehrheit des Anthropic-Boards ernennen kann.",
+          "detail": "Stubbs gehört zu den Entdeckern der beschleunigten Expansion des Universums. Zeitgleich veröffentlichte Anthropic den ersten Public Benefit Report und kündigte an, vorbehaltlich der Zustimmung der Aktionäre einen Teil der Anteile für den Anthropic Public Benefit Fund zu reservieren.",
           "sources": [
             {
               "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-              "date": "15.10.2026"
+              "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+              "date": "21.10.2026"
             }
           ]
         },
         {
           "num": 2,
           "featured": false,
-          "tag": "Politik",
-          "headline": "Anthropic stärkt Schutzmaßnahmen vor den US-Midterms",
-          "lede": "Claude zieht amtliche, bundesstaatsspezifische Wahlinfos von Democracy Works und zeigt am Wahlabend Ergebnisse an.",
-          "detail": "Von rund 250.000 US-Gesprächen betrafen 0,51 % Wahlen, Wahlempfehlungen waren mit 0,01 % selten. Nach Tests externer Forscher kamen Klassifikatoren gegen verteilten Missbrauch über viele harmlose Anfragen hinzu; Konten mit Bezug zu Fake-News-Seiten wurden gesperrt.",
+          "tag": "Produkt",
+          "headline": "Claude Duet: proaktiver Agent startet als Research Preview",
+          "lede": "Anthropic öffnet eine Warteliste für „Duet“, einen proaktiven Agenten für Pro- und Max-Abonnenten in den USA.",
+          "detail": "Belegt nur über Release-Tracker und einen Newsletter, nicht über eine Anthropic-Primärquelle; Details daher mit Vorsicht zu lesen.",
           "sources": [
             {
-              "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/2026-us-midterms",
-              "date": "14.10.2026"
-            }
-          ]
-        },
-        {
-          "num": 3,
-          "featured": false,
-          "tag": "Expansion",
-          "headline": "Anthropic eröffnet Büro in Singapur und schließt MOU mit der Regierung",
-          "lede": "Singapur ist der fünfte Asien-Pazifik-Standort; das MOU deckt KI-Sicherheit, Modellevaluierung und Adoptionsforschung ab.",
-          "detail": "Singapur liegt bei der Claude.ai-Nutzung pro Kopf auf Rang 2 von 121 Ländern. Zu den Nutzern zählen GovTech, DBS, GIC, Grab und Sea.",
-          "sources": [
+              "name": "Releasebot",
+              "url": "https://releasebot.io/updates/anthropic/claude",
+              "date": "21.10.2026"
+            },
             {
-              "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/singapore-office-opening",
-              "date": "14.10.2026"
+              "name": "AI Maker",
+              "url": "https://aimaker.substack.com/p/claude-code-updates-october-2026",
+              "date": "21.10.2026"
             }
           ]
         }
@@ -80,20 +70,96 @@
       "id": "openai",
       "name": "OpenAI",
       "color": "#0f9d63",
-      "count": 1,
+      "count": 3,
       "items": [
+        {
+          "num": 3,
+          "featured": false,
+          "tag": "Sicherheit",
+          "headline": "OpenAI nimmt Training der Frontier-Modelle nach Sicherheits-Überholung wieder auf",
+          "lede": "OpenAI trainiert seine fortgeschrittensten Modelle wieder, nun mit verschärfter Sicherheit und ohne Internetzugang der Trainingsumgebung.",
+          "detail": "Beim Testen der eigenen Abwehr fand OpenAI nach Reuters-Angaben außerdem einen Fehler in weit verbreiteter Software und legte ihn offen. Einen Tag zuvor hatten die Evaluatoren METR und Redwood Research neue Schwachstellen im internen System gemeldet; die Fixes sind von ihnen nicht verifiziert.",
+          "sources": [
+            {
+              "name": "Reuters via US News",
+              "url": "https://money.usnews.com/investing/news/articles/2026-10-23/openai-resumes-frontier-ai-training-with-enhanced-security-no-internet-access",
+              "date": "23.10.2026"
+            }
+          ]
+        },
         {
           "num": 4,
           "featured": false,
-          "tag": "Regulierung",
-          "headline": "FTC schickt OpenAI und Anthropic Civil Investigative Demands",
-          "lede": "Die US-Handelsbehörde FTC hat beiden Unternehmen über 50-seitige Auskunftsverlangen zu Sicherheitsvorfällen zugestellt.",
-          "detail": "Gefragt wird nach Sicherheitsvorfällen, Schutzmaßnahmen, Marketingmaterial und Datenschutzrichtlinien. Es handelt sich um Beweiserhebung im Rahmen möglicher Verbraucherschutzverstöße, nicht um ein Verfahrensergebnis.",
+          "tag": "Finanzierung",
+          "headline": "OpenAI peilt in neuer Runde 1,25 Billionen Dollar Bewertung an",
+          "lede": "Laut Bloomberg liegt die angestrebte Bewertung in der Schlussphase der Verhandlungen bei 1,25 Billionen US-Dollar.",
+          "detail": "Gesucht werden rund 30 Milliarden Dollar. Es handelt sich um einen Bericht über laufende Verhandlungen, nicht um eine bestätigte Einigung.",
           "sources": [
             {
-              "name": "Axios",
-              "url": "https://axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
-              "date": "15.10.2026"
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/videos/2026-10-23/the-pulse-10-232026-video",
+              "date": "23.10.2026"
+            }
+          ]
+        },
+        {
+          "num": 5,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "ChatGPT-Werbung startet in 26 weiteren Ländern",
+          "lede": "OpenAI weitet Werbung in ChatGPT auf 26 zusätzliche Länder aus und deckt damit 89 Märkte ab.",
+          "detail": null,
+          "sources": [
+            {
+              "name": "OpenAI",
+              "url": "https://openai.com/news/",
+              "date": "21.10.2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "xAI & Grok",
+      "color": "#5b5751",
+      "count": 1,
+      "items": [
+        {
+          "num": 6,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "Grok veröffentlicht erste Episode der KI-generierten „Odyssey“-Serie",
+          "lede": "Grok Imagine hat die ersten rund sieben Minuten von „Odyssey“ veröffentlicht, einer vollständig KI-generierten Serie.",
+          "detail": "Wie viele Episoden geplant sind, ist laut TechCrunch offen.",
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey",
+              "date": "25.10.2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "europe",
+      "name": "AI in Europa",
+      "color": "#8a4fd0",
+      "count": 1,
+      "items": [
+        {
+          "num": 7,
+          "featured": false,
+          "tag": "Modell-Release",
+          "headline": "Mistral veröffentlicht Voxtral 3 als Public Preview",
+          "lede": "Mistral bringt die Audio-Familie Voxtral 3 mit Speech-to-Text- und Text-to-Speech-Modellen, alle vier Modelle starten in der Public Preview.",
+          "detail": "Mistral Large 4 ist weiterhin nur als Preview verfügbar; die offenen Gewichte hat Mistral bis Ende Oktober angekündigt, ein Termin ist offiziell nicht bestätigt.",
+          "sources": [
+            {
+              "name": "Mistral Changelog",
+              "url": "https://docs.mistral.ai/resources/changelogs",
+              "date": "20.10.2026"
             }
           ]
         }
@@ -106,17 +172,22 @@
       "count": 1,
       "items": [
         {
-          "num": 5,
+          "num": 8,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Meta veröffentlicht offenes KI-Modell, hält die beste Technik zurück",
-          "lede": "Meta bringt ein Open-Weight-Modell heraus, behält seine fortschrittlichste Technologie aber unter Verschluss.",
-          "detail": null,
+          "tag": "Hardware",
+          "headline": "Nvidia stellt auf der GTC Berlin containerisierte KI-Fabriken vor",
+          "lede": "Jensen Huang präsentiert den DSX Pod auf Basis von Vera Rubin NVL72, ein werkseitig integriertes Rechenzentrum, das den Aufbau von Monaten auf Tage verkürzen soll.",
+          "detail": "Huang drängte Europas KI-Branche zu schnellerem Ausbau und bezifferte eine 1-Gigawatt-KI-Fabrik auf rund 50 Milliarden Dollar.",
           "sources": [
             {
-              "name": "Bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-10-15/meta-releases-open-ai-model-while-keeping-its-best-tech-closed",
-              "date": "15.10.2026"
+              "name": "Washington Post",
+              "url": "https://www.washingtonpost.com/business/2026/10/21/jensen-huang-ai-gtc-berlin-nvidia/fc62a4c8-cd4a-11f1-ac04-9f58578a68b4_story.html",
+              "date": "21.10.2026"
+            },
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/10/23/jensen-huang-gtc-robot-ducks-neocloud-distress.html",
+              "date": "23.10.2026"
             }
           ]
         }
