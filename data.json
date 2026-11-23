@@ -1,71 +1,86 @@
 {
   "schemaVersion": 1,
-  "kw": 46,
+  "kw": 47,
   "year": 2026,
-  "period": "9. – 15. November 2026",
-  "generated": "2026-11-16T07:12:00",
-  "prevHref": "archiv/2026-kw43.html",
+  "period": "16. – 22. November 2026",
+  "generated": "2026-11-23T07:10:00",
+  "prevHref": "archiv/2026-kw46.html",
   "categoryCount": 6,
-  "itemCount": 18,
+  "itemCount": 21,
   "labs": [
     {
       "id": "anthropic",
       "name": "Anthropic",
       "color": "#b5512f",
-      "count": 3,
+      "count": 4,
       "items": [
         {
           "num": null,
           "featured": true,
           "tag": "IPO",
-          "headline": "Anthropic startet IPO-Roadshow: bis zu 64 Mrd. Dollar an der Nasdaq",
-          "lede": "Anthropic bietet 825 Millionen Aktien zu 70 bis 78 Dollar je Stück an und will unter dem Ticker „ANT“ an der Nasdaq Global Select Market gelistet werden.",
-          "detail": "Die Roadshow startete am 10. November; das Volumen läge bei rund 58 bis 64 Mrd. Dollar und wäre damit einer der größten Börsengänge überhaupt. Das Pricing wird für den 18. November erwartet, der Handelsstart für den 19. November.",
+          "headline": "Anthropic an der Nasdaq: Rekord-IPO bringt 93,5 Mrd. Dollar",
+          "lede": "Anthropic hat 1,127 Mrd. Aktien zu je 83 Dollar platziert – inklusive voll ausgeübter Mehrzuteilungsoption von 147 Mio. Aktien rund 93,5 Mrd. Dollar Bruttoerlös.",
+          "detail": "Der Handel unter dem Ticker ANT startete am 19. November an der Nasdaq Global Select, der Abschluss inklusive paralleler Privatplatzierung folgte am 20. November. Nach einem Eröffnungskurs von 111,50 Dollar schloss die Aktie am Freitag bei 88,91 Dollar – mitten in der schwächsten Tech-Woche an der Wall Street seit 2020.",
           "sources": [
             {
               "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/roadshow-launch",
-              "date": "10.11.2026"
+              "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+              "date": "18.11.2026"
+            },
+            {
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/ipo-close",
+              "date": "20.11.2026"
             },
             {
               "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-              "date": "10.11.2026"
+              "url": "https://cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+              "date": "21.11.2026"
             }
           ]
         },
         {
           "num": 1,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Claude Fable 5.2 und Mythos 5.2 veröffentlicht",
-          "lede": "Fable 5.2 ist allgemein verfügbar, Mythos 5.2 – dasselbe Basismodell ohne bestimmte Cyber- und Bio-Safeguards – bleibt auf geprüfte Organisationen beschränkt.",
-          "detail": "Anthropic nennt rund 30 % schnellere Ausgaben als bei den 5.1-Versionen; Mythos 5.2 soll in Schwachstellen-Tests 10,2 % mehr Lücken finden als Opus 5.5. API-Preis: 8 / 40 Dollar pro Million Input-/Output-Token, Fast-Mode zum doppelten Satz.",
+          "tag": "Produkt",
+          "headline": "Computer Use für Team- und Enterprise-Pläne",
+          "lede": "Claude kann bei Team- und Enterprise-Kunden jetzt als Beta den Bildschirm sehen und in freigegebenen Desktop-Apps arbeiten.",
+          "detail": "Die Funktion läuft in der neuen Claude-Oberfläche auf Desktop, Web und Mobile, sobald „Computer access“ aktiviert ist, und wird schrittweise an Organisationen ausgerollt. Parallel startet ein überarbeitetes Design der Mobile-App, zuerst auf iOS.",
           "sources": [
             {
-              "name": "Anthropic",
-              "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-              "date": "09.11.2026"
-            },
-            {
-              "name": "Constellation Research",
-              "url": "https://www.constellationr.com/insights/news/anthropic-releases-mythos-52-fable-52",
-              "date": "09.11.2026"
+              "name": "Claude Release Notes",
+              "url": "https://support.claude.com/en/articles/12138966-release-notes",
+              "date": "20.11.2026"
             }
           ]
         },
         {
           "num": 2,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Claude Meetings: Claude nimmt an Google-Meet-Calls teil",
-          "lede": "Team- und Enterprise-Kunden können Claude als sichtbaren Teilnehmer in Google-Meet-Besprechungen holen; Notizen und Action Items landen danach in Claude.",
-          "detail": "Parallel starten Claude Whiteboards und Claude Sheets als Beta für alle Bezahlpläne. Weitere Meeting-Plattformen sind angekündigt, aber ohne Termin; bei externen Gästen tritt Claude nur mit Admin-Freigabe bei.",
+          "tag": "Tooling",
+          "headline": "Linked Billing: Endkunden zahlen Claude-Nutzung in Fremd-Apps selbst",
+          "lede": "Entwickler können Claude-Kosten ihrer App über die eigene Claude-Organisation des Kunden abrechnen lassen (Beta).",
+          "detail": "Pro Request legt ein billing_policy-Feld fest, wer zahlt; Kunden können in der Console ein Ausgabelimit setzen oder die Verknüpfung lösen. Gilt nur für Organisationen, die direkt mit Anthropic abrechnen.",
           "sources": [
             {
-              "name": "Axios",
-              "url": "https://www.axios.com/2026/11/10/anthropic-claude-meetings-knowledge-work",
-              "date": "10.11.2026"
+              "name": "Claude Platform Release Notes",
+              "url": "https://platform.claude.com/docs/en/release-notes/overview",
+              "date": "17.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 3,
+          "featured": false,
+          "tag": "Sicherheit",
+          "headline": "Text-Wasserzeichen für ältere Claude-Modelle",
+          "lede": "Von Opus 4.6, Opus 4.5, Sonnet 4.5 und Haiku 4.5 erzeugter Text trägt auf unterstützten Plattformen nun Anthropics Text-Wasserzeichen.",
+          "detail": "Bei nicht standardmäßigen Werten für temperature, top_p oder top_k kann das Wasserzeichen fehlen. Zusätzlich gibt es neue Webhook-Events für kundenverwaltete Schlüssel.",
+          "sources": [
+            {
+              "name": "Claude Platform Release Notes",
+              "url": "https://platform.claude.com/docs/en/release-notes/overview",
+              "date": "16.11.2026"
             }
           ]
         }
@@ -78,52 +93,57 @@
       "count": 3,
       "items": [
         {
-          "num": 3,
-          "featured": false,
-          "tag": "Sicherheit",
-          "headline": "Daybreak Red Team und Defense Factory: OpenAI steigt in Security-Tools ein",
-          "lede": "Auf dem Event „Cyber at the Frontier“ stellte OpenAI zwei Daybreak-Produkte vor: agentenbasierte Pentests für Web-Apps und automatisch vorbereitete Patches.",
-          "detail": "Red Team baut Proof-of-Concept-Exploits und prüft Fixes erneut (Early Access); Defense Factory scannt verbundene GitHub-Repos, importiert Funde aus Wiz, Snyk und Endor Labs und läuft als Preview-Plugin in ChatGPT. Patches werden nicht automatisch deployt.",
-          "sources": [
-            {
-              "name": "SecurityWeek",
-              "url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
-              "date": "12.11.2026"
-            },
-            {
-              "name": "AICoder",
-              "url": "https://aicoder.com/news/news-20261113-openai-cyber-at-the-frontier-daybreak-red-team-early-access-defense-factory-codex-plugin-preview",
-              "date": "13.11.2026"
-            }
-          ]
-        },
-        {
           "num": 4,
           "featured": false,
-          "tag": "Politik",
-          "headline": "OpenAI unterstützt Gesetzesinitiativen gegen KI-Chip-Exporte nach China",
-          "lede": "Laut Bloomberg hat OpenAI Abgeordneten signalisiert, die parteiübergreifenden Vorstöße zur Beschränkung von Chipexporten nach China mitzutragen.",
-          "detail": "Das ist bemerkenswert, weil Politico im Oktober noch berichtet hatte, OpenAI habe seinen Druck für schärfere Exportkontrollen zurückgefahren.",
+          "tag": "Modell-Release",
+          "headline": "GPT-6.2 Astra und Sol veröffentlicht",
+          "lede": "OpenAI bringt GPT-6.2 Astra für anspruchsvolle Profi-Arbeit und Sol für den Alltag in ChatGPT Work, Codex und die API.",
+          "detail": "Astra kostet in der API 20 % weniger (8/40 Dollar pro Mio. Input-/Output-Token), Sol bleibt bei 2/10 Dollar. Astra ist laut OpenAI das erste extern ausgerollte Modell, das die „High“-Schwelle für KI-Selbstverbesserung im Preparedness Framework erreicht; erste Tests von Epoch AI sehen es bei realistischen Arbeitsaufgaben hinter Claude Fable 5.2.",
           "sources": [
             {
-              "name": "Bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures",
-              "date": "12.11.2026"
+              "name": "OpenAI Developer Community",
+              "url": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531",
+              "date": "17.11.2026"
+            },
+            {
+              "name": "The Next Web",
+              "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers",
+              "date": "18.11.2026"
             }
           ]
         },
         {
           "num": 5,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Business-Profile in ChatGPT",
-          "lede": "Unternehmen können ab sofort steuern, wie sie in ChatGPT gefunden und dargestellt werden – ChatGPT rückt damit näher an klassische Suche.",
-          "detail": "Über einen Business Hub (Beta) verifizieren berechtigte Firmen ihre Präsenz und laden Produktdaten hoch.",
+          "tag": "Hardware",
+          "headline": "OpenAI-Modelle optimieren AMDs GPU-Schaltungsdesign",
+          "lede": "Laut OpenAI haben seine Modelle bis zu 14 % PPA-Verbesserung an AMDs Flaggschiff-GPU-Design erzielt; Teile davon gingen in ein Design für die Fertigung.",
+          "detail": "Die Modelle schrieben SystemVerilog-RTL um, Synopsys-Tools prüften die Verhaltensgleichheit. Die Zahlen sind selbstberichtet, ohne unabhängiges Audit oder Silizium-Messwerte.",
           "sources": [
             {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
-              "date": "10.11.2026"
+              "name": "The Next Web",
+              "url": "https://thenextweb.com/news/openai-models-amd-gpu-chip-design-14-percent",
+              "date": "18.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 6,
+          "featured": false,
+          "tag": "Politik",
+          "headline": "Oregon verklagt OpenAI auf über 2 Mrd. Dollar",
+          "lede": "Generalstaatsanwalt Dan Rayfield wirft OpenAI vor, die Sicherheit von ChatGPT und ChatGPT for Teens für Minderjährige falsch dargestellt zu haben.",
+          "detail": "Die Klage vor dem Multnomah County Circuit Court stützt sich auf den Unlawful Trade Practices Act und fordert mindestens 2,035 Mrd. Dollar sowie eine Unterlassungsverfügung. OpenAI weist die Vorwürfe zurück.",
+          "sources": [
+            {
+              "name": "OPB",
+              "url": "https://www.opb.org/article/2026/11/17/oregon-ag-sues-openai-claims-company-knowingly-endangers-teens/",
+              "date": "17.11.2026"
+            },
+            {
+              "name": "KPTV",
+              "url": "https://www.kptv.com/2026/11/17/live-ag-rayfield-announces-new-legal-action-protect-oregon-children/",
+              "date": "17.11.2026"
             }
           ]
         }
@@ -136,52 +156,47 @@
       "count": 3,
       "items": [
         {
-          "num": 6,
-          "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Gemini 4 Hydrogen ersetzt Gemini 3.8 Flash in Suche und Gemini-App",
-          "lede": "Google rollt Gemini 4 Hydrogen weltweit für alle Nutzer in der Google-Suche und der Gemini-App aus; laut Google erledigt es Aufgaben 2,5-mal schneller als Gemini 3.8 Flash.",
-          "detail": "Das Modell ist auch über Gemini API, AI Studio und Android Studio verfügbar (berichtet: 1,50 / 7,50 Dollar pro Million Input-/Output-Token, 1 Mio. Token Kontext). Free-User erhalten es nur über die automatische Modellauswahl.",
-          "sources": [
-            {
-              "name": "gHacks",
-              "url": "https://www.ghacks.net/2026/11/13/google-releases-gemini-4-hydrogen-in-search-and-the-gemini-app-replacing-gemini-3-8-flash/",
-              "date": "13.11.2026"
-            }
-          ]
-        },
-        {
           "num": 7,
           "featured": false,
-          "tag": "Robotik",
-          "headline": "DeepMind veröffentlicht Gemini Robotics 2.5",
-          "lede": "Das neue Vision-Language-Action-Modell rollt über Robotik-Partner wie Apptronik, Agile Robots und Boston Dynamics aus.",
-          "detail": "In einem Pilot bei Mercedes-Benz sortierte Apptronik-Humanoid Apollo 2 Autoteile mit 96 % Erfolgsquote. Allgemein verfügbar ist das Modell nicht.",
+          "tag": "Modell-Release",
+          "headline": "Gemini 4 Neon: Carbon-Qualität bei Flash-Tempo",
+          "lede": "Google rollt Gemini 4 Neon für AI-Pro- und AI-Ultra-Abonnenten in der Gemini-App aus; Gemini 3.1 Pro wird abgelöst.",
+          "detail": "Neon soll bei Coding, Reasoning und agentischen Aufgaben an Gemini 4 Carbon heranreichen, aber schneller und günstiger sein. Für Free-Nutzer ist kein Zugang angekündigt.",
           "sources": [
             {
-              "name": "SiliconANGLE",
-              "url": "https://siliconangle.com/2026/11/11/google-deepmind-releases-new-advanced-robotics-ai-model-and-next-generation-gene-prediction-model/",
-              "date": "11.11.2026"
+              "name": "9to5Google",
+              "url": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/",
+              "date": "18.11.2026"
             }
           ]
         },
         {
           "num": 8,
           "featured": false,
-          "tag": "Forschung",
-          "headline": "AlphaGenome 2 sagt DNA-Varianteneffekte je Zelltyp voraus",
-          "lede": "Der Nachfolger von AlphaGenome wurde auf über 107 Millionen Einzelzellprofilen aus 68 Geweben trainiert und trifft die Richtung von Geneffekten laut DeepMind in 43 statt 23 % der Fälle.",
-          "detail": "Zugang über die AlphaGenome-API für nicht-kommerzielle Forschung, kommerziell als Private Preview. Ausdrücklich nicht für klinische Diagnostik validiert.",
+          "tag": "Produkt",
+          "headline": "Gemini Tasks wird in sechs Ländern kostenlos",
+          "lede": "Der agentische Tasks-Modus (früher Spark), bisher AI Pro/Ultra vorbehalten, steht nun Free-Nutzern in USA, Japan, Südkorea, Kanada, Australien und Indien offen.",
+          "detail": "Anrufe, SMS und Zahlungen starten zunächst nur in den USA; dazu kommt eine engere Workspace-Integration.",
           "sources": [
             {
-              "name": "Google DeepMind",
-              "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-              "date": "11.11.2026"
-            },
+              "name": "Android Central",
+              "url": "https://www.androidcentral.com/apps-software/ai/google-just-made-its-best-gemini-agent-free-heres-where-you-can-get-it",
+              "date": "17.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 9,
+          "featured": false,
+          "tag": "Produkt",
+          "headline": "Gemini-App läuft jetzt auf Android Go",
+          "lede": "Google bringt die Gemini-App auf geeignete Android-Go-Smartphones mit wenig Arbeitsspeicher.",
+          "detail": null,
+          "sources": [
             {
-              "name": "MarkTechPost",
-              "url": "https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-variant-effects/",
-              "date": "11.11.2026"
+              "name": "Online Tech Tips",
+              "url": "https://www.online-tech-tips.com/google-gemini-app-lower-memory-android-go-phones/",
+              "date": "18.11.2026"
             }
           ]
         }
@@ -191,40 +206,50 @@
       "id": "xai",
       "name": "xAI & Grok",
       "color": "#5b5751",
-      "count": 2,
+      "count": 3,
       "items": [
         {
-          "num": 9,
+          "num": 10,
           "featured": false,
-          "tag": "Personal",
-          "headline": "Rund 60 Stellen im Grok-Imagine-Videoteam gestrichen",
-          "lede": "SpaceX&#x27; KI-Sparte hat laut The Information etwa 60 Mitarbeiter des Grok-Imagine-Teams entlassen und verlagert Ressourcen auf Coding-Tools und den Agenten Grok Bot.",
-          "detail": "SpaceX hat die Zahl nicht bestätigt; Grok Imagine läuft vorerst weiter.",
+          "tag": "Modell-Release",
+          "headline": "Grok 4.8 im Soft-Rollout",
+          "lede": "Laut Elon Musk ist Grok 4.8 für einen Teil der Grok-Bot-Nutzer freigeschaltet; die allgemeine Freigabe brauche noch ein bis zwei Wochen Feinschliff.",
+          "detail": "Ein offizielles Release-Datum von xAI gibt es nicht, die Zeitangabe ist Musks eigene Schätzung.",
           "sources": [
             {
-              "name": "Crypto Briefing",
-              "url": "https://cryptobriefing.com/spacex-ai-layoffs-grok-imagine-video/",
-              "date": "13.11.2026"
-            },
-            {
-              "name": "FourWeekMBA",
-              "url": "https://fourweekmba.com/ai-report-spacex-ai-cuts-60-on-grok-imagine-shifts-to-coding/",
-              "date": "13.11.2026"
+              "name": "explainx.ai",
+              "url": "https://explainx.ai/blog/grok-4-8-soft-rollout-rl-cpp-stack-november-2026",
+              "date": "18.11.2026"
             }
           ]
         },
         {
-          "num": 10,
+          "num": 11,
           "featured": false,
-          "tag": "Industrie",
-          "headline": "Grok erkennt Fremdkörper in Raketentriebwerken",
-          "lede": "Ein xAI-Modell markiert laut Unternehmen Fremdkörper (FOD) in Boroskop-Aufnahmen mit 99,9 % Genauigkeit – menschliche Prüfer liegen bei rund 94 %.",
+          "tag": "Enterprise",
+          "headline": "Grok Bot übernimmt Buchhaltungs- und Spesenaufgaben",
+          "lede": "xAI positioniert Grok Bot mit einem Produkt-Update als Assistent für Buchhaltung und Spesenverwaltung in Unternehmen.",
           "detail": null,
           "sources": [
             {
-              "name": "Crypto Briefing",
-              "url": "https://cryptobriefing.com/grok-spacex-foreign-object-debris-detection/",
-              "date": "09.11.2026"
+              "name": "xAI",
+              "url": "https://x.ai/news",
+              "date": "16.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 12,
+          "featured": false,
+          "tag": "Tooling",
+          "headline": "grok-build-0.1 aus der API entfernt",
+          "lede": "Das Coding-Modell grok-build-0.1 hat sein End-of-Life erreicht und wird über die Grok-API nicht mehr ausgeliefert.",
+          "detail": null,
+          "sources": [
+            {
+              "name": "xAI API Release Notes",
+              "url": "https://docs.x.ai/developers/release-notes",
+              "date": "19.11.2026"
             }
           ]
         }
@@ -234,50 +259,85 @@
       "id": "europe",
       "name": "AI in Europa",
       "color": "#8a4fd0",
-      "count": 3,
+      "count": 5,
       "items": [
-        {
-          "num": 11,
-          "featured": false,
-          "tag": "Politik",
-          "headline": "EU-Gipfel in Dublin: KI-Souveränität und Gigafactories im Fokus",
-          "lede": "Die Staats- und Regierungschefs der EU berieten am 13. November in Dublin erstmals ausschließlich über KI; Kommissionspräsidentin von der Leyen kündigte an, Milliarden für KI-Gigafactories zu mobilisieren.",
-          "detail": "Die Ausschreibung für bis zu sieben KI-Gigafactories endete am 12. November, Zuschläge sind für Anfang 2027 geplant. Als informelles Treffen fasste der Gipfel keine formalen Beschlüsse.",
-          "sources": [
-            {
-              "name": "Sofia Globe",
-              "url": "https://sofiaglobe.com/2026/11/14/eu-to-mobilise-billions-of-euro-for-ai-gigafactories-europes-tech-sovereignty/",
-              "date": "14.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 12,
-          "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Fractile sammelt 720 Mio. Dollar für Inferenz-Chips",
-          "lede": "Das britische Chip-Startup Fractile schließt eine Series C über 720 Mio. Dollar bei rund 7 Mrd. Dollar Bewertung ab – noch bevor der erste Chip ausgeliefert ist.",
-          "detail": "Angeführt von Thrive Capital, Founders Fund, Lightspeed und Redpoint; die Chips sollen 2027 in Rechenzentren einsatzbereit sein.",
-          "sources": [
-            {
-              "name": "SiliconANGLE",
-              "url": "https://siliconangle.com/2026/11/11/inference-chip-developer-fractile-raises-720m-in-funding/",
-              "date": "11.11.2026"
-            }
-          ]
-        },
         {
           "num": 13,
           "featured": false,
-          "tag": "Hardware",
-          "headline": "Dresdner Chiphersteller Sparxity schließt Series A ab",
-          "lede": "Sparxity (ehemals SpiNNcloud) kommt nach der Series A auf insgesamt 90 Mio. Dollar Finanzierung für Chips, die dynamische Sparsity in der KI-Inferenz ausnutzen.",
-          "detail": "Lead-Investor ist der ICM HPQC Fund, beteiligt sind u. a. Lockheed Martin Ventures und GlobalFoundries. Mit der Deutschen Telekom besteht eine Absichtserklärung für einen Einsatz ab 2028.",
+          "tag": "Finanzierung",
+          "headline": "Telekom investiert 100 Mio. Euro in Mistral",
+          "lede": "Der T.Capital Tech Fund der Deutschen Telekom beteiligt sich an Mistrals Series D über 3 Mrd. Euro, die das Pariser Lab mit mehr als 21 Mrd. Euro bewertet.",
+          "detail": "Die Telekom sieht die Beteiligung als ersten Schritt zu einer strategischen Partnerschaft für souveräne KI für deutsche Unternehmen und Behörden; ein Kundenvertrag ist noch nicht unterzeichnet.",
           "sources": [
             {
-              "name": "The Next Web",
-              "url": "https://thenextweb.com/news/dresden-sparxity-series-a-90m",
-              "date": "10.11.2026"
+              "name": "Deutsche Telekom",
+              "url": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/11/deutsche-telekom-staerkt-souveraene-ki-in-deutschland",
+              "date": "19.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 14,
+          "featured": false,
+          "tag": "Markt",
+          "headline": "Mistral eröffnet Asien-Pazifik-Zentrale in Singapur",
+          "lede": "Mistral macht Singapur zum APAC-Hauptsitz und Forschungsstandort und will dort bis 2027 auf 200 Mitarbeitende wachsen.",
+          "detail": "Das Büro wird als Erweiterung des Science Hub Modelle für öffentlichen Sektor, Hightech-Industrie und Robotik entwickeln.",
+          "sources": [
+            {
+              "name": "TNGlobal",
+              "url": "https://technode.global/2026/11/20/frances-ai-company-mistral-opens-asia-pacific-headquarters-in-singapore-plans-200-staff-by-2027",
+              "date": "20.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 15,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Isomorphic Labs sammelt 5 Mrd. Dollar",
+          "lede": "Das Londoner DeepMind-Spin-off für KI-Wirkstoffdesign schließt eine Series C über 5 Mrd. Dollar ab, angeführt von Greenoaks und Sequoia.",
+          "detail": "Das Geld fließt in die Drug-Design-Engine, Rechenkapazität und erste Kandidaten Richtung klinische Studien. Die Bewertung wurde nicht genannt; die Series B über 2,1 Mrd. Dollar liegt erst ein halbes Jahr zurück.",
+          "sources": [
+            {
+              "name": "BioIndustry Association",
+              "url": "https://www.bioindustry.org/resource/isomorphic-labs-announces-5-billion-series-c-funding.html",
+              "date": "17.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 16,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Genesis AI: 500 Mio. Dollar für Allzweck-Roboter",
+          "lede": "Das Robotik-Startup aus Paris und San Carlos holt eine Series A über 500 Mio. Dollar bei 3,5 Mrd. Dollar Bewertung.",
+          "detail": "Angeführt von Khosla Ventures, Premji Invest und Eclipse, Nvidia ist beteiligt. Erste Einsätze des Roboters Eno sind in Fertigung und Logistik geplant.",
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
+              "date": "17.11.2026"
+            },
+            {
+              "name": "Sifted",
+              "url": "https://sifted.eu/articles/genesis-ai-raises-500m/",
+              "date": "17.11.2026"
+            }
+          ]
+        },
+        {
+          "num": 17,
+          "featured": false,
+          "tag": "Finanzierung",
+          "headline": "Model ML wird mit 1,5 Mrd. Dollar bewertet",
+          "lede": "Das Londoner Startup für KI-Agenten in Banking und Beratung sammelt 250 Mio. Dollar in einer Series B, angeführt von General Atlantic und QED.",
+          "detail": null,
+          "sources": [
+            {
+              "name": "Tech.eu",
+              "url": "https://tech.eu/2026/11/17/model-ml-hits-15b-valuation-with-250m-raise-just-18-months-after-emerging-from-stealth/",
+              "date": "17.11.2026"
             }
           ]
         }
@@ -287,75 +347,50 @@
       "id": "general",
       "name": "Sonstige KI-News",
       "color": "#b7841f",
-      "count": 4,
+      "count": 3,
       "items": [
         {
-          "num": 14,
+          "num": 18,
           "featured": false,
           "tag": "Hardware",
-          "headline": "Nvidia unter Druck wegen Chips in China",
-          "lede": "Mehrere Berichte zeigen, dass exportbeschränkte Nvidia-Chips in China landen; in Washington tobt ein interner Streit über schärfere Kontrollen.",
-          "detail": "Laut Reuters kaufte eine sanktionierte chinesische Universität H200-Chips über einen Zwischenhändler; TechCrunch berichtet über Spuren von Blackwell-Training in führenden chinesischen Modellen. Axios zufolge stellte Finanzminister Bessent Handelsminister Lutnick wegen verschleppter Exportkontrollen zur Rede.",
+          "headline": "Nvidia übertrifft Erwartungen, Aktie gibt trotzdem nach",
+          "lede": "Nvidia meldet 115,8 Mrd. Dollar Quartalsumsatz (+103 % zum Vorjahr) und erwartet rund 130 Mrd. Dollar im Folgequartal.",
+          "detail": "Es war der erste Bericht ohne Jensen Huang als CEO; Interims-CEO ist Colette Kress. Die Aktie schloss am Folgetag 2,9 % im Minus, zusätzlich verlangen neue US-Exportregeln Lizenzen für Chip-Lieferungen nach Singapur, Malaysia, Indonesien, Thailand und Brasilien.",
           "sources": [
             {
-              "name": "Al Jazeera",
-              "url": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show",
-              "date": "11.11.2026"
-            },
-            {
-              "name": "Axios",
-              "url": "https://axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls",
-              "date": "11.11.2026"
-            },
-            {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-              "date": "13.11.2026"
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/11/18/nvidia-earnings-market-analysis.html",
+              "date": "18.11.2026"
             }
           ]
         },
         {
-          "num": 15,
+          "num": 19,
           "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Mercor verdoppelt Bewertung auf 20 Mrd. Dollar",
-          "lede": "Der Anbieter von Experten-Daten für KI-Training sammelt 750 Mio. Dollar in einer Series D ein, u. a. mit Nvidia und Salesforce.",
-          "detail": "Die Bewertung verdoppelt sich gegenüber der Series C vom Oktober 2025 (10 Mrd. Dollar).",
+          "tag": "Enterprise",
+          "headline": "Microsoft Ignite: Copilot als „Betriebssystem für Arbeit“",
+          "lede": "Microsoft integriert Word, Excel und PowerPoint direkt in die Copilot-App und stellt mit Autopilot einen langlaufenden Agenten für wiederkehrende Aufgaben vor.",
+          "detail": "Dazu kommen Copilot Workspaces als Nachfolger der Notebooks und Copilot Code für App-Erstellung per Prompt. Vieles läuft zunächst nur im Frontier-Programm.",
           "sources": [
             {
-              "name": "AI Weekly",
-              "url": "https://aiweekly.co/alerts/mercor-raises-750m-series-d-at-20b-doubling-in-a-year",
-              "date": "10.11.2026"
+              "name": "SiliconANGLE",
+              "url": "https://siliconangle.com/2026/11/18/at-ignite-2026-microsoft-reinvents-copilot-as-the-autonomous-engine-of-enterprise-work/",
+              "date": "18.11.2026"
             }
           ]
         },
         {
-          "num": 16,
+          "num": 20,
           "featured": false,
-          "tag": "Infrastruktur",
-          "headline": "Ex-AWS-Manager Dave Brown übernimmt Metas Rechenzentrums-Ausbau",
-          "lede": "Metas Infrastrukturchef Santosh Janardhan tritt Anfang 2027 ab; Dave Brown, der fast 20 Jahre bei AWS war, übernimmt den milliardenschweren KI-Ausbau.",
-          "detail": null,
+          "tag": "Markt",
+          "headline": "Perplexity erreicht 1 Mrd. Dollar Run-Rate",
+          "lede": "CEO Aravind Srinivas meldet einen annualisierten Umsatz von 1 Mrd. Dollar, eine Vervierfachung seit Jahresbeginn.",
+          "detail": "Es handelt sich um eine Run-Rate, nicht um realisierten Jahresumsatz. Parallel kündigte Perplexity eine Monitor-API und Teammates für Computer an.",
           "sources": [
             {
-              "name": "24/7 Wall St.",
-              "url": "https://247wallst.com/investing/2026/11/12/meta-is-handing-its-ai-data-center-buildout-to-an-amazon-veteran/",
-              "date": "12.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 17,
-          "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Bharat Semi erhält 24 Mio. Dollar Seed für KI-Bildsensoren",
-          "lede": "Das indische Chip-Startup will mit KI-fähigen Bildsensoren den globalen Markt angreifen; angeführt wird die Runde von Info Edge, South Park Commons und Indus Bridge Ventures.",
-          "detail": null,
-          "sources": [
-            {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
-              "date": "15.11.2026"
+              "name": "AIToolly",
+              "url": "https://aitoolly.com/ai-news/article/2026-11-18-perplexity-hits-1-billion-revenue-run-rate-up-fourfold-in-2026-and-ships-monitor-api",
+              "date": "18.11.2026"
             }
           ]
         }
