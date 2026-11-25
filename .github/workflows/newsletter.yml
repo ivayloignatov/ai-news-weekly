@@ -16,7 +16,10 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: |
           set -euo pipefail
-          HTML="$(cat index.html)"
+          # Email-safe render (inline styles) from fresh data.json; index.html styles do not survive Gmail
+          node scripts/html-to-data.mjs
+          node scripts/build-email.mjs data.json email.html
+          HTML="$(cat email.html)"
           # Issue week from data.json (the issue covers the previous week, not the send week)
           SUBJECT="$(printf 'AI News Weekly – %s-KW%02d' "$(jq -r .year data.json)" "$(jq -r .kw data.json)")"
           # jq escaped HTML (Quotes/Newlines) sauber zu JSON

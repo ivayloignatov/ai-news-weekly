@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,11 +63,11 @@ footer{padding:34px 0 70px;border-top:1px solid var(--rule);margin-top:30px;disp
 </style>
 </head>
 <body>
-<header class="wrap mast"><div class="brand"><span class="dot"></span>AI Weekly</div><div class="mast-meta">Kalenderwoche {{KW}} · {{JAHR}}<br><b>{{ZEITRAUM}}</b> · {{COUNT_SUMMARY}}</div></header>
+<header class="wrap mast"><div class="brand"><span class="dot"></span>AI Weekly</div><div class="mast-meta">Week {{KW}} · {{JAHR}}<br><b>{{ZEITRAUM}}</b> · {{COUNT_SUMMARY}}</div></header>
 <div class="topbar" id="topbar"><nav class="nav"><span class="nav-label">{{MELDUNGEN_LABEL}}</span>{{NAV}}</nav></div>
 <main class="wrap">
 {{INHALT}}
-<footer>{{PREV_LINK}}<div class="meta-foot">Automatisch erstellt durch eine wöchentliche Claude-Routine.<br>Jede Meldung basiert auf einer datierten Quelle der jeweiligen Woche. Ohne Beleg keine Aufnahme.<br>Generiert: {{GENERIERT}}</div></footer>
+<footer>{{PREV_LINK}}<div class="meta-foot">Written by a weekly Claude routine for one reader in Germany.<br>Every item rests on a dated source from that week. No source, no item.<br>Generated: {{GENERIERT}}</div></footer>
 </main>
 <script>
 (function(){

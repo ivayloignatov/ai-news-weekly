@@ -25,6 +25,8 @@ const MONTHS = {
 function decode(s) {
   if (s == null) return s;
   return s
+    .replace(/<br\s*\/?>/g, '\n')
+    .replace(/<[^>]+>/g, '')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
@@ -86,13 +88,13 @@ function parseItems(labBlock) {
 function parse(html) {
   // ── Masthead ──
   const mast = pick(html, /<div class="mast-meta">(.*?)<\/div>/s) ?? '';
-  const kwM = html.match(/Kalenderwoche\s+(\d+)\s*·\s*(\d+)/);
+  const kwM = html.match(/(?:Kalenderwoche|Week)\s+(\d+)\s*·\s*(\d+)/);
   const kw = kwM ? parseInt(kwM[1], 10) : null;
   const year = kwM ? parseInt(kwM[2], 10) : null;
   const period = pick(html, /<div class="mast-meta">[\s\S]*?<b>(.*?)<\/b>/);
 
   // ── Footer (generated timestamp + prev edition) ──
-  const genM = html.match(/Generiert:\s*([\d.]+),\s*([\d:]+)/);
+  const genM = html.match(/(?:Generiert|Generated):\s*([\d.]+),\s*([\d:]+)/);
   const generated = genM ? toIso(genM[1], genM[2]) : null;
   const prevHref = pick(html, /<a class="prev-link" href="([^"]+)"/);
 
