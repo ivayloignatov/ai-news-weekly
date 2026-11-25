@@ -17,7 +17,8 @@ jobs:
         run: |
           set -euo pipefail
           HTML="$(cat index.html)"
-          SUBJECT="AI News Weekly – $(date +'%G-KW%V')"
+          # Issue week from data.json (the issue covers the previous week, not the send week)
+          SUBJECT="$(printf 'AI News Weekly – %s-KW%02d' "$(jq -r .year data.json)" "$(jq -r .kw data.json)")"
           # jq escaped HTML (Quotes/Newlines) sauber zu JSON
           jq -n \
             --arg from "ainews@keramikcenter.com" \
