@@ -65,14 +65,15 @@ function parseSources(block) {
 
 function parseItems(labBlock) {
   const out = [];
-  const re = /<article class="(item(?: featured)?)">(.*?)<\/article>/gs;
+  const re = /<article class="(item(?: featured)?)"(?: id="([^"]*)")?>(.*?)<\/article>/gs;
   let m;
   while ((m = re.exec(labBlock)) !== null) {
     const cls = m[1];
-    const body = m[2];
+    const body = m[3];
     const numRaw = pick(body, /<div class="inum">(\d+)<\/div>/);
     const sourcesBlock = pick(body, /<div class="sources">(.*?)<\/div>/s);
     out.push({
+      id: m[2] ?? null,
       num: numRaw ? parseInt(numRaw, 10) : null,
       featured: cls.includes('featured'),
       tag: pick(body, /<span class="tag">(.*?)<\/span>/s),
@@ -111,13 +112,25 @@ function parse(html) {
     labs.push({ id, name, color, count: items.length, items });
   }
 
+  // Twice-weekly issues (2026-11-25): top-3 block and "Coming to Germany" list, both optional.
+  const listItems = (cls) => {
+    const block = (html.match(new RegExp(`<div class="${cls}">(.*?)</div>`, 's')) || [])[1] ?? '';
+    return [...block.matchAll(/<li>(.*?)<\/li>/gs)].map((x) => ({
+      text: decode(x[1]),
+      href: (x[1].match(/href="([^"]+)"/) || [])[1] ?? null,
+    }));
+  };
+
   const itemCount = labs.reduce((n, l) => n + l.items.length, 0);
   return {
     schemaVersion: 1,
+    issueDate: generated ? generated.slice(0, 10) : null,
     kw,
     year,
     period,
     generated,
+    summary: listItems('brief'),
+    rollouts: listItems('rollouts'),
     prevHref,
     categoryCount: labs.length,
     itemCount,

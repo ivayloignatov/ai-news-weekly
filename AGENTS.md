@@ -1,8 +1,10 @@
 # AGENTS.md — ai-news-weekly
 
-Weekly, curated AI news digest. A Claude routine fills `_template.html` ->
-`index.html` (current issue), archives the previous week to
-`archiv/YYYY-kwNN.html`, and pushes to a `claude/**` branch.
+Personal AI briefing, published Tuesday and Friday (since 2026-11-25; weekly
+before). Two Claude routines (same prompt, versioned in `ROUTINE-PROMPT.md`)
+fill `_template.html` -> `index.html` (current issue), archive the previous
+issue to `archiv/YYYY-MM-DD-ddd.html` (older weekly issues: `archiv/YYYY-kwNN.html`),
+and push to a `claude/**` branch.
 
 Repo type: static content repo (HTML digest + a small Node build script + two
 GitHub Actions workflows). No app server, no test framework, no build step
@@ -17,7 +19,7 @@ Claude routine (claude/**-branch)
    -> Coolify: deploys main as static site -> https://ainews.keramikcenter.com
 ```
 
-- **Generation** (Monday): `index.html` is built from `_template.html`. Every
+- **Generation** (Tuesday and Friday, ~06:30 Berlin): `index.html` is built from `_template.html`. Every
   news item needs at least one dated source, or it does not go in.
 - **Send/deploy** run automatically via the two workflows plus Coolify. A
   `GITHUB_TOKEN` push does not trigger `on:push` workflows (loop guard), which
@@ -36,10 +38,13 @@ MUST follow exactly this schema (the CI parser then becomes the validator):
 ```jsonc
 {
   "schemaVersion": 1,
+  "issueDate": "2026-12-01",        // Berlin date of "generated" (added 2026-11-25)
   "kw": 22, "year": 2026,
   "period": "25. - 31. Mai 2026",   // Masthead <b>...</b>
   "generated": "2026-06-01T07:00:00", // ISO (local), from footer "Generiert: ..."
   "prevHref": "archiv/2026-kw21.html",
+  "summary":  [{ "text": "...", "href": "#act-01" }],   // .brief li (optional)
+  "rollouts": [{ "text": "...", "href": "https://..." }], // .rollouts li (optional)
   "categoryCount": 6, "itemCount": 22,
   "labs": [
     {
@@ -49,6 +54,7 @@ MUST follow exactly this schema (the CI parser then becomes the validator):
       "count": 4,
       "items": [
         {
+          "id": "act-01",           // article id (null in older issues)
           "num": 1,                 // .inum (null for featured)
           "featured": false,        // class "item featured"
           "tag": "Modell-Release",  // .tag
@@ -75,4 +81,7 @@ visible break beats a silently empty `data.json`).
 ## Conventions
 
 - Conventional Commits. No force-push, no `--no-verify`.
+- The newsletter mail is rendered from `data.json` by `scripts/build-email.mjs`
+  (inline styles; Gmail strips the site's CSS). `issue-watchdog.yml` fails on
+  Tue/Fri 10:00 Berlin if `data.json` is not today's issue.
 - Secrets (Resend) only via GitHub Actions secrets, never in the repo.

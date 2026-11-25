@@ -47,6 +47,16 @@ function lab(l) {
 </td></tr>${l.items.map((it) => item(it, l.color)).join('\n')}`;
 }
 
+// Top-3 and rollout lists (optional; older data.json has neither)
+function block(title, list, accent, size, color) {
+  if (!list?.length) return '';
+  return `<tr><td style="padding-top:22px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+<td style="background:#ffffff;border:1px solid #dde0e8;border-left:4px solid ${accent};border-radius:8px;padding:14px 18px;">
+<div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#5a6070;margin-bottom:8px;">${title}</div>
+${list.map((x) => `<div style="font-size:${size}px;line-height:1.5;color:${color};margin-bottom:6px;">• ${esc(x.text)}</div>`).join('')}
+</td></tr></table></td></tr>`;
+}
+
 const d = JSON.parse(await readFile(IN, 'utf-8'));
 const nav = d.labs.map((l) => `<span style="color:${l.color};">●</span> ${esc(l.name)} ${l.count}`).join('&nbsp;&nbsp; ');
 
@@ -60,6 +70,8 @@ const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta n
 <div style="font-size:12px;color:#5a6070;margin-top:10px;line-height:1.8;">${nav}</div>
 <div style="font-size:12px;margin-top:8px;"><a href="${SITE}" style="color:#5a6070;">Read on the web</a></div>
 </td></tr>
+${block('Top 3 for you', d.summary, '#b5512f', 15, '#15171d')}
+${block('Coming to Germany', d.rollouts, '#dde0e8', 14, '#5a6070')}
 ${d.labs.map(lab).join('\n')}
 <tr><td style="padding-top:28px;border-top:1px solid #e7e9ef;font-size:11px;color:#9aa0ad;line-height:1.7;">
 Written by a weekly Claude routine. Every item rests on a dated source from that week.<br>

@@ -1,9 +1,8 @@
 name: Issue watchdog
-# Fails (GitHub mails the owner) if no new issue was published by Monday noon.
-# The routine skipped KW44+KW45/2026 without any alert.
+# Fails (GitHub mails the owner) if the Tuesday/Friday issue is not published by 10:00 Berlin.
 on:
   schedule:
-    - cron: '0 11 * * 1'   # Monday 11:00 UTC = 12:00 CET
+    - cron: '0 9 * * 2,5'   # Tue+Fri 09:00 UTC = 10:00 CET / 11:00 CEST
   workflow_dispatch: {}
 
 jobs:
@@ -11,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: data.json covers last week
+      - name: data.json is today's issue
         run: |
           set -euo pipefail
-          EXPECTED="$(date -d '7 days ago' +%V)"
-          GOT="$(printf '%02d' "$(jq -r .kw data.json)")"
-          echo "expected KW$EXPECTED, data.json has KW$GOT"
-          [ "$GOT" = "$EXPECTED" ] || { echo "::error::No AI Weekly issue for KW$EXPECTED"; exit 1; }
+          TODAY="$(TZ=Europe/Berlin date +%F)"
+          GOT="$(jq -r '.issueDate // empty' data.json)"
+          echo "expected issueDate $TODAY, data.json has ${GOT:-none}"
+          [ "$GOT" = "$TODAY" ] || { echo "::error::No AI Weekly issue for $TODAY"; exit 1; }
