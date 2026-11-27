@@ -1,398 +1,211 @@
 {
   "schemaVersion": 1,
-  "kw": 47,
+  "issueDate": "2026-11-27",
+  "kw": 48,
   "year": 2026,
-  "period": "16. – 22. November 2026",
-  "generated": "2026-11-23T07:10:00",
-  "prevHref": "archiv/2026-kw46.html",
+  "period": "Tue 24 – Thu 26 November 2026",
+  "generated": "2026-11-27T06:50:00",
+  "summary": [
+    {
+      "text": "Tasks and Elicitation are GA in Claude Code; update and try a long-running MCP task.",
+      "href": "#my-stack-01"
+    },
+    {
+      "text": "Claude artifacts can be installed as desktop apps; at Sopra the feature stays off until an owner enables it.",
+      "href": "#my-stack-02"
+    },
+    {
+      "text": "Google Workspace MCP is GA and becomes mandatory for agents on 1 Feb 2027; move any agent access off direct API calls.",
+      "href": "#my-stack-03"
+    }
+  ],
+  "rollouts": [
+    {
+      "text": "Google Workspace: MCP mandatory for AI agents, REST limited to Standard quota · 1 Feb 2027 (Scaled-tier billing from 1 Apr 2027); global, no German exception listed · Google",
+      "href": "https://developers.google.com/workspace/release-notes"
+    },
+    {
+      "text": "Synthesia: invisible watermark on all videos · 1 Dec 2026; global, no German exception listed · Synthesia",
+      "href": "https://www.synthesia.io/features/ai-video-detector"
+    },
+    {
+      "text": "ChatGPT: shared Chat and Work usage limits · wider rollout in December; regions not stated · TechCrunch",
+      "href": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+    },
+    {
+      "text": "GitHub: Copilot code review billing defaults to the organisation · 30 Dec 2026; global, no German exception listed · GitHub",
+      "href": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/"
+    }
+  ],
+  "prevHref": "archiv/2026-11-23-mon.html",
   "categoryCount": 6,
-  "itemCount": 21,
+  "itemCount": 12,
   "labs": [
     {
-      "id": "anthropic",
-      "name": "Anthropic",
+      "id": "my-stack",
+      "name": "Claude & Gemini in Germany",
       "color": "#b5512f",
+      "count": 3,
+      "items": [
+        {
+          "id": "my-stack-01",
+          "num": 1,
+          "featured": false,
+          "tag": "Feature",
+          "headline": "MCP: Tasks and Elicitation GA, MCP servers can now ship skills (beta)",
+          "lede": "Anthropic made long-running Tasks and Elicitation generally available in Claude and Claude Code for Pro, Max and Ultra; no regional restriction is stated, so Germany is covered.",
+          "detail": "Skills over MCP is a public beta, on by default for Pro/Max/Ultra, opt-in via admin for Team, \"coming soon\" for Enterprise. File uploads to MCP servers follow \"soon\" with no date. Claude Code 2.1.332 shows MCP skills as server:skill in the / menu.\nWhy it matters: Your MCP servers can now carry their own skills, and long jobs no longer block a session. Your Sopra Enterprise plan will not get Skills over MCP yet.\nAction: Update Claude Code, try one long-running MCP task, and check whether a server you use already ships skills.\nTake: Useful plumbing, not a headline. The Enterprise delay matters more if you plan to demo this at work.\nYour plans: Claude Max: yes. Sopra work access: Tasks rolling out, Skills over MCP not yet. Google AI Pro / M365: no.",
+          "sources": []
+        },
+        {
+          "id": "my-stack-02",
+          "num": 2,
+          "featured": false,
+          "tag": "Feature",
+          "headline": "Claude artifacts can now be installed as desktop apps (beta, Mac and Windows)",
+          "lede": "Installed artifacts open in their own window on Claude for Mac and Windows on all plans; no regional restriction is stated, so it applies in Germany.",
+          "detail": "Three permission levels: browser-equivalent default, app permissions (notifications, global shortcuts), and full computer access. Team has it on with full access off; Enterprise is off until an owner enables it. Permissions must be re-approved after every update, and Anthropic does not review apps. Usage counts toward plan limits. Not available to HIPAA-ready orgs.\nWhy it matters: Your own small tools (dashboards, trackers) can live as apps without hosting. For client or Sopra use, full computer access is a security review topic.\nAction: Update the Claude desktop app and install one of your own artifacts. For Sopra, do not enable full access before IT security has looked at it.\nTake: Handy for personal tools. Full computer access for unreviewed apps is a risk you should not wave through at a client.\nYour plans: Claude Max: yes. Sopra work access: off by default until an owner enables it.",
+          "sources": []
+        },
+        {
+          "id": "my-stack-03",
+          "num": 3,
+          "featured": false,
+          "tag": "Workspace",
+          "headline": "Google Workspace MCP servers are GA; MCP becomes mandatory for agents on 1 Feb 2027",
+          "lede": "Chat, Gmail, Calendar, Docs, Drive, Sheets, Slides and Tasks MCP servers are generally available (rollout up to 10 days); no region limit is listed.",
+          "detail": "Standard tier is capped at 5,000 requests per day per project per product. From 1 Feb 2027 agents must use MCP and direct REST calls fall under Standard quotas; billing for the Scaled tier starts 1 Apr 2027. Since 11 Nov, MCP servers reject OAuth clients not marked as AI agent clients. On 26 Nov seven more Gmail tools (send_message, reply, create_filter) went GA.\nWhy it matters: If you wire Claude Code or a homelab agent to Gmail, Drive or Calendar, the old direct-API route is on a deadline. Consulting clients on Workspace will ask about this.\nAction: Re-create any OAuth client used by agents as an agentic client and move agent access to the MCP servers before February.\nTake: Sensible move by Google, but it is also a metering hook: billing arrives in April.\nYour plans: Google AI Pro (personal Google account): check whether your account gets access, the notes target Workspace and Cloud projects.",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "act",
+      "name": "Act on this",
+      "color": "#0f9d63",
+      "count": 1,
+      "items": [
+        {
+          "id": "act-01",
+          "num": 1,
+          "featured": false,
+          "tag": "Update",
+          "headline": "Claude Code 2.1.332: MCP skills, new skill-shell hook, Sonnet 5.5 mappings",
+          "lede": "Claude Code 2.1.332 is out; it is a client update, so it is available in Germany now.",
+          "detail": "Adds MCP skills in the / menu (beta) and a PreSkillShellCommand hook that can refuse a skill's inline shell commands. On Foundry the default model is now Sonnet 5.5; on Bedrock Mantle sonnet means Sonnet 5. Fixes several freezes (named pipes, huge hook output, MCP stdout floods). Breaking for observability setups: desktop OTel service.name is now claude-code-desktop, and OAuth tokens can start with oat02-.\nWhy it matters: The hook is a cheap guardrail for the skills you install from third parties. The OTel and token-prefix changes can break proxies and log scrubbers.\nAction: Update, then check proxy rules or log scrubbers for the oat02- prefix and any OTel filters on service.name.\nTake: Worth the update for the freeze fixes alone.\nYour plans: Claude Max: yes. Sopra work access: depends on the version your IT allows.",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "name": "Other models: usable in Germany?",
+      "color": "#2f6ddb",
       "count": 4,
       "items": [
         {
-          "num": null,
-          "featured": true,
-          "tag": "IPO",
-          "headline": "Anthropic an der Nasdaq: Rekord-IPO bringt 93,5 Mrd. Dollar",
-          "lede": "Anthropic hat 1,127 Mrd. Aktien zu je 83 Dollar platziert – inklusive voll ausgeübter Mehrzuteilungsoption von 147 Mio. Aktien rund 93,5 Mrd. Dollar Bruttoerlös.",
-          "detail": "Der Handel unter dem Ticker ANT startete am 19. November an der Nasdaq Global Select, der Abschluss inklusive paralleler Privatplatzierung folgte am 20. November. Nach einem Eröffnungskurs von 111,50 Dollar schloss die Aktie am Freitag bei 88,91 Dollar – mitten in der schwächsten Tech-Woche an der Wall Street seit 2020.",
-          "sources": [
-            {
-              "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-              "date": "18.11.2026"
-            },
-            {
-              "name": "Anthropic",
-              "url": "https://www.anthropic.com/news/ipo-close",
-              "date": "20.11.2026"
-            },
-            {
-              "name": "CNBC",
-              "url": "https://cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
-              "date": "21.11.2026"
-            }
-          ]
-        },
-        {
+          "id": "models-01",
           "num": 1,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Computer Use für Team- und Enterprise-Pläne",
-          "lede": "Claude kann bei Team- und Enterprise-Kunden jetzt als Beta den Bildschirm sehen und in freigegebenen Desktop-Apps arbeiten.",
-          "detail": "Die Funktion läuft in der neuen Claude-Oberfläche auf Desktop, Web und Mobile, sobald „Computer access“ aktiviert ist, und wird schrittweise an Organisationen ausgerollt. Parallel startet ein überarbeitetes Design der Mobile-App, zuerst auf iOS.",
-          "sources": [
-            {
-              "name": "Claude Release Notes",
-              "url": "https://support.claude.com/en/articles/12138966-release-notes",
-              "date": "20.11.2026"
-            }
-          ]
+          "tag": "Limits",
+          "headline": "GPT-6.2 limits get tighter; ChatGPT merges Chat and Work into one usage meter",
+          "lede": "OpenAI says GPT-6.2 was discounted too heavily at launch: users now hit the limit 40% sooner with Astra and 25% sooner with Sol; there is no German-specific information.",
+          "detail": "No retroactive charges, and Go, Plus, Pro and Business get one extra reset. Separately, OpenAI is starting a unified Chat and Work experience with one shared meter for a small group of Pro users, wider in December. Instant stays outside the cap. API pricing is separate. Closed weights, no local option.\nWhy it matters: Only relevant if you compare ChatGPT with your Claude Max usage, or if clients on ChatGPT Business hit limits.\nAction: Ignore unless you use ChatGPT. For clients, expect the limit complaints.\nTake: Flat-rate AI is getting more metered everywhere. Plan on that when you quote client costs.\nYour plans: Not in Claude Max, Google AI Pro or Microsoft 365 Family. Microsoft has also announced GPT-6.2 for Copilot, availability varies by organisation and region.",
+          "sources": []
         },
         {
+          "id": "models-02",
           "num": 2,
           "featured": false,
-          "tag": "Tooling",
-          "headline": "Linked Billing: Endkunden zahlen Claude-Nutzung in Fremd-Apps selbst",
-          "lede": "Entwickler können Claude-Kosten ihrer App über die eigene Claude-Organisation des Kunden abrechnen lassen (Beta).",
-          "detail": "Pro Request legt ein billing_policy-Feld fest, wer zahlt; Kunden können in der Console ein Ausgabelimit setzen oder die Verknüpfung lösen. Gilt nur für Organisationen, die direkt mit Anthropic abrechnen.",
-          "sources": [
-            {
-              "name": "Claude Platform Release Notes",
-              "url": "https://platform.claude.com/docs/en/release-notes/overview",
-              "date": "17.11.2026"
-            }
-          ]
+          "tag": "Open weights",
+          "headline": "Inkling 2 Mini lands in Ollama (0.40.18); about 32 GB memory suggested",
+          "lede": "Thinking Machines' Inkling 2 Mini can be run locally via Ollama on Windows and Linux; as a local model there is no data-processing question, and cloud hosting via Fireworks is also offered.",
+          "detail": "Ollama suggests 32 GB of shared or graphics memory as a guideline. Fireworks lists Inkling 2 Mini at $0.15 per million input and $0.50 per million output tokens, Inkling 2 Small at $0.30 and $1. The model reuses parts of its network in loops to get reasoning with less memory (The Neuron).\nWhy it matters: It fits a 32 GB GPU or two smaller cards in your homelab.\nAction: Run ollama pull inkling-2-mini after updating Ollama and compare it with your current local default on two or three real tasks.\nTake: Interesting architecture, but no independent benchmarks yet. Test, do not switch.\nYour plans: Local only (free), or paid Fireworks API.",
+          "sources": []
         },
         {
+          "id": "models-03",
           "num": 3,
           "featured": false,
-          "tag": "Sicherheit",
-          "headline": "Text-Wasserzeichen für ältere Claude-Modelle",
-          "lede": "Von Opus 4.6, Opus 4.5, Sonnet 4.5 und Haiku 4.5 erzeugter Text trägt auf unterstützten Plattformen nun Anthropics Text-Wasserzeichen.",
-          "detail": "Bei nicht standardmäßigen Werten für temperature, top_p oder top_k kann das Wasserzeichen fehlen. Zusätzlich gibt es neue Webhook-Events für kundenverwaltete Schlüssel.",
-          "sources": [
-            {
-              "name": "Claude Platform Release Notes",
-              "url": "https://platform.claude.com/docs/en/release-notes/overview",
-              "date": "16.11.2026"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "openai",
-      "name": "OpenAI",
-      "color": "#0f9d63",
-      "count": 3,
-      "items": [
+          "tag": "Open weights",
+          "headline": "Tencent Hy4 Flash: cheap API, GGUF builds need about 128 GB memory",
+          "lede": "Tencent's Hy4 Flash is available via Fireworks and as GGUF files; there is no German-specific information and data processing depends on the host (Fireworks or your machine).",
+          "detail": "Fireworks: $0.07 per million uncached input and $0.281 per million output tokens, 512K context, text and image input. The vendor reports 75.9% on CorporateBench against 75.4% for Opus 5.5 at $0.013 versus $2.80 per task, but it ranks 19th of 22 on DeepSWE. GGUF files are 126 to 157 GiB; Tencent reports 44 to 50 tokens/s on an M5 Max Mac with 128 GB.\nWhy it matters: Not runnable on your GPUs. It is a cost reference point for client talks about cheap Chinese models, with the data-residency question attached.\nAction: Nothing to do now. If a client asks about cheap models, note the mixed benchmark picture and the hosting question.\nTake: Vendor-picked benchmark, and the coding rank says otherwise. Treat the headline cost as marketing until independent tests appear.\nYour plans: API (paid), or local only on 128 GB class hardware.",
+          "sources": []
+        },
         {
+          "id": "models-04",
           "num": 4,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "GPT-6.2 Astra und Sol veröffentlicht",
-          "lede": "OpenAI bringt GPT-6.2 Astra für anspruchsvolle Profi-Arbeit und Sol für den Alltag in ChatGPT Work, Codex und die API.",
-          "detail": "Astra kostet in der API 20 % weniger (8/40 Dollar pro Mio. Input-/Output-Token), Sol bleibt bei 2/10 Dollar. Astra ist laut OpenAI das erste extern ausgerollte Modell, das die „High“-Schwelle für KI-Selbstverbesserung im Preparedness Framework erreicht; erste Tests von Epoch AI sehen es bei realistischen Arbeitsaufgaben hinter Claude Fable 5.2.",
-          "sources": [
-            {
-              "name": "OpenAI Developer Community",
-              "url": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531",
-              "date": "17.11.2026"
-            },
-            {
-              "name": "The Next Web",
-              "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers",
-              "date": "18.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 5,
-          "featured": false,
-          "tag": "Hardware",
-          "headline": "OpenAI-Modelle optimieren AMDs GPU-Schaltungsdesign",
-          "lede": "Laut OpenAI haben seine Modelle bis zu 14 % PPA-Verbesserung an AMDs Flaggschiff-GPU-Design erzielt; Teile davon gingen in ein Design für die Fertigung.",
-          "detail": "Die Modelle schrieben SystemVerilog-RTL um, Synopsys-Tools prüften die Verhaltensgleichheit. Die Zahlen sind selbstberichtet, ohne unabhängiges Audit oder Silizium-Messwerte.",
-          "sources": [
-            {
-              "name": "The Next Web",
-              "url": "https://thenextweb.com/news/openai-models-amd-gpu-chip-design-14-percent",
-              "date": "18.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 6,
-          "featured": false,
-          "tag": "Politik",
-          "headline": "Oregon verklagt OpenAI auf über 2 Mrd. Dollar",
-          "lede": "Generalstaatsanwalt Dan Rayfield wirft OpenAI vor, die Sicherheit von ChatGPT und ChatGPT for Teens für Minderjährige falsch dargestellt zu haben.",
-          "detail": "Die Klage vor dem Multnomah County Circuit Court stützt sich auf den Unlawful Trade Practices Act und fordert mindestens 2,035 Mrd. Dollar sowie eine Unterlassungsverfügung. OpenAI weist die Vorwürfe zurück.",
-          "sources": [
-            {
-              "name": "OPB",
-              "url": "https://www.opb.org/article/2026/11/17/oregon-ag-sues-openai-claims-company-knowingly-endangers-teens/",
-              "date": "17.11.2026"
-            },
-            {
-              "name": "KPTV",
-              "url": "https://www.kptv.com/2026/11/17/live-ag-rayfield-announces-new-legal-action-protect-oregon-children/",
-              "date": "17.11.2026"
-            }
-          ]
+          "tag": "Open weights",
+          "headline": "Ternary Bonsai 2.5 27B: Apache 2.0, GGUF file of only 5.93 GB",
+          "lede": "PrismML released the 27B ternary model on 24 Nov under Apache 2.0; it is a download, so it runs in Germany with no cloud processing.",
+          "detail": "The GGUF is 5.93 GB per the model card, and context needs memory on top. Ternary weights are what make it this small. Quality versus normal 27B models is not shown in the sources I could check.\nWhy it matters: It could run on a small or older GPU in your homelab, even next to other services.\nAction: Pull it and run it against your usual prompts if you have a spare GPU.\nTake: Small size is real, quality is unproven. Judge on your own tasks.\nYour plans: Local only (free).",
+          "sources": []
         }
       ]
     },
     {
-      "id": "google",
-      "name": "Google & Gemini",
-      "color": "#2f6ddb",
-      "count": 3,
+      "id": "media",
+      "name": "Image, video & audio",
+      "color": "#c2417a",
+      "count": 2,
       "items": [
         {
-          "num": 7,
+          "id": "media-01",
+          "num": 1,
           "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Gemini 4 Neon: Carbon-Qualität bei Flash-Tempo",
-          "lede": "Google rollt Gemini 4 Neon für AI-Pro- und AI-Ultra-Abonnenten in der Gemini-App aus; Gemini 3.1 Pro wird abgelöst.",
-          "detail": "Neon soll bei Coding, Reasoning und agentischen Aufgaben an Gemini 4 Carbon heranreichen, aber schneller und günstiger sein. Für Free-Nutzer ist kein Zugang angekündigt.",
-          "sources": [
-            {
-              "name": "9to5Google",
-              "url": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/",
-              "date": "18.11.2026"
-            }
-          ]
+          "tag": "Video",
+          "headline": "Higgsfield MAGI-2: 1080p text-to-video up to 30 seconds at $0.08 per second",
+          "lede": "MAGI-2 is live in the Higgsfield app and API; no German restriction is stated, and open weights are only announced.",
+          "detail": "The API lists 1080p text-to-video from 4 to 30 seconds, so a 30-second clip is $2.40. Niji Journey also released Niji 8 on 24 Nov, with an editor that carries a character from a reference image into new poses.\nWhy it matters: Thirty seconds per clip is long for current video tools, and the price is easy to budget.\nAction: Wait for the open weights before planning local use; try one API clip if you need video now.\nTake: Open weights are a promise, not a release.\nYour plans: API (paid). Not included in Claude Max, Google AI Pro or Microsoft 365 Family.",
+          "sources": []
         },
         {
-          "num": 8,
+          "id": "media-02",
+          "num": 2,
           "featured": false,
-          "tag": "Produkt",
-          "headline": "Gemini Tasks wird in sechs Ländern kostenlos",
-          "lede": "Der agentische Tasks-Modus (früher Spark), bisher AI Pro/Ultra vorbehalten, steht nun Free-Nutzern in USA, Japan, Südkorea, Kanada, Australien und Indien offen.",
-          "detail": "Anrufe, SMS und Zahlungen starten zunächst nur in den USA; dazu kommt eine engere Workspace-Integration.",
-          "sources": [
-            {
-              "name": "Android Central",
-              "url": "https://www.androidcentral.com/apps-software/ai/google-just-made-its-best-gemini-agent-free-heres-where-you-can-get-it",
-              "date": "17.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 9,
-          "featured": false,
-          "tag": "Produkt",
-          "headline": "Gemini-App läuft jetzt auf Android Go",
-          "lede": "Google bringt die Gemini-App auf geeignete Android-Go-Smartphones mit wenig Arbeitsspeicher.",
-          "detail": null,
-          "sources": [
-            {
-              "name": "Online Tech Tips",
-              "url": "https://www.online-tech-tips.com/google-gemini-app-lower-memory-android-go-phones/",
-              "date": "18.11.2026"
-            }
-          ]
+          "tag": "Voice",
+          "headline": "DeepL Aure v2: DeepL Voice translation delay cut by half",
+          "lede": "DeepL, a German company, rolled out its Aure v2 voice model to DeepL Voice for online meetings, in-person conversations and the Voice API.",
+          "detail": "DeepL's internal test (one-minute recordings, ten language pairs) shows a 50% lower median translation delay than the previous model, measured via API without app-side delay. It is enabled automatically for supported languages.\nWhy it matters: DeepL is a European vendor, which makes it an easy answer when clients ask about live translation in multilingual meetings.\nAction: Test it in a real meeting with an English or French counterpart.\nTake: Self-reported benchmark, but the direction is right and it is a German vendor.\nYour plans: DeepL subscription needed. Not part of your four plans.",
+          "sources": []
         }
       ]
     },
     {
-      "id": "xai",
-      "name": "xAI & Grok",
-      "color": "#5b5751",
-      "count": 3,
-      "items": [
-        {
-          "num": 10,
-          "featured": false,
-          "tag": "Modell-Release",
-          "headline": "Grok 4.8 im Soft-Rollout",
-          "lede": "Laut Elon Musk ist Grok 4.8 für einen Teil der Grok-Bot-Nutzer freigeschaltet; die allgemeine Freigabe brauche noch ein bis zwei Wochen Feinschliff.",
-          "detail": "Ein offizielles Release-Datum von xAI gibt es nicht, die Zeitangabe ist Musks eigene Schätzung.",
-          "sources": [
-            {
-              "name": "explainx.ai",
-              "url": "https://explainx.ai/blog/grok-4-8-soft-rollout-rl-cpp-stack-november-2026",
-              "date": "18.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 11,
-          "featured": false,
-          "tag": "Enterprise",
-          "headline": "Grok Bot übernimmt Buchhaltungs- und Spesenaufgaben",
-          "lede": "xAI positioniert Grok Bot mit einem Produkt-Update als Assistent für Buchhaltung und Spesenverwaltung in Unternehmen.",
-          "detail": null,
-          "sources": [
-            {
-              "name": "xAI",
-              "url": "https://x.ai/news",
-              "date": "16.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 12,
-          "featured": false,
-          "tag": "Tooling",
-          "headline": "grok-build-0.1 aus der API entfernt",
-          "lede": "Das Coding-Modell grok-build-0.1 hat sein End-of-Life erreicht und wird über die Grok-API nicht mehr ausgeliefert.",
-          "detail": null,
-          "sources": [
-            {
-              "name": "xAI API Release Notes",
-              "url": "https://docs.x.ai/developers/release-notes",
-              "date": "19.11.2026"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "europe",
-      "name": "AI in Europa",
+      "id": "community",
+      "name": "Community & GitHub",
       "color": "#8a4fd0",
-      "count": 5,
+      "count": 1,
       "items": [
         {
-          "num": 13,
+          "id": "community-01",
+          "num": 1,
           "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Telekom investiert 100 Mio. Euro in Mistral",
-          "lede": "Der T.Capital Tech Fund der Deutschen Telekom beteiligt sich an Mistrals Series D über 3 Mrd. Euro, die das Pariser Lab mit mehr als 21 Mrd. Euro bewertet.",
-          "detail": "Die Telekom sieht die Beteiligung als ersten Schritt zu einer strategischen Partnerschaft für souveräne KI für deutsche Unternehmen und Behörden; ein Kundenvertrag ist noch nicht unterzeichnet.",
-          "sources": [
-            {
-              "name": "Deutsche Telekom",
-              "url": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/11/deutsche-telekom-staerkt-souveraene-ki-in-deutschland",
-              "date": "19.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 14,
-          "featured": false,
-          "tag": "Markt",
-          "headline": "Mistral eröffnet Asien-Pazifik-Zentrale in Singapur",
-          "lede": "Mistral macht Singapur zum APAC-Hauptsitz und Forschungsstandort und will dort bis 2027 auf 200 Mitarbeitende wachsen.",
-          "detail": "Das Büro wird als Erweiterung des Science Hub Modelle für öffentlichen Sektor, Hightech-Industrie und Robotik entwickeln.",
-          "sources": [
-            {
-              "name": "TNGlobal",
-              "url": "https://technode.global/2026/11/20/frances-ai-company-mistral-opens-asia-pacific-headquarters-in-singapore-plans-200-staff-by-2027",
-              "date": "20.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 15,
-          "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Isomorphic Labs sammelt 5 Mrd. Dollar",
-          "lede": "Das Londoner DeepMind-Spin-off für KI-Wirkstoffdesign schließt eine Series C über 5 Mrd. Dollar ab, angeführt von Greenoaks und Sequoia.",
-          "detail": "Das Geld fließt in die Drug-Design-Engine, Rechenkapazität und erste Kandidaten Richtung klinische Studien. Die Bewertung wurde nicht genannt; die Series B über 2,1 Mrd. Dollar liegt erst ein halbes Jahr zurück.",
-          "sources": [
-            {
-              "name": "BioIndustry Association",
-              "url": "https://www.bioindustry.org/resource/isomorphic-labs-announces-5-billion-series-c-funding.html",
-              "date": "17.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 16,
-          "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Genesis AI: 500 Mio. Dollar für Allzweck-Roboter",
-          "lede": "Das Robotik-Startup aus Paris und San Carlos holt eine Series A über 500 Mio. Dollar bei 3,5 Mrd. Dollar Bewertung.",
-          "detail": "Angeführt von Khosla Ventures, Premji Invest und Eclipse, Nvidia ist beteiligt. Erste Einsätze des Roboters Eno sind in Fertigung und Logistik geplant.",
-          "sources": [
-            {
-              "name": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
-              "date": "17.11.2026"
-            },
-            {
-              "name": "Sifted",
-              "url": "https://sifted.eu/articles/genesis-ai-raises-500m/",
-              "date": "17.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 17,
-          "featured": false,
-          "tag": "Finanzierung",
-          "headline": "Model ML wird mit 1,5 Mrd. Dollar bewertet",
-          "lede": "Das Londoner Startup für KI-Agenten in Banking und Beratung sammelt 250 Mio. Dollar in einer Series B, angeführt von General Atlantic und QED.",
-          "detail": null,
-          "sources": [
-            {
-              "name": "Tech.eu",
-              "url": "https://tech.eu/2026/11/17/model-ml-hits-15b-valuation-with-250m-raise-just-18-months-after-emerging-from-stealth/",
-              "date": "17.11.2026"
-            }
-          ]
+          "tag": "Local LLM",
+          "headline": "Magnitude streams model weights from SSD: 66 GB model on a 24 GB RTX 3090",
+          "lede": "Magnitude uses an SSD to run models larger than GPU memory; it is open tooling you run yourself, so Germany is irrelevant.",
+          "detail": "The company reports 41 tokens per second for a 66 GB model on a 24 GB RTX 3090. I could not check the repo or the test setup, so this is a vendor figure only.\nWhy it matters: If it holds up, your single 24 GB GPU could handle models that currently do not fit.\nAction: Watch for independent tests before spending a weekend on it.\nTake: Interesting but unverified. A secondhand number is not a reason to rebuild your stack.\nYour plans: Local only (free).",
+          "sources": []
         }
       ]
     },
     {
-      "id": "general",
-      "name": "Sonstige KI-News",
+      "id": "work",
+      "name": "Work & consulting",
       "color": "#b7841f",
-      "count": 3,
+      "count": 1,
       "items": [
         {
-          "num": 18,
+          "id": "work-01",
+          "num": 1,
           "featured": false,
-          "tag": "Hardware",
-          "headline": "Nvidia übertrifft Erwartungen, Aktie gibt trotzdem nach",
-          "lede": "Nvidia meldet 115,8 Mrd. Dollar Quartalsumsatz (+103 % zum Vorjahr) und erwartet rund 130 Mrd. Dollar im Folgequartal.",
-          "detail": "Es war der erste Bericht ohne Jensen Huang als CEO; Interims-CEO ist Colette Kress. Die Aktie schloss am Folgetag 2,9 % im Minus, zusätzlich verlangen neue US-Exportregeln Lizenzen für Chip-Lieferungen nach Singapur, Malaysia, Indonesien, Thailand und Brasilien.",
-          "sources": [
-            {
-              "name": "CNBC",
-              "url": "https://www.cnbc.com/2026/11/18/nvidia-earnings-market-analysis.html",
-              "date": "18.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 19,
-          "featured": false,
-          "tag": "Enterprise",
-          "headline": "Microsoft Ignite: Copilot als „Betriebssystem für Arbeit“",
-          "lede": "Microsoft integriert Word, Excel und PowerPoint direkt in die Copilot-App und stellt mit Autopilot einen langlaufenden Agenten für wiederkehrende Aufgaben vor.",
-          "detail": "Dazu kommen Copilot Workspaces als Nachfolger der Notebooks und Copilot Code für App-Erstellung per Prompt. Vieles läuft zunächst nur im Frontier-Programm.",
-          "sources": [
-            {
-              "name": "SiliconANGLE",
-              "url": "https://siliconangle.com/2026/11/18/at-ignite-2026-microsoft-reinvents-copilot-as-the-autonomous-engine-of-enterprise-work/",
-              "date": "18.11.2026"
-            }
-          ]
-        },
-        {
-          "num": 20,
-          "featured": false,
-          "tag": "Markt",
-          "headline": "Perplexity erreicht 1 Mrd. Dollar Run-Rate",
-          "lede": "CEO Aravind Srinivas meldet einen annualisierten Umsatz von 1 Mrd. Dollar, eine Vervierfachung seit Jahresbeginn.",
-          "detail": "Es handelt sich um eine Run-Rate, nicht um realisierten Jahresumsatz. Parallel kündigte Perplexity eine Monitor-API und Teammates für Computer an.",
-          "sources": [
-            {
-              "name": "AIToolly",
-              "url": "https://aitoolly.com/ai-news/article/2026-11-18-perplexity-hits-1-billion-revenue-run-rate-up-fourfold-in-2026-and-ships-monitor-api",
-              "date": "18.11.2026"
-            }
-          ]
+          "tag": "Billing",
+          "headline": "GitHub: Copilot code review costs default to the organisation from 30 December",
+          "lede": "For Copilot Business and Enterprise, review costs go to the repository's organisation if paid seats exist and no billing choice was saved; the change is global, with no German exception stated.",
+          "detail": "A saved choice stays. GitHub also offers 30% off Copilot Fusion usage until 31 December.\nWhy it matters: Clients on Copilot Business or Enterprise will see an unexpected line on their bill in January if nobody sets the billing choice.\nAction: Ask clients who use Copilot code review to save an explicit billing setting before 30 December.\nTake: A small default with real invoice impact. It is a good, concrete thing to flag to a client.\nYour plans: Copilot is not part of Microsoft 365 Family. Client plans only.",
+          "sources": []
         }
       ]
     }
